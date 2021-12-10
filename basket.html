@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper wrapper--catalog">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="header__inner">
+                    <button class="header__burger js_btn js_btn-menu"
+                        style="background-image: url(img/icons/burger.svg);"></button>
+                    <div class="header__left">
+                        <a class="logo" href="#">
+                            <img class="logo__img" src="img/logo.svg" alt="logo">
+                        </a>
+                        <span class="header__span">Для бизнеса</span>
+                    </div>
+                    <ul class="header__menu">
+                        <li class="header__item">
+                            <a class="header__link" href="#">О компании</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Сервисы</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Сервисы</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Помощь</a>
+                        </li>
+                    </ul>
+                    <div class="header__box">
+                        <a class="header__catalog" href="#">Каталог</a>
+                        <form class="form">
+                            <label class="form__label" for="form"></label>
+                            <input class="form__input" type="search" id="form" placeholder="Я ищу что-то конкретное">
+                            <button class="form__btn"></button>
+                        </form>
+                    </div>
+                    <div class="header__right">
+                        <a class="header__phone" href="tel:+74952592467">+7 (495) 259-24-67</a>
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a class="header__icon header__icon--basket" href="#"
+                                    style="background-image: url(img/icons/basket.svg);"></a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__icon header__icon--like" href="#"
+                                    style="background-image: url(img//icons/like.svg);"></a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__icon header__icon--user" href="#"
+                                    style="background-image: url(img/icons/user.svg);"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mob">
+                <div class="header-mob__box">
+                    <form class="header-mob__form">
+                        <label class="header-mob_label" for="form"></label>
+                        <input class="header-mob__input" type="search" id="form" placeholder="Я ищу...">
+                        <button class="header-mob__btn"></button>
+                    </form>
+                </div>
+                <ul class="header-mob__menu">
+                    <li class="header-mob__item">
+                        <a class="header-mob__link" href="#">О компании</a>
+                    </li>
+                    <li class="header-mob__item">
+                        <a class="header-mob__link" href="#">Сервисы</a>
+                    </li>
+                    <li class="header-mob__item">
+                        <a class="header-mob__link" href="#">Сервисы</a>
+                    </li>
+                    <li class="header-mob__item">
+                        <a class="header-mob__link" href="#">Помощь</a>
+                    </li>
+                </ul>
+                <a class="header-mob__catalog" href="#">Каталог</a>
+                <a class="header-mob__icon" href="#">Избранное</a>
+            </div>
+        </header>
+        <main>
+            <section class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Корзина</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="basket">
+                <div class="container">
+                    <div class="basket__title-wrap">
+                        <h2 class="basket__title">Корзина</h2>
+                        <div class="basket__box">
+                            <a class="basket__download" href="#" download>
+                                <svg class="basket__download-icon" width="20" height="16" viewBox="0 0 22 17"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.00043 7.00067C7.00043 5.9398 7.42186 4.92238 8.17201 4.17224C8.92215 3.42209 9.93957 3.00067 11.0004 3.00067C12.0613 3.00067 13.0787 3.42209 13.8289 4.17224C14.579 4.92238 15.0004 5.9398 15.0004 7.00067V8.00067H16.0004C16.4601 8.00067 16.9152 8.0912 17.3398 8.26709C17.7645 8.44298 18.1503 8.70079 18.4753 9.02579C18.8003 9.3508 19.0581 9.73663 19.234 10.1613C19.4099 10.5859 19.5004 11.041 19.5004 11.5007C19.5004 11.9603 19.4099 12.4154 19.234 12.8401C19.0581 13.2647 18.8003 13.6505 18.4753 13.9755C18.1503 14.3005 17.7645 14.5584 17.3398 14.7342C16.9152 14.9101 16.4601 15.0007 16.0004 15.0007H15.9004C15.6352 15.0007 15.3809 15.106 15.1933 15.2936C15.0058 15.4811 14.9004 15.7354 14.9004 16.0007C14.9004 16.2659 15.0058 16.5202 15.1933 16.7078C15.3809 16.8953 15.6352 17.0007 15.9004 17.0007H16.0004C17.3796 17.0024 18.709 16.486 19.7253 15.5538C20.7416 14.6215 21.3706 13.3415 21.4876 11.9673C21.6046 10.5931 21.2011 9.22519 20.3571 8.13452C19.513 7.04386 18.29 6.3101 16.9304 6.07867C16.7108 4.66355 15.9923 3.37363 14.9048 2.4419C13.8173 1.51016 12.4325 0.998047 11.0004 0.998047C9.56838 0.998047 8.18353 1.51016 7.09603 2.4419C6.00852 3.37363 5.29007 4.66355 5.07043 6.07867C3.71532 6.31524 2.49798 7.05086 1.65837 8.14052C0.818755 9.23019 0.417787 10.5948 0.534497 11.9655C0.651207 13.3361 1.27713 14.6134 2.28888 15.5454C3.30064 16.4774 4.62483 16.9966 6.00043 17.0007H6.10043C6.36565 17.0007 6.62 16.8953 6.80754 16.7078C6.99508 16.5202 7.10043 16.2659 7.10043 16.0007C7.10043 15.7354 6.99508 15.4811 6.80754 15.2936C6.62 15.106 6.36565 15.0007 6.10043 15.0007H6.00043C5.54081 15.0007 5.08568 14.9101 4.66104 14.7342C4.2364 14.5584 3.85056 14.3005 3.52556 13.9755C3.20055 13.6505 2.94275 13.2647 2.76685 12.8401C2.59096 12.4154 2.50043 11.9603 2.50043 11.5007C2.50043 11.041 2.59096 10.5859 2.76685 10.1613C2.94275 9.73663 3.20055 9.3508 3.52556 9.02579C3.85056 8.70079 4.2364 8.44298 4.66104 8.26709C5.08568 8.0912 5.54081 8.00067 6.00043 8.00067H7.00043V7.00067ZM12.0004 8.00067C12.0004 7.73545 11.8951 7.4811 11.7075 7.29356C11.52 7.10602 11.2656 7.00067 11.0004 7.00067C10.7352 7.00067 10.4809 7.10602 10.2933 7.29356C10.1058 7.4811 10.0004 7.73545 10.0004 8.00067V13.5867L8.70743 12.2937C8.51883 12.1115 8.26623 12.0107 8.00403 12.013C7.74184 12.0153 7.49102 12.1204 7.30561 12.3058C7.12021 12.4913 7.01504 12.7421 7.01276 13.0043C7.01048 13.2665 7.11128 13.5191 7.29343 13.7077L10.2934 16.7077C10.481 16.8951 10.7353 17.0005 11.0004 17.0005C11.2656 17.0005 11.5199 16.8951 11.7074 16.7077L14.7074 13.7077C14.8896 13.5191 14.9904 13.2665 14.9881 13.0043C14.9858 12.7421 14.8807 12.4913 14.6953 12.3058C14.5098 12.1204 14.259 12.0153 13.9968 12.013C13.7346 12.0107 13.482 12.1115 13.2934 12.2937L12.0004 13.5867V8.00067Z"
+                                        fill="" />
+                                </svg>
+                                Сохранить корзину в файл
+                            </a>
+                            <a class="basket__link" href="#">
+                                <svg class="basket__link-icon" width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.293 0.293275C10.1055 0.480802 10.0002 0.735111 10.0002 1.00027C10.0002 1.26544 10.1055 1.51975 10.293 1.70727L13.586 5.00027H8C5.87827 5.00027 3.84344 5.84313 2.34315 7.34342C0.842855 8.84371 0 10.8785 0 13.0003V17.0003C0 17.2655 0.105357 17.5198 0.292893 17.7074C0.48043 17.8949 0.734784 18.0003 1 18.0003C1.26522 18.0003 1.51957 17.8949 1.70711 17.7074C1.89464 17.5198 2 17.2655 2 17.0003V13.0003C2 11.409 2.63214 9.88285 3.75736 8.75763C4.88258 7.63242 6.4087 7.00027 8 7.00027H13.586L10.293 10.2933C10.1108 10.4819 10.01 10.7345 10.0123 10.9967C10.0146 11.2589 10.1198 11.5097 10.3052 11.6951C10.4906 11.8805 10.7414 11.9857 11.0036 11.9879C11.2658 11.9902 11.5184 11.8894 11.707 11.7073L16.707 6.70727C16.8945 6.51975 16.9998 6.26544 16.9998 6.00027C16.9998 5.73511 16.8945 5.4808 16.707 5.29327L11.707 0.293275C11.5195 0.105804 11.2652 0.000488281 11 0.000488281C10.7348 0.000488281 10.4805 0.105804 10.293 0.293275Z"
+                                        fill="" />
+                                </svg>
+                                Получить ссылку на корзину
+                            </a>
+                            <button class="basket-mob__filter">
+                                <span class="basket-mob__text">Выбрать</span>
+                                <span class="basket-mob__text"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="basket__inner">
+                        <div class="basket__cards">
+                            <div class="basket__top">
+                                <div class="basket__check-wrap">
+                                    <label class="basket__label" for="InCheck-1">
+                                        <input class="basket__input" type="checkbox" id="InCheck-1">
+                                        <span class="basket__check-style"></span>
+                                        Выбрать все<span class="basket__calk">(4)</span>
+                                    </label>
+                                </div>
+                                <div class="basket__check-box">
+                                    <a class="basket__btn js-active" href="#"><svg
+                                            class="basket__icon basket__icon--favorites" width="22" height="20"
+                                            viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11 18L9.695 16.849C5.06 12.7771 2 10.0916 2 6.79564C2 4.11008 4.178 2 6.95 2C8.516 2 10.019 2.70627 11 3.82234C11.981 2.70627 13.484 2 15.05 2C17.822 2 20 4.11008 20 6.79564C20 10.0916 16.94 12.7771 12.305 16.8578L11 18Z"
+                                                stroke="" stroke-width="2.3" stroke-linejoin="round" />
+                                        </svg>В избранное</a>
+                                    <a class="basket__btn js-active" href="#"><svg
+                                            class="basket__icon basket__icon--expectations" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2 10C2 7.87827 2.84285 5.84344 4.34315 4.34315C5.84344 2.84285 7.87827 2 10 2C12.1217 2 14.1566 2.84285 15.6569 4.34315C17.1571 5.84344 18 7.87827 18 10C18 12.1217 17.1571 14.1566 15.6569 15.6569C14.1566 17.1571 12.1217 18 10 18C7.87827 18 5.84344 17.1571 4.34315 15.6569C2.84285 14.1566 2 12.1217 2 10ZM10 0C4.477 0 0 4.477 0 10C0 15.523 4.477 20 10 20C15.523 20 20 15.523 20 10C20 4.477 15.523 0 10 0ZM11 4C11 3.73478 10.8946 3.48043 10.7071 3.29289C10.5196 3.10536 10.2652 3 10 3C9.73478 3 9.48043 3.10536 9.29289 3.29289C9.10536 3.48043 9 3.73478 9 4V10C9.00006 10.2652 9.10545 10.5195 9.293 10.707L12.293 13.707C12.4816 13.8892 12.7342 13.99 12.9964 13.9877C13.2586 13.9854 13.5094 13.8802 13.6948 13.6948C13.8802 13.5094 13.9854 13.2586 13.9877 12.9964C13.99 12.7342 13.8892 12.4816 13.707 12.293L11 9.586V4Z"
+                                                fill="" />
+                                        </svg> В лист
+                                        ожидания</a>
+                                    <button class="basket__btn basket__btn--btn" type="button">
+                                        <svg class="basket__icon basket__icon--del" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.5 5.5L19.5 20.5" stroke="" stroke-width="1.6" />
+                                            <path d="M19.5 5.5L4.5 20.5" stroke="" stroke-width="1.6" />
+                                        </svg>
+                                        Удалить
+                                        выбранное</button>
+                                </div>
+                            </div>
+                            <ul class="basket__list">
+                                <li class="basket__item">
+                                    <div class="basket__item-check">
+                                        <label class="basket__label" for="InCheck-2">
+                                            <input class="basket__input" type="checkbox" id="InCheck-2">
+                                            <span class="basket__check-style"></span>
+                                        </label>
+                                    </div>
+                                    <div class="basket__content">
+                                        <div class="basket__img-wrap">
+                                            <img class="basket__img" src="img/basket/milk.png" width="53" height="126"
+                                                alt="milk">
+                                        </div>
+                                        <div class="basket__content-box">
+                                            <div class="basket__num-box">
+                                                <span class="basket__text">Код товара: </span>
+                                                <input class="basket__num" type="text" value="05347554" id="inputText-1"
+                                                    readonly>
+                                                <button class="basket__copy" onclick="textCopy()"></button>
+                                            </div>
+                                            <h3 class="basket__content-title">Молоко овсяное с какао</h3>
+                                            <ul class="basket__info">
+                                                <li class="basket__info-item">
+                                                    <span class="basket__info-category">Объем</span>
+                                                    <div class="basket__info-text">500 мл</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="basket__price-wrap">
+                                        <div class="count__wrap">
+                                            <div class="count__input-number">
+                                                <button class="count__calc js-minus" type="button" id="down">
+                                                    <span class="count__span count__span--minus"
+                                                        style="background-image: url(img/icons/minus.png);"></span>
+                                                </button>
+                                                <label class="count__label" for="countIn">
+                                                    <input class="count__input" name="quantity" value="1" type="number"
+                                                        id="priceIn">
+                                                </label>
+                                                <button class="count__calc js-plus" type="button" id="up">
+                                                    <span class="count__span count__span--plus"
+                                                        style="background-image: url(img/icons/plus.png);"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="basket__price-box">
+                                            <div class="basket__price"><span class="baslet__calc-price">19.9</span> $
+                                            </div>
+                                            <span class="basket__min-price"><span
+                                                    class="baslet__calc-price">1390</span>р.</span>
+                                            <span class="basket__price-info"
+                                                style="background-image: url(img/icons/info.svg);"></span>
+                                        </div>
+                                    </div>
+                                    <div class="basket__buttons">
+                                        <button class="basket__btn-icon basket__btn-icon--like" type="button"
+                                            style="background-image: url(img/icons/like.svg);"></button>
+                                        <button class="basket__btn-icon basket__btn-icon--del-card" type="button"
+                                            style="background-image: url(img/icons/close.svg);"></button>
+                                    </div>
+                                </li>
+                                <li class="basket__item">
+                                    <div class="basket__item-check">
+                                        <label class="basket__label" for="InCheck-3">
+                                            <input class="basket__input" type="checkbox" id="InCheck-3">
+                                            <span class="basket__check-style"></span>
+                                        </label>
+                                    </div>
+                                    <div class="basket__content">
+                                        <div class="basket__img-wrap">
+                                            <img class="basket__img" src="img/basket/milk.png" width="53" height="126"
+                                                alt="milk">
+                                        </div>
+                                        <div class="basket__content-box">
+                                            <div class="basket__num-box">
+                                                <span class="basket__text">Код товара: </span>
+                                                <input class="basket__num" type="text" value="05347554" id="inputText-2"
+                                                    readonly>
+                                                <button class="basket__copy" onclick="textCopy()"></button>
+                                            </div>
+                                            <h3 class="basket__content-title">Молоко овсяное с какао</h3>
+                                            <ul class="basket__info">
+                                                <li class="basket__info-item">
+                                                    <span class="basket__info-category">Объем</span>
+                                                    <div class="basket__info-text">500 мл</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="basket__price-wrap">
+                                        <div class="count__wrap">
+                                            <div class="count__input-number">
+                                                <button class="count__calc js-minus" type="button" id="down">
+                                                    <span class="count__span count__span--minus"
+                                                        style="background-image: url(img/icons/minus.png);"></span>
+                                                </button>
+                                                <label class="count__label" for="countIn">
+                                                    <input class="count__input" name="quantity" value="1" type="number"
+                                                        id="priceIn">
+                                                </label>
+                                                <button class="count__calc js-plus" type="button" id="up">
+                                                    <span class="count__span count__span--plus"
+                                                        style="background-image: url(img/icons/plus.png);"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="basket__price-box">
+                                            <div class="basket__price"><span class="baslet__calc-price">19.9</span> $
+                                            </div>
+                                            <span class="basket__min-price"><span
+                                                    class="baslet__calc-price">1390</span>р.</span>
+                                            <span class="basket__price-info"
+                                                style="background-image: url(img/icons/info.svg);"></span>
+                                        </div>
+                                    </div>
+                                    <div class="basket__buttons">
+                                        <button class="basket__btn-icon basket__btn-icon--like" type="button"
+                                            style="background-image: url(img/icons/like.svg);"></button>
+                                        <button class="basket__btn-icon basket__btn-icon--del-card" type="button"
+                                            style="background-image: url(img/icons/close.svg);"></button>
+                                    </div>
+                                </li>
+                                <li class="basket__item">
+                                    <div class="basket__item-check">
+                                        <label class="basket__label" for="InCheck-4">
+                                            <input class="basket__input" type="checkbox" id="InCheck-4">
+                                            <span class="basket__check-style"></span>
+                                        </label>
+                                    </div>
+                                    <div class="basket__content">
+                                        <div class="basket__img-wrap">
+                                            <img class="basket__img" src="img/basket/milk.png" width="53" height="126"
+                                                alt="milk">
+                                        </div>
+                                        <div class="basket__content-box">
+                                            <div class="basket__num-box">
+                                                <span class="basket__text">Код товара: </span>
+                                                <input class="basket__num" type="text" value="05347554" id="inputText-3"
+                                                    readonly>
+                                                <button class="basket__copy" onclick="textCopy()"></button>
+                                            </div>
+                                            <h3 class="basket__content-title">Молоко овсяное с какао</h3>
+                                            <ul class="basket__info">
+                                                <li class="basket__info-item">
+                                                    <span class="basket__info-category">Объем</span>
+                                                    <div class="basket__info-text">500 мл</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="basket__price-wrap">
+                                        <div class="count__wrap">
+                                            <div class="count__input-number">
+                                                <button class="count__calc js-minus" type="button" id="down">
+                                                    <span class="count__span count__span--minus"
+                                                        style="background-image: url(img/icons/minus.png);"></span>
+                                                </button>
+                                                <label class="count__label" for="countIn">
+                                                    <input class="count__input" name="quantity" value="1" type="number"
+                                                        id="priceIn">
+                                                </label>
+                                                <button class="count__calc js-plus" type="button" id="up">
+                                                    <span class="count__span count__span--plus"
+                                                        style="background-image: url(img/icons/plus.png);"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="basket__price-box">
+                                            <div class="basket__price"><span class="baslet__calc-price">19.9</span> $
+                                            </div>
+                                            <span class="basket__min-price"><span
+                                                    class="baslet__calc-price">1390</span>р.</span>
+                                            <span class="basket__price-info"
+                                                style="background-image: url(img/icons/info.svg);"></span>
+                                        </div>
+                                    </div>
+                                    <div class="basket__buttons">
+                                        <button class="basket__btn-icon basket__btn-icon--like" type="button"
+                                            style="background-image: url(img/icons/like.svg);"></button>
+                                        <button class="basket__btn-icon basket__btn-icon--del-card" type="button"
+                                            style="background-image: url(img/icons/close.svg);"></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="basket-section">
+                            <h2 class="basket-section__title">Общая стоимость</h2>
+                            <div class="basket-section__box">
+                                <span class="basket-section__price js-sum  js-price"><span>19.9</span> <span
+                                        class="basket-section__currency">$</span></span>
+                                <span class="basket-section__min-price price_sp">1390<span
+                                        class="basket-section__currency">р.</span></span>
+                                <span class="basket-section__info"
+                                    style="background-image: url(img/icons/info.svg);"></span>
+                            </div>
+                            <button class="count__btn">
+                                <span class="count__text-desktop">Оформить заказ</span>
+                                <span class="count__text-mobile">Оформить</span>
+                            </button>
+                        </div>
+                        <a class="basket-mob" href="#">
+                            <h3 class="basket-mob__title">Оформить заказ</h3>
+                            <div class="basket-section__box">
+                                <span class="basket-section__price js-sum  js-price"><span>19.9</span> <span
+                                        class="basket-section__currency">$</span></span>
+                                <span class="basket-section__info"
+                                    style="background-image: url(img/icons/info-white.svg);">
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="add-to-basket">
+                <div class="container">
+                    <div class="add-to-basket__inner">
+                        <h2 class="add-to-basket__title">Добавить в корзину быстро</h2>
+                        <form class="add-to-basket__form">
+                            <label class="add-to-basket__label" for="inputSearch">
+                                <input class="add-to-basket__input" type="search"
+                                    placeholder="Введите код товара, например, 05347554" id="inputSearch">
+                            </label>
+                            <button class="add-to-basket__button" type="submit">Добавить</button>
+                        </form>
+                        <span class="add-to-basket__decor">Или</span>
+                        <div class="add-to-basket__box">
+                            <a class="add-to-basket__icon" href="#" download>Загрузить корзину
+                                из файла</a>
+                            <a class="add-to-basket__span">формат файла .csv</a>
+                            <a class="add-to-basket__download" href="#" download>Скачать пример файла</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="similar-products">
+                <div class="container">
+                    <h2 class="similar-products__title">Похожие товары</h2>
+                    <ul class="similar-products__list similar-products__list--desktop">
+                        <li class="similar-products__item">
+                            <article class="product-card">
+                                <div class="product-card__img-wrap">
+                                    <span class="product-card__sale">В НАЛИЧИИ</span>
+                                    <div class="product-card__icon-wrap">
+                                        <button class="product-card__icon">
+                                            <span class="product-card__heart product-card__heart--hidden"
+                                                style="background-image: url(img/icons/heart.svg);"></span>
+                                            <span class="product-card__heart product-card__heart--active"
+                                                style="background-image: url(img/icons/heart-active.svg);"></span>
+                                        </button>
+                                        <button class="product-card__icon">
+                                            <span class="product-card__filter product-card__filter--hidden"
+                                                style="background-image: url(img/icons/filter.svg);"></span>
+                                            <span class="product-card__filter product-card__filter--active"
+                                                style="background-image: url(img/icons/filter-active.svg);"></span>
+                                        </button>
+                                    </div>
+                                    <img class="product-card__img" src="img/product-card/milk.png" alt="milk" width="65"
+                                        height="153">
+                                </div>
+                                <div class="product-card__text-wrap">
+                                    <div class="product-card__title">Молоко Valio 0.05%</div>
+                                    <p class="product-card__text">Самое вкусное молоко в мире молока</p>
+                                </div>
+
+                                <div class="product-card__buttom">
+                                    <span class="similar-products__weight">500мл</span>
+                                    <div class="product-card__price-wrap">
+                                        <span class="product-card__price">2.45$</span>
+                                        <span class="product-card__price product-card__price--currency">148р.</span>
+                                        <span class="product-card__info"
+                                            style="background-image: url(img/icons/info.svg);"></span>
+                                        <button class="product-card__basket" type="button">
+                                            <svg class="product-card__basket-img" width="20" height="20"
+                                                viewBox="0 0 20 20" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M10 2.00038C9.2912 2.00044 8.60082 2.2408 8.02882 2.68666C7.45682 3.13252 7.03289 3.76073 6.81842 4.48032L6.06739 7.00027H13.9326L13.1816 4.48032C12.9671 3.76073 12.5432 3.13252 11.9712 2.68666C11.3992 2.2408 10.7088 2.00044 10 2.00038ZM15.9022 7.00027L14.9709 3.87534C14.6361 2.75083 13.9738 1.76909 13.08 1.07234C12.1863 0.375583 11.1075 0 10 0C8.89246 0 7.81369 0.375583 6.91995 1.07234C6.02622 1.76909 5.36395 2.75083 5.02908 3.87534L4.09779 7.00027H1.87754C1.5844 7.00028 1.29534 7.0734 1.0335 7.21377C0.771652 7.35414 0.544301 7.55787 0.369647 7.80864C0.194994 8.05941 0.07789 8.35025 0.0277122 8.65789C-0.0224656 8.96552 -0.00432325 9.28139 0.0806865 9.58022L1.13589 13.2901L2.43894 17.87C2.6142 18.4861 2.97086 19.0258 3.45621 19.4093C3.94157 19.7929 4.52988 20 5.13422 20H14.8658C15.47 19.9998 16.0581 19.7926 16.5432 19.409C17.0284 19.0255 17.3849 18.486 17.5601 17.87L18.8641 13.2901L19.9193 9.58022C20.0043 9.28139 20.0225 8.96552 19.9723 8.65789C19.9221 8.35025 19.805 8.05941 19.6304 7.80864C19.4557 7.55787 19.2283 7.35414 18.9665 7.21377C18.7047 7.0734 18.4156 7.00028 18.1225 7.00027H15.9022ZM4.78405 9.00023H1.87754L2.73091 12.0002H6.27955L5.89465 9.00023H4.78405ZM7.79008 9.00023L8.17404 12.0002H11.826L12.2109 9.00023H7.78914H7.79008ZM14.1054 9.00023L13.7204 12.0002H17.2691L18.1225 9.00023H14.1054ZM16.7002 14.0001H13.4642L12.9525 18H14.8648C15.0663 18 15.2624 17.931 15.4242 17.8032C15.586 17.6753 15.7048 17.4954 15.7633 17.2901L16.6992 14.0001H16.7002ZM11.058 18L11.5697 14.0001H8.42939L8.94198 18H11.058ZM7.04655 18L6.53491 14.0001H3.29982L4.2358 17.2901C4.29422 17.4954 4.4131 17.6753 4.57489 17.8032C4.73667 17.931 4.93277 18 5.13422 18H7.04655Z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="product-card__btn" href="#">Добавить в корзину</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="similar-products__item">
+                            <article class="product-card">
+                                <div class="product-card__img-wrap">
+                                    <span class="product-card__sale">В НАЛИЧИИ</span>
+                                    <div class="product-card__icon-wrap">
+                                        <button class="product-card__icon">
+                                            <span class="product-card__heart product-card__heart--hidden"
+                                                style="background-image: url(img/icons/heart.svg);"></span>
+                                            <span class="product-card__heart product-card__heart--active"
+                                                style="background-image: url(img/icons/heart-active.svg);"></span>
+                                        </button>
+                                        <button class="product-card__icon">
+                                            <span class="product-card__filter product-card__filter--hidden"
+                                                style="background-image: url(img/icons/filter.svg);"></span>
+                                            <span class="product-card__filter product-card__filter--active"
+                                                style="background-image: url(img/icons/filter-active.svg);"></span>
+                                        </button>
+                                    </div>
+                                    <img class="product-card__img" src="img/product-card/milk.png" alt="milk" width="65"
+                                        height="153">
+                                </div>
+                                <div class="product-card__text-wrap">
+                                    <div class="product-card__title">Молоко Valio 0.05%</div>
+                                    <p class="product-card__text">Самое вкусное молоко в мире молока</p>
+                                </div>
+
+                                <div class="product-card__buttom">
+                                    <span class="similar-products__weight">500мл</span>
+                                    <div class="product-card__price-wrap">
+                                        <span class="product-card__price">2.45$</span>
+                                        <span class="product-card__price product-card__price--currency">148р.</span>
+                                        <span class="product-card__info"
+                                            style="background-image: url(img/icons/info.svg);"></span>
+                                        <button class="product-card__basket" type="button">
+                                            <svg class="product-card__basket-img" width="20" height="20"
+                                                viewBox="0 0 20 20" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M10 2.00038C9.2912 2.00044 8.60082 2.2408 8.02882 2.68666C7.45682 3.13252 7.03289 3.76073 6.81842 4.48032L6.06739 7.00027H13.9326L13.1816 4.48032C12.9671 3.76073 12.5432 3.13252 11.9712 2.68666C11.3992 2.2408 10.7088 2.00044 10 2.00038ZM15.9022 7.00027L14.9709 3.87534C14.6361 2.75083 13.9738 1.76909 13.08 1.07234C12.1863 0.375583 11.1075 0 10 0C8.89246 0 7.81369 0.375583 6.91995 1.07234C6.02622 1.76909 5.36395 2.75083 5.02908 3.87534L4.09779 7.00027H1.87754C1.5844 7.00028 1.29534 7.0734 1.0335 7.21377C0.771652 7.35414 0.544301 7.55787 0.369647 7.80864C0.194994 8.05941 0.07789 8.35025 0.0277122 8.65789C-0.0224656 8.96552 -0.00432325 9.28139 0.0806865 9.58022L1.13589 13.2901L2.43894 17.87C2.6142 18.4861 2.97086 19.0258 3.45621 19.4093C3.94157 19.7929 4.52988 20 5.13422 20H14.8658C15.47 19.9998 16.0581 19.7926 16.5432 19.409C17.0284 19.0255 17.3849 18.486 17.5601 17.87L18.8641 13.2901L19.9193 9.58022C20.0043 9.28139 20.0225 8.96552 19.9723 8.65789C19.9221 8.35025 19.805 8.05941 19.6304 7.80864C19.4557 7.55787 19.2283 7.35414 18.9665 7.21377C18.7047 7.0734 18.4156 7.00028 18.1225 7.00027H15.9022ZM4.78405 9.00023H1.87754L2.73091 12.0002H6.27955L5.89465 9.00023H4.78405ZM7.79008 9.00023L8.17404 12.0002H11.826L12.2109 9.00023H7.78914H7.79008ZM14.1054 9.00023L13.7204 12.0002H17.2691L18.1225 9.00023H14.1054ZM16.7002 14.0001H13.4642L12.9525 18H14.8648C15.0663 18 15.2624 17.931 15.4242 17.8032C15.586 17.6753 15.7048 17.4954 15.7633 17.2901L16.6992 14.0001H16.7002ZM11.058 18L11.5697 14.0001H8.42939L8.94198 18H11.058ZM7.04655 18L6.53491 14.0001H3.29982L4.2358 17.2901C4.29422 17.4954 4.4131 17.6753 4.57489 17.8032C4.73667 17.931 4.93277 18 5.13422 18H7.04655Z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="product-card__btn" href="#">Добавить в корзину</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="similar-products__item">
+                            <article class="product-card">
+                                <div class="product-card__img-wrap">
+                                    <span class="product-card__sale">В НАЛИЧИИ</span>
+                                    <div class="product-card__icon-wrap">
+                                        <button class="product-card__icon">
+                                            <span class="product-card__heart product-card__heart--hidden"
+                                                style="background-image: url(img/icons/heart.svg);"></span>
+                                            <span class="product-card__heart product-card__heart--active"
+                                                style="background-image: url(img/icons/heart-active.svg);"></span>
+                                        </button>
+                                        <button class="product-card__icon">
+                                            <span class="product-card__filter product-card__filter--hidden"
+                                                style="background-image: url(img/icons/filter.svg);"></span>
+                                            <span class="product-card__filter product-card__filter--active"
+                                                style="background-image: url(img/icons/filter-active.svg);"></span>
+                                        </button>
+                                    </div>
+                                    <img class="product-card__img" src="img/product-card/milk.png" alt="milk" width="65"
+                                        height="153">
+                                </div>
+                                <div class="product-card__text-wrap">
+                                    <div class="product-card__title">Молоко Valio 0.05%</div>
+                                    <p class="product-card__text">Самое вкусное молоко в мире молока</p>
+                                </div>
+
+                                <div class="product-card__buttom">
+                                    <span class="similar-products__weight">500мл</span>
+                                    <div class="product-card__price-wrap">
+                                        <span class="product-card__price">2.45$</span>
+                                        <span class="product-card__price product-card__price--currency">148р.</span>
+                                        <span class="product-card__info"
+                                            style="background-image: url(img/icons/info.svg);"></span>
+                                        <button class="product-card__basket" type="button">
+                                            <svg class="product-card__basket-img" width="20" height="20"
+                                                viewBox="0 0 20 20" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M10 2.00038C9.2912 2.00044 8.60082 2.2408 8.02882 2.68666C7.45682 3.13252 7.03289 3.76073 6.81842 4.48032L6.06739 7.00027H13.9326L13.1816 4.48032C12.9671 3.76073 12.5432 3.13252 11.9712 2.68666C11.3992 2.2408 10.7088 2.00044 10 2.00038ZM15.9022 7.00027L14.9709 3.87534C14.6361 2.75083 13.9738 1.76909 13.08 1.07234C12.1863 0.375583 11.1075 0 10 0C8.89246 0 7.81369 0.375583 6.91995 1.07234C6.02622 1.76909 5.36395 2.75083 5.02908 3.87534L4.09779 7.00027H1.87754C1.5844 7.00028 1.29534 7.0734 1.0335 7.21377C0.771652 7.35414 0.544301 7.55787 0.369647 7.80864C0.194994 8.05941 0.07789 8.35025 0.0277122 8.65789C-0.0224656 8.96552 -0.00432325 9.28139 0.0806865 9.58022L1.13589 13.2901L2.43894 17.87C2.6142 18.4861 2.97086 19.0258 3.45621 19.4093C3.94157 19.7929 4.52988 20 5.13422 20H14.8658C15.47 19.9998 16.0581 19.7926 16.5432 19.409C17.0284 19.0255 17.3849 18.486 17.5601 17.87L18.8641 13.2901L19.9193 9.58022C20.0043 9.28139 20.0225 8.96552 19.9723 8.65789C19.9221 8.35025 19.805 8.05941 19.6304 7.80864C19.4557 7.55787 19.2283 7.35414 18.9665 7.21377C18.7047 7.0734 18.4156 7.00028 18.1225 7.00027H15.9022ZM4.78405 9.00023H1.87754L2.73091 12.0002H6.27955L5.89465 9.00023H4.78405ZM7.79008 9.00023L8.17404 12.0002H11.826L12.2109 9.00023H7.78914H7.79008ZM14.1054 9.00023L13.7204 12.0002H17.2691L18.1225 9.00023H14.1054ZM16.7002 14.0001H13.4642L12.9525 18H14.8648C15.0663 18 15.2624 17.931 15.4242 17.8032C15.586 17.6753 15.7048 17.4954 15.7633 17.2901L16.6992 14.0001H16.7002ZM11.058 18L11.5697 14.0001H8.42939L8.94198 18H11.058ZM7.04655 18L6.53491 14.0001H3.29982L4.2358 17.2901C4.29422 17.4954 4.4131 17.6753 4.57489 17.8032C4.73667 17.931 4.93277 18 5.13422 18H7.04655Z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="product-card__btn" href="#">Добавить в корзину</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="similar-products__item">
+                            <article class="product-card">
+                                <div class="product-card__img-wrap">
+                                    <span class="product-card__sale">В НАЛИЧИИ</span>
+                                    <div class="product-card__icon-wrap">
+                                        <button class="product-card__icon">
+                                            <span class="product-card__heart product-card__heart--hidden"
+                                                style="background-image: url(img/icons/heart.svg);"></span>
+                                            <span class="product-card__heart product-card__heart--active"
+                                                style="background-image: url(img/icons/heart-active.svg);"></span>
+                                        </button>
+                                        <button class="product-card__icon">
+                                            <span class="product-card__filter product-card__filter--hidden"
+                                                style="background-image: url(img/icons/filter.svg);"></span>
+                                            <span class="product-card__filter product-card__filter--active"
+                                                style="background-image: url(img/icons/filter-active.svg);"></span>
+                                        </button>
+                                    </div>
+                                    <img class="product-card__img" src="img/product-card/milk.png" alt="milk" width="65"
+                                        height="153">
+                                </div>
+                                <div class="product-card__text-wrap">
+                                    <div class="product-card__title">Молоко Valio 0.05%</div>
+                                    <p class="product-card__text">Самое вкусное молоко в мире молока</p>
+                                </div>
+
+                                <div class="product-card__buttom">
+                                    <span class="similar-products__weight">500мл</span>
+                                    <div class="product-card__price-wrap">
+                                        <span class="product-card__price">2.45$</span>
+                                        <span class="product-card__price product-card__price--currency">148р.</span>
+                                        <span class="product-card__info"
+                                            style="background-image: url(img/icons/info.svg);"></span>
+                                        <button class="product-card__basket" type="button">
+                                            <svg class="product-card__basket-img" width="20" height="20"
+                                                viewBox="0 0 20 20" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M10 2.00038C9.2912 2.00044 8.60082 2.2408 8.02882 2.68666C7.45682 3.13252 7.03289 3.76073 6.81842 4.48032L6.06739 7.00027H13.9326L13.1816 4.48032C12.9671 3.76073 12.5432 3.13252 11.9712 2.68666C11.3992 2.2408 10.7088 2.00044 10 2.00038ZM15.9022 7.00027L14.9709 3.87534C14.6361 2.75083 13.9738 1.76909 13.08 1.07234C12.1863 0.375583 11.1075 0 10 0C8.89246 0 7.81369 0.375583 6.91995 1.07234C6.02622 1.76909 5.36395 2.75083 5.02908 3.87534L4.09779 7.00027H1.87754C1.5844 7.00028 1.29534 7.0734 1.0335 7.21377C0.771652 7.35414 0.544301 7.55787 0.369647 7.80864C0.194994 8.05941 0.07789 8.35025 0.0277122 8.65789C-0.0224656 8.96552 -0.00432325 9.28139 0.0806865 9.58022L1.13589 13.2901L2.43894 17.87C2.6142 18.4861 2.97086 19.0258 3.45621 19.4093C3.94157 19.7929 4.52988 20 5.13422 20H14.8658C15.47 19.9998 16.0581 19.7926 16.5432 19.409C17.0284 19.0255 17.3849 18.486 17.5601 17.87L18.8641 13.2901L19.9193 9.58022C20.0043 9.28139 20.0225 8.96552 19.9723 8.65789C19.9221 8.35025 19.805 8.05941 19.6304 7.80864C19.4557 7.55787 19.2283 7.35414 18.9665 7.21377C18.7047 7.0734 18.4156 7.00028 18.1225 7.00027H15.9022ZM4.78405 9.00023H1.87754L2.73091 12.0002H6.27955L5.89465 9.00023H4.78405ZM7.79008 9.00023L8.17404 12.0002H11.826L12.2109 9.00023H7.78914H7.79008ZM14.1054 9.00023L13.7204 12.0002H17.2691L18.1225 9.00023H14.1054ZM16.7002 14.0001H13.4642L12.9525 18H14.8648C15.0663 18 15.2624 17.931 15.4242 17.8032C15.586 17.6753 15.7048 17.4954 15.7633 17.2901L16.6992 14.0001H16.7002ZM11.058 18L11.5697 14.0001H8.42939L8.94198 18H11.058ZM7.04655 18L6.53491 14.0001H3.29982L4.2358 17.2901C4.29422 17.4954 4.4131 17.6753 4.57489 17.8032C4.73667 17.931 4.93277 18 5.13422 18H7.04655Z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="product-card__btn" href="#">Добавить в корзину</a>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                    <div class="similar-mobile swiper">
+                        <ul class="similar-products__mobile-list swiper-wrapper">
+                            <li class=" swiper-slide">
+                                <article class="product-card">
+                                    <div class="product-card__img-wrap">
+                                        <span class="product-card__sale">В НАЛИЧИИ</span>
+                                        <div class="product-card__icon-wrap">
+                                            <button class="product-card__icon">
+                                                <span class="product-card__heart product-card__heart--hidden"
+                                                    style="background-image: url(img/icons/heart.svg);"></span>
+                                                <span class="product-card__heart product-card__heart--active"
+                                                    style="background-image: url(img/icons/heart-active.svg);"></span>
+                                            </button>
+                                            <button class="product-card__icon">
+                                                <span class="product-card__filter product-card__filter--hidden"
+                                                    style="background-image: url(img/icons/filter.svg);"></span>
+                                                <span class="product-card__filter product-card__filter--active"
+                                                    style="background-image: url(img/icons/filter-active.svg);"></span>
+                                            </button>
+                                        </div>
+                                        <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                    </div>
+                                    <div class="product-card__text-wrap">
+                                        <div class="product-card__title">Молоко Valio 0.05%</div>
+                                        <p class="product-card__text">Самое вкусное молоко в мире молока</p>
+                                    </div>
+
+                                    <div class="product-card__buttom">
+                                        <span class="similar-products__weight">500мл</span>
+                                        <div class="product-card__price-wrap">
+                                            <span class="product-card__price">2.45$</span>
+                                            <span class="product-card__price product-card__price--currency">148р.</span>
+                                            <span class="product-card__info"
+                                                style="background-image: url(img/icons/info.svg);"></span>
+                                            <button class="product-card__basket" type="button">
+                                                <svg class="product-card__basket-img" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M10 2.00038C9.2912 2.00044 8.60082 2.2408 8.02882 2.68666C7.45682 3.13252 7.03289 3.76073 6.81842 4.48032L6.06739 7.00027H13.9326L13.1816 4.48032C12.9671 3.76073 12.5432 3.13252 11.9712 2.68666C11.3992 2.2408 10.7088 2.00044 10 2.00038ZM15.9022 7.00027L14.9709 3.87534C14.6361 2.75083 13.9738 1.76909 13.08 1.07234C12.1863 0.375583 11.1075 0 10 0C8.89246 0 7.81369 0.375583 6.91995 1.07234C6.02622 1.76909 5.36395 2.75083 5.02908 3.87534L4.09779 7.00027H1.87754C1.5844 7.00028 1.29534 7.0734 1.0335 7.21377C0.771652 7.35414 0.544301 7.55787 0.369647 7.80864C0.194994 8.05941 0.07789 8.35025 0.0277122 8.65789C-0.0224656 8.96552 -0.00432325 9.28139 0.0806865 9.58022L1.13589 13.2901L2.43894 17.87C2.6142 18.4861 2.97086 19.0258 3.45621 19.4093C3.94157 19.7929 4.52988 20 5.13422 20H14.8658C15.47 19.9998 16.0581 19.7926 16.5432 19.409C17.0284 19.0255 17.3849 18.486 17.5601 17.87L18.8641 13.2901L19.9193 9.58022C20.0043 9.28139 20.0225 8.96552 19.9723 8.65789C19.9221 8.35025 19.805 8.05941 19.6304 7.80864C19.4557 7.55787 19.2283 7.35414 18.9665 7.21377C18.7047 7.0734 18.4156 7.00028 18.1225 7.00027H15.9022ZM4.78405 9.00023H1.87754L2.73091 12.0002H6.27955L5.89465 9.00023H4.78405ZM7.79008 9.00023L8.17404 12.0002H11.826L12.2109 9.00023H7.78914H7.79008ZM14.1054 9.00023L13.7204 12.0002H17.2691L18.1225 9.00023H14.1054ZM16.7002 14.0001H13.4642L12.9525 18H14.8648C15.0663 18 15.2624 17.931 15.4242 17.8032C15.586 17.6753 15.7048 17.4954 15.7633 17.2901L16.6992 14.0001H16.7002ZM11.058 18L11.5697 14.0001H8.42939L8.94198 18H11.058ZM7.04655 18L6.53491 14.0001H3.29982L4.2358 17.2901C4.29422 17.4954 4.4131 17.6753 4.57489 17.8032C4.73667 17.931 4.93277 18 5.13422 18H7.04655Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <a class="product-card__btn" href="#">Добавить в корзину</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class=" swiper-slide">
+                                <article class="product-card">
+                                    <div class="product-card__img-wrap">
+                                        <span class="product-card__sale">В НАЛИЧИИ</span>
+                                        <div class="product-card__icon-wrap">
+                                            <button class="product-card__icon">
+                                                <span class="product-card__heart product-card__heart--hidden"
+                                                    style="background-image: url(img/icons/heart.svg);"></span>
+                                                <span class="product-card__heart product-card__heart--active"
+                                                    style="background-image: url(img/icons/heart-active.svg);"></span>
+                                            </button>
+                                            <button class="product-card__icon">
+                                                <span class="product-card__filter product-card__filter--hidden"
+                                                    style="background-image: url(img/icons/filter.svg);"></span>
+                                                <span class="product-card__filter product-card__filter--active"
+                                                    style="background-image: url(img/icons/filter-active.svg);"></span>
+                                            </button>
+                                        </div>
+                                        <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                    </div>
+                                    <div class="product-card__text-wrap">
+                                        <div class="product-card__title">Молоко Valio 0.05%</div>
+                                        <p class="product-card__text">Самое вкусное молоко в мире молока</p>
+                                    </div>
+
+                                    <div class="product-card__buttom">
+                                        <span class="similar-products__weight">500мл</span>
+                                        <div class="product-card__price-wrap">
+                                            <span class="product-card__price">2.45$</span>
+                                            <span class="product-card__price product-card__price--currency">148р.</span>
+                                            <span class="product-card__info"
+                                                style="background-image: url(img/icons/info.svg);"></span>
+                                            <button class="product-card__basket" type="button">
+                                                <svg class="product-card__basket-img" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M10 2.00038C9.2912 2.00044 8.60082 2.2408 8.02882 2.68666C7.45682 3.13252 7.03289 3.76073 6.81842 4.48032L6.06739 7.00027H13.9326L13.1816 4.48032C12.9671 3.76073 12.5432 3.13252 11.9712 2.68666C11.3992 2.2408 10.7088 2.00044 10 2.00038ZM15.9022 7.00027L14.9709 3.87534C14.6361 2.75083 13.9738 1.76909 13.08 1.07234C12.1863 0.375583 11.1075 0 10 0C8.89246 0 7.81369 0.375583 6.91995 1.07234C6.02622 1.76909 5.36395 2.75083 5.02908 3.87534L4.09779 7.00027H1.87754C1.5844 7.00028 1.29534 7.0734 1.0335 7.21377C0.771652 7.35414 0.544301 7.55787 0.369647 7.80864C0.194994 8.05941 0.07789 8.35025 0.0277122 8.65789C-0.0224656 8.96552 -0.00432325 9.28139 0.0806865 9.58022L1.13589 13.2901L2.43894 17.87C2.6142 18.4861 2.97086 19.0258 3.45621 19.4093C3.94157 19.7929 4.52988 20 5.13422 20H14.8658C15.47 19.9998 16.0581 19.7926 16.5432 19.409C17.0284 19.0255 17.3849 18.486 17.5601 17.87L18.8641 13.2901L19.9193 9.58022C20.0043 9.28139 20.0225 8.96552 19.9723 8.65789C19.9221 8.35025 19.805 8.05941 19.6304 7.80864C19.4557 7.55787 19.2283 7.35414 18.9665 7.21377C18.7047 7.0734 18.4156 7.00028 18.1225 7.00027H15.9022ZM4.78405 9.00023H1.87754L2.73091 12.0002H6.27955L5.89465 9.00023H4.78405ZM7.79008 9.00023L8.17404 12.0002H11.826L12.2109 9.00023H7.78914H7.79008ZM14.1054 9.00023L13.7204 12.0002H17.2691L18.1225 9.00023H14.1054ZM16.7002 14.0001H13.4642L12.9525 18H14.8648C15.0663 18 15.2624 17.931 15.4242 17.8032C15.586 17.6753 15.7048 17.4954 15.7633 17.2901L16.6992 14.0001H16.7002ZM11.058 18L11.5697 14.0001H8.42939L8.94198 18H11.058ZM7.04655 18L6.53491 14.0001H3.29982L4.2358 17.2901C4.29422 17.4954 4.4131 17.6753 4.57489 17.8032C4.73667 17.931 4.93277 18 5.13422 18H7.04655Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <a class="product-card__btn" href="#">Добавить в корзину</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class=" swiper-slide">
+                                <article class="product-card">
+                                    <div class="product-card__img-wrap">
+                                        <span class="product-card__sale">В НАЛИЧИИ</span>
+                                        <div class="product-card__icon-wrap">
+                                            <button class="product-card__icon">
+                                                <span class="product-card__heart product-card__heart--hidden"
+                                                    style="background-image: url(img/icons/heart.svg);"></span>
+                                                <span class="product-card__heart product-card__heart--active"
+                                                    style="background-image: url(img/icons/heart-active.svg);"></span>
+                                            </button>
+                                            <button class="product-card__icon">
+                                                <span class="product-card__filter product-card__filter--hidden"
+                                                    style="background-image: url(img/icons/filter.svg);"></span>
+                                                <span class="product-card__filter product-card__filter--active"
+                                                    style="background-image: url(img/icons/filter-active.svg);"></span>
+                                            </button>
+                                        </div>
+                                        <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                    </div>
+                                    <div class="product-card__text-wrap">
+                                        <div class="product-card__title">Молоко Valio 0.05%</div>
+                                        <p class="product-card__text">Самое вкусное молоко в мире молока</p>
+                                    </div>
+
+                                    <div class="product-card__buttom">
+                                        <span class="similar-products__weight">500мл</span>
+                                        <div class="product-card__price-wrap">
+                                            <span class="product-card__price">2.45$</span>
+                                            <span class="product-card__price product-card__price--currency">148р.</span>
+                                            <span class="product-card__info"
+                                                style="background-image: url(img/icons/info.svg);"></span>
+                                            <button class="product-card__basket" type="button">
+                                                <svg class="product-card__basket-img" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M10 2.00038C9.2912 2.00044 8.60082 2.2408 8.02882 2.68666C7.45682 3.13252 7.03289 3.76073 6.81842 4.48032L6.06739 7.00027H13.9326L13.1816 4.48032C12.9671 3.76073 12.5432 3.13252 11.9712 2.68666C11.3992 2.2408 10.7088 2.00044 10 2.00038ZM15.9022 7.00027L14.9709 3.87534C14.6361 2.75083 13.9738 1.76909 13.08 1.07234C12.1863 0.375583 11.1075 0 10 0C8.89246 0 7.81369 0.375583 6.91995 1.07234C6.02622 1.76909 5.36395 2.75083 5.02908 3.87534L4.09779 7.00027H1.87754C1.5844 7.00028 1.29534 7.0734 1.0335 7.21377C0.771652 7.35414 0.544301 7.55787 0.369647 7.80864C0.194994 8.05941 0.07789 8.35025 0.0277122 8.65789C-0.0224656 8.96552 -0.00432325 9.28139 0.0806865 9.58022L1.13589 13.2901L2.43894 17.87C2.6142 18.4861 2.97086 19.0258 3.45621 19.4093C3.94157 19.7929 4.52988 20 5.13422 20H14.8658C15.47 19.9998 16.0581 19.7926 16.5432 19.409C17.0284 19.0255 17.3849 18.486 17.5601 17.87L18.8641 13.2901L19.9193 9.58022C20.0043 9.28139 20.0225 8.96552 19.9723 8.65789C19.9221 8.35025 19.805 8.05941 19.6304 7.80864C19.4557 7.55787 19.2283 7.35414 18.9665 7.21377C18.7047 7.0734 18.4156 7.00028 18.1225 7.00027H15.9022ZM4.78405 9.00023H1.87754L2.73091 12.0002H6.27955L5.89465 9.00023H4.78405ZM7.79008 9.00023L8.17404 12.0002H11.826L12.2109 9.00023H7.78914H7.79008ZM14.1054 9.00023L13.7204 12.0002H17.2691L18.1225 9.00023H14.1054ZM16.7002 14.0001H13.4642L12.9525 18H14.8648C15.0663 18 15.2624 17.931 15.4242 17.8032C15.586 17.6753 15.7048 17.4954 15.7633 17.2901L16.6992 14.0001H16.7002ZM11.058 18L11.5697 14.0001H8.42939L8.94198 18H11.058ZM7.04655 18L6.53491 14.0001H3.29982L4.2358 17.2901C4.29422 17.4954 4.4131 17.6753 4.57489 17.8032C4.73667 17.931 4.93277 18 5.13422 18H7.04655Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <a class="product-card__btn" href="#">Добавить в корзину</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class=" swiper-slide">
+                                <article class="product-card">
+                                    <div class="product-card__img-wrap">
+                                        <span class="product-card__sale">В НАЛИЧИИ</span>
+                                        <div class="product-card__icon-wrap">
+                                            <button class="product-card__icon">
+                                                <span class="product-card__heart product-card__heart--hidden"
+                                                    style="background-image: url(img/icons/heart.svg);"></span>
+                                                <span class="product-card__heart product-card__heart--active"
+                                                    style="background-image: url(img/icons/heart-active.svg);"></span>
+                                            </button>
+                                            <button class="product-card__icon">
+                                                <span class="product-card__filter product-card__filter--hidden"
+                                                    style="background-image: url(img/icons/filter.svg);"></span>
+                                                <span class="product-card__filter product-card__filter--active"
+                                                    style="background-image: url(img/icons/filter-active.svg);"></span>
+                                            </button>
+                                        </div>
+                                        <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                    </div>
+                                    <div class="product-card__text-wrap">
+                                        <div class="product-card__title">Молоко Valio 0.05%</div>
+                                        <p class="product-card__text">Самое вкусное молоко в мире молока</p>
+                                    </div>
+
+                                    <div class="product-card__buttom">
+                                        <span class="similar-products__weight">500мл</span>
+                                        <div class="product-card__price-wrap">
+                                            <span class="product-card__price">2.45$</span>
+                                            <span class="product-card__price product-card__price--currency">148р.</span>
+                                            <span class="product-card__info"
+                                                style="background-image: url(img/icons/info.svg);"></span>
+                                            <button class="product-card__basket" type="button">
+                                                <svg class="product-card__basket-img" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M10 2.00038C9.2912 2.00044 8.60082 2.2408 8.02882 2.68666C7.45682 3.13252 7.03289 3.76073 6.81842 4.48032L6.06739 7.00027H13.9326L13.1816 4.48032C12.9671 3.76073 12.5432 3.13252 11.9712 2.68666C11.3992 2.2408 10.7088 2.00044 10 2.00038ZM15.9022 7.00027L14.9709 3.87534C14.6361 2.75083 13.9738 1.76909 13.08 1.07234C12.1863 0.375583 11.1075 0 10 0C8.89246 0 7.81369 0.375583 6.91995 1.07234C6.02622 1.76909 5.36395 2.75083 5.02908 3.87534L4.09779 7.00027H1.87754C1.5844 7.00028 1.29534 7.0734 1.0335 7.21377C0.771652 7.35414 0.544301 7.55787 0.369647 7.80864C0.194994 8.05941 0.07789 8.35025 0.0277122 8.65789C-0.0224656 8.96552 -0.00432325 9.28139 0.0806865 9.58022L1.13589 13.2901L2.43894 17.87C2.6142 18.4861 2.97086 19.0258 3.45621 19.4093C3.94157 19.7929 4.52988 20 5.13422 20H14.8658C15.47 19.9998 16.0581 19.7926 16.5432 19.409C17.0284 19.0255 17.3849 18.486 17.5601 17.87L18.8641 13.2901L19.9193 9.58022C20.0043 9.28139 20.0225 8.96552 19.9723 8.65789C19.9221 8.35025 19.805 8.05941 19.6304 7.80864C19.4557 7.55787 19.2283 7.35414 18.9665 7.21377C18.7047 7.0734 18.4156 7.00028 18.1225 7.00027H15.9022ZM4.78405 9.00023H1.87754L2.73091 12.0002H6.27955L5.89465 9.00023H4.78405ZM7.79008 9.00023L8.17404 12.0002H11.826L12.2109 9.00023H7.78914H7.79008ZM14.1054 9.00023L13.7204 12.0002H17.2691L18.1225 9.00023H14.1054ZM16.7002 14.0001H13.4642L12.9525 18H14.8648C15.0663 18 15.2624 17.931 15.4242 17.8032C15.586 17.6753 15.7048 17.4954 15.7633 17.2901L16.6992 14.0001H16.7002ZM11.058 18L11.5697 14.0001H8.42939L8.94198 18H11.058ZM7.04655 18L6.53491 14.0001H3.29982L4.2358 17.2901C4.29422 17.4954 4.4131 17.6753 4.57489 17.8032C4.73667 17.931 4.93277 18 5.13422 18H7.04655Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <a class="product-card__btn" href="#">Добавить в корзину</a>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="similar-products__pagination"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__top">
+                        <div class="footer__left">
+                            <h2 class="footer__title">Контакты</h2>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link footer__link--phone" href="tel:+74952592467">+7 (495)
+                                        259-24-67</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link footer__link--email" href="#">streit.sale@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__right">
+                            <h2 class="footer__title footer__title--right">Есть вопросы? </h2>
+                            <p class="footer__text">Оставьте номер – и мы обязательно перезвоним</p>
+                            <form class="footer__form js-form">
+                                <label class="footer__label" for="footer-form"></label>
+                                <input class="footer__input" type="tel" id="footer-form" name="phone_user"
+                                    placeholder="+7 (___) ___ ____" required>
+                                <button class="footer__btn" type="submit">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <a class="logo" href="#">
+                            <img class="logo__img" src="img/logo-footer.svg" alt="logo">
+                        </a>
+                        <p class="footer__copy">Copyright © 2021 Streitsale. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
