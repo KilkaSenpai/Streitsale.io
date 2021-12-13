@@ -110,12 +110,6 @@ $('.js-active').on('click', function () {
     $(this).toggleClass('active');
 });
 
-function textCopy() {
-    var copyText = document.getElementById("inputText");
-    copyText.select();
-    document.execCommand("copy");
-}
-
 var swiper = new Swiper(".swiper-thumb", {
     spaceBetween: 5,
     slidesPerView: 3,
@@ -145,27 +139,6 @@ $('.text-hide').on('click', function () {
 $('.text-hide').on('click', function () {
     $('.card-info__description-span').toggleClass('js-active');
 });
-
-// let price = document.querySelector(".js-price");
-// let sum = document.querySelector(".js-sum");
-// let priceIn = document.getElementById("priceIn");
-// let up = document.getElementById("up");
-// let down = document.getElementById("down");
-// up.onclick = () => {
-//     priceIn.value = (isNaN(priceIn.value)) ? 1 : +priceIn.value + 1;
-//     setSum();
-// };
-// down.onclick = () =>{
-//     priceIn.value = (priceIn.value) > 0 ? +priceIn.value - 1 : 0;
-//     setSum();
-// }
-
-// priceIn.oninput = setSum;
-
-// function setSum() {
-//     sum.innerText = (price.innerText * priceIn.value)
-// }
-
 
 $('.scroll-card__btn').on('click', function () {
     $(this).toggleClass('active');
@@ -215,17 +188,65 @@ new Swiper('.similar-mobile', {
     centeredSlides: true,
 });
 
-var inp = document.querySelector('.add-to-basket__input'),
+$('#InCheck-1').click(function () {
+    if ($(this).is(':checked')) {
+        $('#controls input:checkbox').prop('checked', true);
+    } else {
+        $('#controls input:checkbox').prop('checked', false);
+    }
+});
 
-  mediaQuery = window.matchMedia("screen and (min-width: 768px)");
-mediaQuery.addListener(changePlaceholder);
 
-function changePlaceholder(mq) {
-  if (mq.matches) {
-    inp.setAttribute('placeholder', 'Введите код товара, например, 05347554');
-  } else {
-    inp.setAttribute('placeholder', 'Введите код товара');
+$('#InCheck-mob').click(function () {
+    $('.mobil-check').toggleClass('active');
+    $('.basket__item').toggleClass('check-active');
 
-  }
-}
-changePlaceholder(mediaQuery);
+    if ($(this).is(':checked')) {
+        $('#controls input:checkbox').prop('checked', true);
+    } else {
+        $('#controls input:checkbox').prop('checked', false);
+    }
+});
+
+
+$(document).ready(function () {
+    function change($tr, val) {
+        var $input = $tr.find('input');
+        var count = parseInt($input.val()) + val;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        var $price = $tr.find('.basket__price .basket__calc-price');
+        $price.text(count * $price.data('price'));
+        var $price2 = $tr.find('.basket__min-price .basket__calc-price');
+        $price2.text(count * $price2.data('price'));
+    }
+    function call_all_price() {
+        $(".basket__list .basket__item").each(function () {
+            var price_dollar = parseInt($(this).find(".basket__price .basket__calc-price").text());
+            var price_rub = parseInt($(this).find(".basket__min-price .basket__calc-price").text());
+            var dollar = + price_dollar;
+            var rub = + price_rub;
+            $(".basket-section .all_dolar").text(dollar);
+            $(".basket-section .all_rub").text(rub);
+        });
+    }
+    $('.minus').click(function () {
+        change($(this).closest('.basket__price-wrap'), -1);
+        call_all_price();
+    });
+    $('.plus').click(function () {
+        change($(this).closest('.basket__price-wrap'), 1);
+        call_all_price();
+    });
+    $('.number input').on("input", function () {
+        var $price = $(this).closest('.basket__price-wrap').find('.basket__price .basket__calc-price');
+        $price.text(this.value * $price.data('price'));
+        var $price2 = $(this).closest('.basket__price-wrap').find('.basket__min-price .basket__calc-price');
+        $price2.text(this.value * $price2.data('price'));
+    });
+});
+
+
+$('.js-arrow').on('click', function () {
+    $('.icon-up').toggleClass('icon-down');
+});
