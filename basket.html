@@ -128,14 +128,16 @@
                                 </svg>
                                 Получить ссылку на корзину
                             </a>
-                            <button class="basket-mob__filter">
-                                <span class="basket-mob__text">Выбрать</span>
-                                <span class="basket-mob__text"></span>
-                            </button>
+                            <label class="mobil-check" for="InCheck-mob" id="js-active">
+                                <input class="basket__input" type="checkbox" id="InCheck-mob">
+                                <span class="basket__check-style"></span>
+                                Выбрать
+                                <span class="hide-text">Отменить</span>
+                            </label>
                         </div>
                     </div>
                     <div class="basket__inner">
-                        <div class="basket__cards">
+                        <div class="basket__cards contents">
                             <div class="basket__top">
                                 <div class="basket__check-wrap">
                                     <label class="basket__label" for="InCheck-1">
@@ -170,7 +172,7 @@
                                         выбранное</button>
                                 </div>
                             </div>
-                            <ul class="basket__list">
+                            <ul class="basket__list" id="controls">
                                 <li class="basket__item">
                                     <div class="basket__item-check">
                                         <label class="basket__label" for="InCheck-2">
@@ -188,7 +190,7 @@
                                                 <span class="basket__text">Код товара: </span>
                                                 <input class="basket__num" type="text" value="05347554" id="inputText-1"
                                                     readonly>
-                                                <button class="basket__copy" onclick="textCopy()"></button>
+                                                <button class="basket__copy"></button>
                                             </div>
                                             <h3 class="basket__content-title">Молоко овсяное с какао</h3>
                                             <ul class="basket__info">
@@ -202,7 +204,7 @@
                                     <div class="basket__price-wrap">
                                         <div class="count__wrap">
                                             <div class="count__input-number">
-                                                <button class="count__calc js-minus" type="button" id="down">
+                                                <button class="count__calc js-minus minus" type="button" id="down">
                                                     <span class="count__span count__span--minus"
                                                         style="background-image: url(img/icons/minus.png);"></span>
                                                 </button>
@@ -210,17 +212,18 @@
                                                     <input class="count__input" name="quantity" value="1" type="number"
                                                         id="priceIn">
                                                 </label>
-                                                <button class="count__calc js-plus" type="button" id="up">
+                                                <button class="count__calc js-plus plus" type="button" id="up">
                                                     <span class="count__span count__span--plus"
                                                         style="background-image: url(img/icons/plus.png);"></span>
                                                 </button>
                                             </div>
                                         </div>
                                         <div class="basket__price-box">
-                                            <div class="basket__price"><span class="baslet__calc-price">19.9</span> $
+                                            <div class="basket__price"><span class="basket__calc-price"
+                                                    data-price="20">20</span> $
                                             </div>
-                                            <span class="basket__min-price"><span
-                                                    class="baslet__calc-price">1390</span>р.</span>
+                                            <span class="basket__min-price">
+                                                <span class="basket__calc-price" data-price="1390">1390</span>р.</span>
                                             <span class="basket__price-info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                         </div>
@@ -247,9 +250,9 @@
                                         <div class="basket__content-box">
                                             <div class="basket__num-box">
                                                 <span class="basket__text">Код товара: </span>
-                                                <input class="basket__num" type="text" value="05347554" id="inputText-2"
+                                                <input class="basket__num" type="text" value="05347554" id="inputText-1"
                                                     readonly>
-                                                <button class="basket__copy" onclick="textCopy()"></button>
+                                                <button class="basket__copy"></button>
                                             </div>
                                             <h3 class="basket__content-title">Молоко овсяное с какао</h3>
                                             <ul class="basket__info">
@@ -263,7 +266,7 @@
                                     <div class="basket__price-wrap">
                                         <div class="count__wrap">
                                             <div class="count__input-number">
-                                                <button class="count__calc js-minus" type="button" id="down">
+                                                <button class="count__calc js-minus minus" type="button" id="down">
                                                     <span class="count__span count__span--minus"
                                                         style="background-image: url(img/icons/minus.png);"></span>
                                                 </button>
@@ -271,78 +274,18 @@
                                                     <input class="count__input" name="quantity" value="1" type="number"
                                                         id="priceIn">
                                                 </label>
-                                                <button class="count__calc js-plus" type="button" id="up">
+                                                <button class="count__calc js-plus plus" type="button" id="up">
                                                     <span class="count__span count__span--plus"
                                                         style="background-image: url(img/icons/plus.png);"></span>
                                                 </button>
                                             </div>
                                         </div>
                                         <div class="basket__price-box">
-                                            <div class="basket__price"><span class="baslet__calc-price">19.9</span> $
+                                            <div class="basket__price"><span class="basket__calc-price"
+                                                    data-price="20">20</span> $
                                             </div>
-                                            <span class="basket__min-price"><span
-                                                    class="baslet__calc-price">1390</span>р.</span>
-                                            <span class="basket__price-info"
-                                                style="background-image: url(img/icons/info.svg);"></span>
-                                        </div>
-                                    </div>
-                                    <div class="basket__buttons">
-                                        <button class="basket__btn-icon basket__btn-icon--like" type="button"
-                                            style="background-image: url(img/icons/like.svg);"></button>
-                                        <button class="basket__btn-icon basket__btn-icon--del-card" type="button"
-                                            style="background-image: url(img/icons/close.svg);"></button>
-                                    </div>
-                                </li>
-                                <li class="basket__item">
-                                    <div class="basket__item-check">
-                                        <label class="basket__label" for="InCheck-4">
-                                            <input class="basket__input" type="checkbox" id="InCheck-4">
-                                            <span class="basket__check-style"></span>
-                                        </label>
-                                    </div>
-                                    <div class="basket__content">
-                                        <div class="basket__img-wrap">
-                                            <img class="basket__img" src="img/basket/milk.png" width="53" height="126"
-                                                alt="milk">
-                                        </div>
-                                        <div class="basket__content-box">
-                                            <div class="basket__num-box">
-                                                <span class="basket__text">Код товара: </span>
-                                                <input class="basket__num" type="text" value="05347554" id="inputText-3"
-                                                    readonly>
-                                                <button class="basket__copy" onclick="textCopy()"></button>
-                                            </div>
-                                            <h3 class="basket__content-title">Молоко овсяное с какао</h3>
-                                            <ul class="basket__info">
-                                                <li class="basket__info-item">
-                                                    <span class="basket__info-category">Объем</span>
-                                                    <div class="basket__info-text">500 мл</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="basket__price-wrap">
-                                        <div class="count__wrap">
-                                            <div class="count__input-number">
-                                                <button class="count__calc js-minus" type="button" id="down">
-                                                    <span class="count__span count__span--minus"
-                                                        style="background-image: url(img/icons/minus.png);"></span>
-                                                </button>
-                                                <label class="count__label" for="countIn">
-                                                    <input class="count__input" name="quantity" value="1" type="number"
-                                                        id="priceIn">
-                                                </label>
-                                                <button class="count__calc js-plus" type="button" id="up">
-                                                    <span class="count__span count__span--plus"
-                                                        style="background-image: url(img/icons/plus.png);"></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="basket__price-box">
-                                            <div class="basket__price"><span class="baslet__calc-price">19.9</span> $
-                                            </div>
-                                            <span class="basket__min-price"><span
-                                                    class="baslet__calc-price">1390</span>р.</span>
+                                            <span class="basket__min-price">
+                                                <span class="basket__calc-price" data-price="1390">1390</span>р.</span>
                                             <span class="basket__price-info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                         </div>
@@ -356,20 +299,25 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="basket-section">
-                            <h2 class="basket-section__title">Общая стоимость</h2>
-                            <div class="basket-section__box">
-                                <span class="basket-section__price js-sum  js-price"><span>19.9</span> <span
-                                        class="basket-section__currency">$</span></span>
-                                <span class="basket-section__min-price price_sp">1390<span
-                                        class="basket-section__currency">р.</span></span>
-                                <span class="basket-section__info"
-                                    style="background-image: url(img/icons/info.svg);"></span>
+                        <div class="right_panel_wrap">
+                            <div class="basket-section">
+                                <h2 class="basket-section__title">Общая стоимость</h2>
+                                <div class="basket-section__box">
+                                    <span class="basket-section__price js-sum  js-price"><span
+                                            class="all_dolar">20</span> <span
+                                            class="basket-section__currency">$</span></span>
+                                    <span class="basket-section__min-price price_sp">
+                                        <span class="all_rub">1390</span>
+                                        <span class="basket-section__currency">р.</span>
+                                    </span>
+                                    <span class="basket-section__info"
+                                        style="background-image: url(img/icons/info.svg);"></span>
+                                </div>
+                                <button class="count__btn">
+                                    <span class="count__text-desktop">Оформить заказ</span>
+                                    <span class="count__text-mobile">Оформить</span>
+                                </button>
                             </div>
-                            <button class="count__btn">
-                                <span class="count__text-desktop">Оформить заказ</span>
-                                <span class="count__text-mobile">Оформить</span>
-                            </button>
                         </div>
                         <a class="basket-mob" href="#">
                             <h3 class="basket-mob__title">Оформить заказ</h3>
@@ -397,8 +345,14 @@
                         </form>
                         <span class="add-to-basket__decor">Или</span>
                         <div class="add-to-basket__box">
-                            <a class="add-to-basket__icon" href="#" download>Загрузить корзину
-                                из файла</a>
+                            <form class="add-to-basket__file">
+                                <div class="add-to-basket__container">
+                                    <input class="add-to-basket__file-input" type="file" id="file-input">
+                                    <label class="add-to-basket__icon" for="file-input">Загрузить корзину
+                                        из файла</label>
+                                    <p class="add-to-basket__file-return"></p>
+                                </div>
+                            </form>
                             <a class="add-to-basket__span">формат файла .csv</a>
                             <a class="add-to-basket__download" href="#" download>Скачать пример файла</a>
                         </div>
@@ -820,6 +774,47 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/magnific-popup.min.js"></script>
+    <script src="js/theia-sticky-sidebar.min.js"></script>
+    <script src="js/ResizeSensor.min.js"></script>
+    <script>
+        var inp = document.querySelector('.add-to-basket__input'),
+
+            mediaQuery = window.matchMedia("screen and (min-width: 768px)");
+        mediaQuery.addListener(changePlaceholder);
+
+        function changePlaceholder(mq) {
+            if (mq.matches) {
+                inp.setAttribute('placeholder', 'Введите код товара, например, 05347554');
+            } else {
+                inp.setAttribute('placeholder', 'Введите код товара');
+
+            }
+        }
+        changePlaceholder(mediaQuery);
+    </script>
+    <script>
+        var fileInput = document.querySelector(".add-to-basket__file-input"),
+            button = document.querySelector(".add-to-basket__icon"),
+            the_return = document.querySelector(".add-to-basket__file-return");
+
+        button.addEventListener("keydown", function (event) {
+            if (event.keyCode == 13 || event.keyCode == 32) {
+                fileInput.focus();
+            }
+        });
+        button.addEventListener("click", function (event) {
+            fileInput.focus();
+            return false;
+        });
+        fileInput.addEventListener("change", function (event) {
+            the_return.innerHTML = this.value;
+        });
+    </script>
+    <script>
+        $('.contents, .right_panel_wrap').theiaStickySidebar({
+            additionalMarginTop: 110
+        });
+    </script>
     <script src="js/common.js"></script>
 </body>
 
