@@ -107,7 +107,7 @@ $('.product-card__basket').on('click', function () {
     $(this).toggleClass('active');
 });
 $('.js-active').on('click', function () {
-    $(this).toggleClass('active');
+    $(this).toggleClass('icon-active');
 });
 
 var swiper = new Swiper(".swiper-thumb", {
