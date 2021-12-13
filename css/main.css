@@ -3979,12 +3979,12 @@ textarea {
       @media (max-width: 1200px) {
         .basket__btn--btn {
           font-size: 14px; } }
-    .basket__btn.active {
+    .basket__btn.icon-active {
       color: #F85A3E; }
-      .basket__btn.active .basket__icon--favorites {
+      .basket__btn.icon-active .basket__icon--favorites {
         fill: #F85A3E;
         stroke: #F85A3E; }
-      .basket__btn.active .basket__icon--expectations {
+      .basket__btn.icon-active .basket__icon--expectations {
         fill: #F85A3E; }
   .basket__icon {
     display: -webkit-box;
