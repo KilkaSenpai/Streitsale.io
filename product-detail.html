@@ -123,14 +123,14 @@
                                 <h3 class="scroll-card__title">Молоко овсяное с какао</h3>
                                 <div class="card-info__num-wrap scroll-card--num">
                                     <span class="card-info__text">Код товара: </span>
-                                    <input class="card-info__num" type="text" value="05347554" id="inputText" readonly>
-                                    <button class="card-info__copy" onclick="textCopy()"></button>
+                                    <input class="card-info__num" type="text" value="05347554" readonly>
+                                    <button class="card-info__copy"></button>
                                 </div>
                             </div>
                             <div class="scroll-card__box">
                                 <div class="scroll-card__price-wrap">
-                                    <span class="scroll-card__price"><span class="js-num">19.9</span>$</span>
-                                    <span class="scroll-card__price-min"><span class="js-num">1390</span>р.</span>
+                                    <span class="scroll-card__price "><span class="basket__calc-price" data-price="20">20</span>$</span>
+                                    <span class="scroll-card__price-min"><span class="basket__calc-price" data-price="1390">1390</span>р.</span>
                                     <span class="scroll-card__info"
                                         style="background-image: url(img/icons/info.svg);"></span>
                                 </div>
@@ -157,8 +157,8 @@
                     </div>
                     <div class="card-info__num-wrap">
                         <span class="card-info__text">Код товара: </span>
-                        <input class="card-info__num" type="text" value="05347554" id="inputText" readonly>
-                        <button class="card-info__copy" onclick="textCopy()"></button>
+                        <input class="card-info__num" type="text" value="05347554" readonly>
+                        <button class="card-info__copy"></button>
                     </div>
                     <div class="card-info__info">
                         <div class="card-info__slider-wrap">
@@ -245,8 +245,8 @@
                         </div>
                         <div class="card-info__num-wrap card-info--mobile">
                             <span class="card-info__text">Код товара: </span>
-                            <input class="card-info__num" type="text" value="05347554" id="inputText" readonly>
-                            <button class="card-info__copy" onclick="textCopy()"></button>
+                            <input class="card-info__num" type="text" value="05347554" id="num-3" readonly>
+                            <button class="card-info__copy"></button>
                         </div>
                         <div class="card-info__info-box">
                             <ul class="card-info__list">
@@ -312,30 +312,31 @@
                             </ul>
                         </div>
                         <div class="basket-section">
-                            <div class="basket-section__box">
-                                <span class="basket-section__price js-sum  js-price"><span>19.9</span> <span
-                                        class="basket-section__currency">$</span></span>
-                                <span class="basket-section__min-price price_sp">1390<span
-                                        class="basket-section__currency">р.</span></span>
-                                <span class="basket-section__info"
-                                    style="background-image: url(img/icons/info.svg);"></span>
-                            </div>
-                            <div class="count__wrap">
-                                <div class="count__input-number">
-                                    <button class="count__calc js-minus" type="button" id="down">
-                                        <span class="count__span count__span--minus"
-                                            style="background-image: url(img/icons/minus.png);"></span>
-                                    </button>
-                                    <label class="count__label" for="countIn">
-                                        <input class="count__input" name="quantity" value="1" type="number"
-                                            id="priceIn">
-                                    </label>
-                                    <button class="count__calc js-plus" type="button" id="up">
-                                        <span class="count__span count__span--plus"
-                                            style="background-image: url(img/icons/plus.png);"></span>
-                                    </button>
+                            <div class="basket__price-wrap">
+                                <div class="basket-section__box">
+                                    <span class="basket-section__price basket__price"><span class="basket__calc-price" data-price="20">20</span>$</span>
+                                    <span class="basket-section__min-price basket__min-price"> <span class="basket__calc-price" data-price="1390">1390</span>р.</span>
+                                    <span class="basket-section__info"
+                                        style="background-image: url(img/icons/info.svg);"></span>
+                                </div>
+                                <div class="count__wrap">
+                                    <div class="count__input-number">
+                                        <button class="count__calc minus" type="button" id="down">
+                                            <span class="count__span count__span--minus"
+                                                style="background-image: url(img/icons/minus.png);"></span>
+                                        </button>
+                                        <label class="count__label n" for="countIn">
+                                            <input class="count__input" name="quantity" value="1" type="number"
+                                                id="priceIn">
+                                        </label>
+                                        <button class="count__calc plus" type="button" id="up">
+                                            <span class="count__span count__span--plus"
+                                                style="background-image: url(img/icons/plus.png);"></span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
+                           
                             <button class="count__btn">
                                 <span class="count__text-desktop">Добавить в корзину</span>
                                 <span class="count__text-mobile">В корзину</span>
