@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/air-datepicker.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper wrapper--catalog">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="header__inner">
+                    <button class="header__burger js_btn js_btn-menu"
+                        style="background-image: url(img/icons/burger.svg);"></button>
+                    <div class="header__left">
+                        <a class="logo" href="#">
+                            <img class="logo__img" src="img/logo.svg" alt="logo">
+                        </a>
+                        <span class="header__span">Для бизнеса</span>
+                    </div>
+                    <ul class="header__menu">
+                        <li class="header__item">
+                            <a class="header__link" href="#">О компании</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Сервисы</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Сервисы</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Помощь</a>
+                        </li>
+                    </ul>
+                    <div class="header__box">
+                        <a class="header__catalog" href="#">Каталог</a>
+                        <form class="form">
+                            <label class="form__label" for="form"></label>
+                            <input class="form__input" type="search" id="form" placeholder="Я ищу что-то конкретное">
+                            <button class="form__btn"></button>
+                        </form>
+                    </div>
+                    <div class="header__right">
+                        <a class="header__phone" href="tel:+74952592467">+7 (495) 259-24-67</a>
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a class="header__icon header__icon--basket" href="#"
+                                    style="background-image: url(img/icons/basket.svg);"></a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__icon header__icon--like" href="#"
+                                    style="background-image: url(img//icons/like.svg);"></a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__icon header__icon--user" href="#"
+                                    style="background-image: url(img/icons/user.svg);"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mob">
+                <div class="header-mob__box">
+                    <form class="header-mob__form">
+                        <label class="header-mob_label" for="form"></label>
+                        <input class="header-mob__input" type="search" id="form" placeholder="Я ищу...">
+                        <button class="header-mob__btn"></button>
+                    </form>
+                </div>
+                <ul class="header-mob__menu">
+                    <li class="header-mob__item">
+                        <a class="header-mob__link" href="#">О компании</a>
+                    </li>
+                    <li class="header-mob__item">
+                        <a class="header-mob__link" href="#">Сервисы</a>
+                    </li>
+                    <li class="header-mob__item">
+                        <a class="header-mob__link" href="#">Сервисы</a>
+                    </li>
+                    <li class="header-mob__item">
+                        <a class="header-mob__link" href="#">Помощь</a>
+                    </li>
+                </ul>
+                <a class="header-mob__catalog" href="#">Каталог</a>
+                <a class="header-mob__icon" href="#">Избранное</a>
+            </div>
+        </header>
+        <main>
+            <section class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Личный кабинет</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Шаблоны заказов</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">275645</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="container">
+                <div class="main-title__wrap">
+                    <h1 class="main-title">+7 977 687 78 01</h1>
+                    <button class="main-title__contact" type="button">Связаться с менеджером</button>
+                    <div class="contact-manager">
+                        <h3 class="contact-manager__title">Ваш персональный менеджер</h3>
+                        <span class="contact-manager__name">Ирина</span>
+                        <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
+                    </div>
+                </div>
+                <div class="sections__wrap">
+                    <section class="aside aside--list-notifications">
+                        <ul class="aside__list">
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--log-off" href="#">Выйти из аккаунта</a>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--user" href="#">Аккаунт</a>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--company" href="#">Компании</a>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--favorites" href="#">Избранное</a>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--orders" href="#">Заказы</a>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--documentation" href="#">Документы</a>
+                            </li>
+                            <li class="aside__item">
+                                <span class="aside__link aside__link--notifications aside__link--the-page">Уведомления
+                                </span>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--download" href="#" download>Скачать прайс-лист</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="orders orders--list-notifications">
+                        <div class="orders__title-wrap">
+                            <h2 class="orders__title">Уведомления</h2>
+                            <ul class="orders__links">
+                                <li class="orders__item">
+                                    <span class="orders__link orders__link--the-page">Список уведомлений</span>
+                                </li>
+                                <li class="orders__item">
+                                    <a class="orders__link" href="#">Настройки</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="orders__box">
+                            <div class="basket__inner">
+                                <div class="basket__cards">
+                                    <div class="basket__top">
+                                        <div class="basket__check-wrap">
+                                            <label class="basket__label" for="notificationsCheck-1">
+                                                <input class="basket__input" type="checkbox" id="notificationsCheck-1">
+                                                <span class="basket__check-style"></span>
+                                                Выбрать все<span class="basket__calk">(4)</span>
+                                            </label>
+                                        </div>
+                                        <div class="basket__check-box">
+                                            <button class="basket__btn js-active">
+                                                <svg class="basket__icon basket__icon--read" width="20" height="19"
+                                                    viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M19.99 7C19.99 6.28 19.62 5.65 19.05 5.3L10 0L0.95 5.3C0.38 5.65 0 6.28 0 7V17C0 18.1 0.9 19 2 19H18C19.1 19 20 18.1 20 17L19.99 7ZM10 12L1.74 6.84L10 2L18.26 6.84L10 12Z"
+                                                        fill="" />
+                                                </svg>
+                                                Отметить как прочитанное</button>
+                                            <button class="basket__btn basket__btn--btn" type="button">
+                                                <svg class="basket__icon basket__icon--del" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.5 5.5L19.5 20.5" stroke="" stroke-width="1.6" />
+                                                    <path d="M19.5 5.5L4.5 20.5" stroke="" stroke-width="1.6" />
+                                                </svg>
+                                                Удалить
+                                                выбранное</button>
+                                        </div>
+                                    </div>
+                                    <ul class="orders__check-list" id="controls">
+                                        <li class="orders__check-item">
+                                            <div class="basket__item-check">
+                                                <label class="basket__label" for="notificationsCheck-2">
+                                                    <input class="basket__input" type="checkbox"
+                                                        id="notificationsCheck-2">
+                                                    <span class="basket__check-style"></span>
+                                                </label>
+                                            </div>
+                                            <div class="orders__check-content">
+                                                <a class="orders__check-title" href="#modal-notifi-11">Молоко овсяное с
+                                                    какао</a>
+                                            </div>
+                                            <div class="orders__check-buttons">
+                                                <button class="basket__btn-icon basket__btn-icon--del-card"
+                                                    type="button"
+                                                    style="background-image: url(img/icons/close.svg);"></button>
+                                            </div>
+                                        </li>
+                                        <li class="orders__check-item">
+                                            <div class="basket__item-check">
+                                                <label class="basket__label" for="notificationsCheck-3">
+                                                    <input class="basket__input" type="checkbox"
+                                                        id="notificationsCheck-3">
+                                                    <span class="basket__check-style"></span>
+                                                </label>
+                                            </div>
+                                            <div class="orders__check-content">
+                                                <a class="orders__check-title" href="#modal-notifi-12">Молоко овсяное с
+                                                    какао</a>
+                                            </div>
+                                            <div class="orders__check-buttons">
+                                                <button class="basket__btn-icon basket__btn-icon--del-card"
+                                                    type="button"
+                                                    style="background-image: url(img/icons/close.svg);"></button>
+                                            </div>
+                                        </li>
+                                        <li class="orders__check-item">
+                                            <div class="basket__item-check">
+                                                <label class="basket__label" for="notificationsCheck-4">
+                                                    <input class="basket__input" type="checkbox"
+                                                        id="notificationsCheck-4">
+                                                    <span class="basket__check-style"></span>
+                                                </label>
+                                            </div>
+                                            <div class="orders__check-content">
+                                                <a class="orders__check-title" href="#modal-notifi-13">Молоко овсяное с
+                                                    какао</a>
+                                            </div>
+                                            <div class="orders__check-buttons">
+                                                <button class="basket__btn-icon basket__btn-icon--del-card"
+                                                    type="button"
+                                                    style="background-image: url(img/icons/close.svg);"></button>
+                                            </div>
+                                        </li>
+                                        <li class="orders__check-item">
+                                            <div class="basket__item-check">
+                                                <label class="basket__label" for="notificationsCheck-5">
+                                                    <input class="basket__input" type="checkbox"
+                                                        id="notificationsCheck-5">
+                                                    <span class="basket__check-style"></span>
+                                                </label>
+                                            </div>
+                                            <div class="orders__check-content">
+                                                <a class="orders__check-title" href="#modal-notifi-14">Молоко овсяное с
+                                                    какао</a>
+                                            </div>
+                                            <div class="orders__check-buttons">
+                                                <button class="basket__btn-icon basket__btn-icon--del-card"
+                                                    type="button"
+                                                    style="background-image: url(img/icons/close.svg);"></button>
+                                            </div>
+                                        </li>
+                                        <li class="orders__check-item">
+                                            <div class="basket__item-check">
+                                                <label class="basket__label" for="notificationsCheck-6">
+                                                    <input class="basket__input" type="checkbox"
+                                                        id="notificationsCheck-6">
+                                                    <span class="basket__check-style"></span>
+                                                </label>
+                                            </div>
+                                            <div class="orders__check-content">
+                                                <a class="orders__check-title" href="modal-notifi-15">Молоко овсяное с
+                                                    какао</a>
+                                            </div>
+                                            <div class="orders__check-buttons">
+                                                <button class="basket__btn-icon basket__btn-icon--del-card"
+                                                    type="button"
+                                                    style="background-image: url(img/icons/close.svg);"></button>
+                                            </div>
+                                        </li>
+                                        <li class="orders__check-item">
+                                            <div class="basket__item-check">
+                                                <label class="basket__label" for="notificationsCheck-7">
+                                                    <input class="basket__input" type="checkbox"
+                                                        id="notificationsCheck-7">
+                                                    <span class="basket__check-style"></span>
+                                                </label>
+                                            </div>
+                                            <div class="orders__check-content">
+                                                <a class="orders__check-title" href="#modal-notifi-16">Молоко овсяное с
+                                                    какао</a>
+                                            </div>
+                                            <div class="orders__check-buttons">
+                                                <button class="basket__btn-icon basket__btn-icon--del-card"
+                                                    type="button"
+                                                    style="background-image: url(img/icons/close.svg);"></button>
+                                            </div>
+                                        </li>
+                                        <li class="orders__check-item">
+                                            <div class="basket__item-check">
+                                                <label class="basket__label" for="notificationsCheck-8">
+                                                    <input class="basket__input" type="checkbox"
+                                                        id="notificationsCheck-8">
+                                                    <span class="basket__check-style"></span>
+                                                </label>
+                                            </div>
+                                            <div class="orders__check-content">
+                                                <a class="orders__check-title" href="#modal-notifi-17">Молоко овсяное с
+                                                    какао</a>
+                                            </div>
+                                            <div class="orders__check-buttons">
+                                                <button class="basket__btn-icon basket__btn-icon--del-card"
+                                                    type="button"
+                                                    style="background-image: url(img/icons/close.svg);"></button>
+                                            </div>
+                                        </li>
+                                        <li class="orders__check-item">
+                                            <div class="basket__item-check">
+                                                <label class="basket__label" for="notificationsCheck-9">
+                                                    <input class="basket__input" type="checkbox"
+                                                        id="notificationsCheck-9">
+                                                    <span class="basket__check-style"></span>
+                                                </label>
+                                            </div>
+                                            <div class="orders__check-content">
+                                                <a class="orders__check-title" href="#modal-notifi-18">Молоко овсяное с
+                                                    какао</a>
+                                            </div>
+                                            <div class="orders__check-buttons">
+                                                <button class="basket__btn-icon basket__btn-icon--del-card"
+                                                    type="button"
+                                                    style="background-image: url(img/icons/close.svg);"></button>
+                                            </div>
+                                        </li>
+                                        <li class="orders__check-item">
+                                            <div class="basket__item-check">
+                                                <label class="basket__label" for="notificationsCheck-10">
+                                                    <input class="basket__input" type="checkbox"
+                                                        id="notificationsCheck-10">
+                                                    <span class="basket__check-style"></span>
+                                                </label>
+                                            </div>
+                                            <div class="orders__check-content">
+                                                <a class="orders__check-title" href="#modal-notifi-19">Молоко овсяное с
+                                                    какао</a>
+                                            </div>
+                                            <div class="orders__check-buttons">
+                                                <button class="basket__btn-icon basket__btn-icon--del-card"
+                                                    type="button"
+                                                    style="background-image: url(img/icons/close.svg);"></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__item">
+                                    <a class="pagination__link pagination__link--arrow" href="#">
+                                        <svg class="pagination__img" width="9" height="12" viewBox="0 0 9 12">
+                                            <path
+                                                d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">1</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">2</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">...</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">9</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">10</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link pagination__link--arrow pagination__link--right"
+                                        href="#">
+                                        <svg class="pagination__img" width="9" height="12" viewBox="0 0 9 12">
+                                            <path
+                                                d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__top">
+                        <div class="footer__left">
+                            <h2 class="footer__title">Контакты</h2>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link footer__link--phone" href="tel:+74952592467">+7 (495)
+                                        259-24-67</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link footer__link--email" href="#">streit.sale@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__right">
+                            <h2 class="footer__title footer__title--right">Есть вопросы? </h2>
+                            <p class="footer__text">Оставьте номер – и мы обязательно перезвоним</p>
+                            <form class="footer__form js-form">
+                                <label class="footer__label" for="footer-form"></label>
+                                <input class="footer__input" type="tel" id="footer-form" name="phone_user"
+                                    placeholder="+7 (___) ___ ____" required>
+                                <button class="footer__btn" type="submit">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <a class="logo" href="#">
+                            <img class="logo__img" src="img/logo-footer.svg" alt="logo">
+                        </a>
+                        <p class="footer__copy">Copyright © 2021 Streitsale. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-11">
+            <h3 class="modal-notification__title">Изменение статуса заказа</h3>
+            <p class="modal-notification__text">
+                <span class="modal-notification__num">Ваш заказ №909100 прибыл на таможню и проходит процедуру
+                    таможенного оформления</span>
+            </p>
+            <button class="modal-notification__btn">Понятно, спасибо</button>
+            <button class="modal-notification__close"></button>
+        </div>
+        <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-12">
+            <h3 class="modal-notification__title">Изменение статуса заказа</h3>
+            <p class="modal-notification__text">
+                <span class="modal-notification__num">Ваш заказ №909101 прибыл на таможню и проходит процедуру
+                    таможенного оформления</span>
+            </p>
+            <button class="modal-notification__btn">Понятно, спасибо</button>
+            <button class="modal-notification__close"></button>
+        </div>
+        <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-13">
+            <h3 class="modal-notification__title">Изменение статуса заказа</h3>
+            <p class="modal-notification__text">
+                <span class="modal-notification__num">Ваш заказ №909102 прибыл на таможню и проходит процедуру
+                    таможенного оформления</span>
+            </p>
+            <button class="modal-notification__btn">Понятно, спасибо</button>
+            <button class="modal-notification__close"></button>
+        </div>
+        <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-14">
+            <h3 class="modal-notification__title">Изменение статуса заказа</h3>
+            <p class="modal-notification__text">
+                <span class="modal-notification__num">Ваш заказ №909103 прибыл на таможню и проходит процедуру
+                    таможенного оформления</span>
+            </p>
+            <button class="modal-notification__btn">Понятно, спасибо</button>
+            <button class="modal-notification__close"></button>
+        </div>
+        <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-15">
+            <h3 class="modal-notification__title">Изменение статуса заказа</h3>
+            <p class="modal-notification__text">
+                <span class="modal-notification__num">Ваш заказ №909104 прибыл на таможню и проходит процедуру
+                    таможенного оформления</span>
+            </p>
+            <button class="modal-notification__btn">Понятно, спасибо</button>
+            <button class="modal-notification__close"></button>
+        </div>
+        <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-16">
+            <h3 class="modal-notification__title">Изменение статуса заказа</h3>
+            <p class="modal-notification__text">
+                <span class="modal-notification__num">Ваш заказ №9090105 прибыл на таможню и проходит процедуру
+                    таможенного оформления</span>
+            </p>
+            <button class="modal-notification__btn">Понятно, спасибо</button>
+            <button class="modal-notification__close"></button>
+        </div>
+        <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-17">
+            <h3 class="modal-notification__title">Изменение статуса заказа</h3>
+            <p class="modal-notification__text">
+                <span class="modal-notification__num">Ваш заказ №909106 прибыл на таможню и проходит процедуру
+                    таможенного оформления</span>
+            </p>
+            <button class="modal-notification__btn">Понятно, спасибо</button>
+            <button class="modal-notification__close"></button>
+        </div>
+        <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-18">
+            <h3 class="modal-notification__title">Изменение статуса заказа</h3>
+            <p class="modal-notification__text">
+                <span class="modal-notification__num">Ваш заказ №9090107 прибыл на таможню и проходит процедуру
+                    таможенного оформления</span>
+            </p>
+            <button class="modal-notification__btn">Понятно, спасибо</button>
+            <button class="modal-notification__close"></button>
+        </div>
+        <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-19">
+            <h3 class="modal-notification__title">Изменение статуса заказа</h3>
+            <p class="modal-notification__text">
+                <span class="modal-notification__num">Ваш заказ №9090108 прибыл на таможню и проходит процедуру
+                    таможенного оформления</span>
+            </p>
+            <button class="modal-notification__btn">Понятно, спасибо</button>
+            <button class="modal-notification__close"></button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/theia-sticky-sidebar.min.js"></script>
+    <script src="js/ResizeSensor.min.js"></script>
+    <script src="js/air-datepicker.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script>
+        $(".orders__select").select2({
+            selectionCssClass: 'orders__select',
+            dropdownCssClass: 'orders__select-item'
+        });
+    </script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/air-datepicker.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper wrapper--catalog">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="header__inner">
+                    <button class="header__burger js_btn js_btn-menu"
+                        style="background-image: url(img/icons/burger.svg);"></button>
+                    <div class="header__left">
+                        <a class="logo" href="#">
+                            <img class="logo__img" src="img/logo.svg" alt="logo">
+                        </a>
+                        <span class="header__span">Для бизнеса</span>
+                    </div>
+                    <ul class="header__menu">
+                        <li class="header__item">
+                            <a class="header__link" href="#">О компании</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Сервисы</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Сервисы</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Помощь</a>
+                        </li>
+                    </ul>
+                    <div class="header__box">
+                        <a class="header__catalog" href="#">Каталог</a>
+                        <form class="form">
+                            <label class="form__label" for="form"></label>
+                            <input class="form__input" type="search" id="form" placeholder="Я ищу что-то конкретное">
+                            <button class="form__btn"></button>
+                        </form>
+                    </div>
+                    <div class="header__right">
+                        <a class="header__phone" href="tel:+74952592467">+7 (495) 259-24-67</a>
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a class="header__icon header__icon--basket" href="#"
+                                    style="background-image: url(img/icons/basket.svg);"></a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__icon header__icon--like" href="#"
+                                    style="background-image: url(img//icons/like.svg);"></a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__icon header__icon--user" href="#"
+                                    style="background-image: url(img/icons/user.svg);"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mob">
+                <div class="header-mob__box">
+                    <form class="header-mob__form">
+                        <label class="header-mob_label" for="form"></label>
+                        <input class="header-mob__input" type="search" id="form" placeholder="Я ищу...">
+                        <button class="header-mob__btn"></button>
+                    </form>
+                </div>
+                <ul class="header-mob__menu">
+                    <li class="header-mob__item">
+                        <a class="header-mob__link" href="#">О компании</a>
+                    </li>
+                    <li class="header-mob__item">
+                        <a class="header-mob__link" href="#">Сервисы</a>
+                    </li>
+                    <li class="header-mob__item">
+                        <a class="header-mob__link" href="#">Сервисы</a>
+                    </li>
+                    <li class="header-mob__item">
+                        <a class="header-mob__link" href="#">Помощь</a>
+                    </li>
+                </ul>
+                <a class="header-mob__catalog" href="#">Каталог</a>
+                <a class="header-mob__icon" href="#">Избранное</a>
+            </div>
+        </header>
+        <main>
+            <section class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Личный кабинет</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Шаблоны заказов</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">275645</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="container">
+                <div class="main-title__wrap">
+                    <h1 class="main-title">+7 977 687 78 01</h1>
+                    <button class="main-title__contact" type="button">Связаться с менеджером</button>
+                    <div class="contact-manager">
+                        <h3 class="contact-manager__title">Ваш персональный менеджер</h3>
+                        <span class="contact-manager__name">Ирина</span>
+                        <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
+                    </div>
+                </div>
+                <div class="sections__wrap">
+                    <section class="aside aside--selected-products">
+                        <ul class="aside__list">
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--log-off" href="#">Выйти из аккаунта</a>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--user" href="#">Аккаунт</a>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--company" href="#">Компании</a>
+                            </li>
+                            <li class="aside__item">
+                                <span class="aside__link aside__link--favorites aside__link--the-page">Избранное</span>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--orders" href="#">Заказы</a>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--documentation" href="#">Документы</a>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--notifications" href="#">Уведомления</a>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--download" href="#" download>Скачать прайс-лист</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="orders orders--waiting-list">
+                        <div class="orders__title-wrap">
+                            <h2 class="orders__title">Избранное</h2>
+                            <ul class="orders__links">
+                                <li class="orders__item">
+                                    <a class="orders__link" href="#">Избранные товары</a>
+                                </li>
+                                <li class="orders__item">
+                                    <span class="orders__link orders__link--the-page">Лист ожидания</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="orders__box">
+                            <div class="orders__filter">
+                                <select class="orders__select ">
+                                    <option class="orders__select-item" value="one" selected>
+                                        Показать товары в наличии
+                                    </option>
+                                    <option class="orders__select-item" value="“РВ-ИМПЭКС”">
+                                        Показать товары в наличии 1
+                                    </option>
+                                    <option class="orders__select-item" value="“ФУДСТРИМВЕР”">
+                                        Показать товары в наличии 2
+                                    </option>
+                                    <option class="orders__select-item" value="“РВ-ИМПЭКС”">
+                                        Показать товары в наличии 3
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="basket__inner">
+                                <div class="basket__cards">
+                                    <div class="basket__top">
+                                        <div class="basket__check-wrap">
+                                            <label class="basket__label" for="waitingCheck-1">
+                                                <input class="basket__input" type="checkbox" id="waitingCheck-1">
+                                                <span class="basket__check-style"></span>
+                                                Выбрать все<span class="basket__calk">(4)</span>
+                                            </label>
+                                        </div>
+                                        <div class="basket__check-box">
+                                            <button class="basket__btn js-active">
+                                                <svg class="basket__icon basket__icon--basket" width="23" height="21"
+                                                    viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M11.5 2.10039C10.6849 2.10046 9.89095 2.35284 9.23315 2.82099C8.57535 3.28914 8.08783 3.94876 7.84119 4.70434L6.97749 7.35028H16.0225L15.1588 4.70434C14.9122 3.94876 14.4247 3.28914 13.7669 2.82099C13.1091 2.35284 12.3151 2.10046 11.5 2.10039ZM18.2875 7.35028L17.2166 4.0691C16.8315 2.88838 16.0698 1.85755 15.0421 1.12596C14.0143 0.394363 12.7737 0 11.5 0C10.2263 0 8.98574 0.394363 7.95795 1.12596C6.93015 1.85755 6.16854 2.88838 5.78344 4.0691L4.71246 7.35028H2.15917C1.82206 7.35029 1.48964 7.42707 1.18852 7.57446C0.8874 7.72185 0.625946 7.93576 0.425095 8.19907C0.224243 8.46238 0.0895735 8.76777 0.0318691 9.09078C-0.0258354 9.4138 -0.00497173 9.74546 0.0927895 10.0592L1.30628 13.9546L2.80478 18.7635C3.00633 19.4104 3.41648 19.9771 3.97464 20.3798C4.5328 20.7825 5.20936 21 5.90436 21H17.0956C17.7905 20.9998 18.4668 20.7822 19.0247 20.3795C19.5827 19.9768 19.9926 19.4102 20.1941 18.7635L21.6937 13.9546L22.9072 10.0592C23.005 9.74546 23.0258 9.4138 22.9681 9.09078C22.9104 8.76777 22.7758 8.46238 22.5749 8.19907C22.3741 7.93576 22.1126 7.72185 21.8115 7.57446C21.5104 7.42707 21.1779 7.35029 20.8408 7.35028H18.2875ZM5.50166 9.45024H2.15917L3.14054 12.6002H7.22149L6.77884 9.45024H5.50166ZM8.95859 9.45024L9.40015 12.6002H13.5999L14.0425 9.45024H8.95751H8.95859ZM16.2212 9.45024L15.7785 12.6002H19.8595L20.8408 9.45024H16.2212ZM19.2052 14.7001H15.4838L14.8954 18.9H17.0946C17.3262 18.9 17.5518 18.8276 17.7378 18.6933C17.9239 18.5591 18.0606 18.3702 18.1278 18.1546L19.2041 14.7001H19.2052ZM12.7167 18.9L13.3051 14.7001H9.6938L10.2833 18.9H12.7167ZM8.10353 18.9L7.51514 14.7001H3.79479L4.87117 18.1546C4.93835 18.3702 5.07507 18.5591 5.26112 18.6933C5.44717 18.8276 5.67269 18.9 5.90436 18.9H8.10353Z"
+                                                        fill="" />
+                                                </svg>
+                                                Добавить в корзину</button>
+                                            <button class="basket__btn basket__btn--btn" type="button">
+                                                <svg class="basket__icon basket__icon--del" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.5 5.5L19.5 20.5" stroke="" stroke-width="1.6" />
+                                                    <path d="M19.5 5.5L4.5 20.5" stroke="" stroke-width="1.6" />
+                                                </svg>
+                                                Удалить
+                                                выбранное</button>
+                                        </div>
+                                    </div>
+                                    <ul class="basket__list" id="controls">
+                                        <li class="basket__item">
+                                            <div class="basket__item-check">
+                                                <label class="basket__label" for="waitingCheck-2">
+                                                    <input class="basket__input" type="checkbox" id="waitingCheck-2">
+                                                    <span class="basket__check-style"></span>
+                                                </label>
+                                            </div>
+                                            <div class="basket__content">
+                                                <div class="basket__img-wrap">
+                                                    <span class="product-card__sale">В НАЛИЧИИ</span>
+                                                    <img class="basket__img" src="img/basket/milk.png" width="53"
+                                                        height="126" alt="milk">
+                                                </div>
+                                                <div class="basket__content-box">
+                                                    <div class="basket__num-box">
+                                                        <span class="basket__text">Код товара: </span>
+                                                        <input class="basket__num" type="text" value="05347554"
+                                                            id="inputText-1" readonly>
+                                                        <button class="basket__copy"></button>
+                                                    </div>
+                                                    <h3 class="basket__content-title">Молоко овсяное с какао</h3>
+                                                </div>
+                                            </div>
+                                            <div class="basket__price-wrap">
+                                                <div class="basket__price-box">
+                                                    <div class="basket__price"><span class="basket__calc-price"
+                                                            data-price="20">20</span> $
+                                                    </div>
+                                                    <span class="basket__min-price">
+                                                        <span class="basket__calc-price"
+                                                            data-price="1390">1390</span>р.</span>
+                                                    <span class="basket__price-info"
+                                                        style="background-image: url(img/icons/info.svg);"></span>
+                                                </div>
+                                            </div>
+                                            <div class="basket__buttons">
+                                                <button class="product-card__icon">
+                                                    <span class="product-card__add-basket product-card__add-basket--hidden"
+                                                        style="background-image: url(img/icons/basket-grey.svg);"></span>
+                                                    <span class="product-card__add-basket product-card__add-basket--active"
+                                                        style="background-image: url(img/icons/basket.svg);"></span>
+                                                </button>
+                                                <button class="product-card__icon">
+                                                    <span class="product-card__heart product-card__heart--hidden"
+                                                        style="background-image: url(img/icons/heart-orange.svg);"></span>
+                                                    <span class="product-card__heart product-card__heart--active"
+                                                        style="background-image: url(img/icons/heart-active.svg);"></span>
+                                                </button>
+                                                <button class="product-card__icon">
+                                                    <span class="product-card__filter product-card__filter--hidden"
+                                                        style="background-image: url(img/icons/filter.svg);"></span>
+                                                    <span class="product-card__filter product-card__filter--active"
+                                                        style="background-image: url(img/icons/filter-active.svg);"></span>
+                                                </button>
+                                                <button class="basket__btn-icon basket__btn-icon--del-card"
+                                                    type="button"
+                                                    style="background-image: url(img/icons/close.svg);"></button>
+                                            </div>
+                                        </li>
+                                        <li class="basket__item">
+                                            <div class="basket__item-check">
+                                                <label class="basket__label" for="waitingCheck-2">
+                                                    <input class="basket__input" type="checkbox" id="waitingCheck-2">
+                                                    <span class="basket__check-style"></span>
+                                                </label>
+                                            </div>
+                                            <div class="basket__content">
+                                                <div class="basket__img-wrap">
+                                                    <img class="basket__img" src="img/basket/milk.png" width="53"
+                                                        height="126" alt="milk">
+                                                </div>
+                                                <div class="basket__content-box">
+                                                    <div class="basket__num-box">
+                                                        <span class="basket__text">Код товара: </span>
+                                                        <input class="basket__num" type="text" value="05347554"
+                                                            id="inputText-1" readonly>
+                                                        <button class="basket__copy"></button>
+                                                    </div>
+                                                    <h3 class="basket__content-title">Молоко овсяное с какао и всяким разным в две строки</h3>
+                                                </div>
+                                            </div>
+                                            <div class="basket__price-wrap">
+                                                <div class="basket__price-box">
+                                                    <div class="basket__price"><span class="basket__calc-price"
+                                                            data-price="20">20</span> $
+                                                    </div>
+                                                    <span class="basket__min-price">
+                                                        <span class="basket__calc-price"
+                                                            data-price="1390">1390</span>р.</span>
+                                                    <span class="basket__price-info"
+                                                        style="background-image: url(img/icons/info.svg);"></span>
+                                                </div>
+                                            </div>
+                                            <div class="basket__buttons">
+                                                <button class="product-card__icon">
+                                                    <span class="product-card__heart product-card__heart--hidden"
+                                                        style="background-image: url(img/icons/heart-orange.svg);"></span>
+                                                    <span class="product-card__heart product-card__heart--active"
+                                                        style="background-image: url(img/icons/heart-active.svg);"></span>
+                                                </button>
+                                                <button class="product-card__icon">
+                                                    <span class="product-card__filter product-card__filter--hidden"
+                                                        style="background-image: url(img/icons/filter.svg);"></span>
+                                                    <span class="product-card__filter product-card__filter--active"
+                                                        style="background-image: url(img/icons/filter-active.svg);"></span>
+                                                </button>
+                                                <button class="basket__btn-icon basket__btn-icon--del-card"
+                                                    type="button"
+                                                    style="background-image: url(img/icons/close.svg);"></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__item">
+                                    <a class="pagination__link pagination__link--arrow" href="#">
+                                        <svg class="pagination__img" width="9" height="12" viewBox="0 0 9 12">
+                                            <path
+                                                d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">1</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">2</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">...</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">9</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">10</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link pagination__link--arrow pagination__link--right"
+                                        href="#">
+                                        <svg class="pagination__img" width="9" height="12" viewBox="0 0 9 12">
+                                            <path
+                                                d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="orders__settings">Настроить оповещения</button>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__top">
+                        <div class="footer__left">
+                            <h2 class="footer__title">Контакты</h2>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link footer__link--phone" href="tel:+74952592467">+7 (495)
+                                        259-24-67</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link footer__link--email" href="#">streit.sale@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__right">
+                            <h2 class="footer__title footer__title--right">Есть вопросы? </h2>
+                            <p class="footer__text">Оставьте номер – и мы обязательно перезвоним</p>
+                            <form class="footer__form js-form">
+                                <label class="footer__label" for="footer-form"></label>
+                                <input class="footer__input" type="tel" id="footer-form" name="phone_user"
+                                    placeholder="+7 (___) ___ ____" required>
+                                <button class="footer__btn" type="submit">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <a class="logo" href="#">
+                            <img class="logo__img" src="img/logo-footer.svg" alt="logo">
+                        </a>
+                        <p class="footer__copy">Copyright © 2021 Streitsale. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/theia-sticky-sidebar.min.js"></script>
+    <script src="js/ResizeSensor.min.js"></script>
+    <script src="js/air-datepicker.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script>
+        $(".orders__select").select2({
+            selectionCssClass: 'orders__select',
+            dropdownCssClass: 'orders__select-item'
+        });
+    </script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/air-datepicker.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper wrapper--catalog">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="header__inner">
+                    <button class="header__burger js_btn js_btn-menu"
+                        style="background-image: url(img/icons/burger.svg);"></button>
+                    <div class="header__left">
+                        <a class="logo" href="#">
+                            <img class="logo__img" src="img/logo.svg" alt="logo">
+                        </a>
+                        <span class="header__span">Для бизнеса</span>
+                    </div>
+                    <ul class="header__menu">
+                        <li class="header__item">
+                            <a class="header__link" href="#">О компании</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Сервисы</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Сервисы</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Помощь</a>
+                        </li>
+                    </ul>
+                    <div class="header__box">
+                        <a class="header__catalog" href="#">Каталог</a>
+                        <form class="form">
+                            <label class="form__label" for="form"></label>
+                            <input class="form__input" type="search" id="form" placeholder="Я ищу что-то конкретное">
+                            <button class="form__btn"></button>
+                        </form>
+                    </div>
+                    <div class="header__right">
+                        <a class="header__phone" href="tel:+74952592467">+7 (495) 259-24-67</a>
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a class="header__icon header__icon--basket" href="#"
+                                    style="background-image: url(img/icons/basket.svg);"></a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__icon header__icon--like" href="#"
+                                    style="background-image: url(img//icons/like.svg);"></a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__icon header__icon--user" href="#"
+                                    style="background-image: url(img/icons/user.svg);"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mob">
+                <div class="header-mob__box">
+                    <form class="header-mob__form">
+                        <label class="header-mob_label" for="form"></label>
+                        <input class="header-mob__input" type="search" id="form" placeholder="Я ищу...">
+                        <button class="header-mob__btn"></button>
+                    </form>
+                </div>
+                <ul class="header-mob__menu">
+                    <li class="header-mob__item">
+                        <a class="header-mob__link" href="#">О компании</a>
+                    </li>
+                    <li class="header-mob__item">
+                        <a class="header-mob__link" href="#">Сервисы</a>
+                    </li>
+                    <li class="header-mob__item">
+                        <a class="header-mob__link" href="#">Сервисы</a>
+                    </li>
+                    <li class="header-mob__item">
+                        <a class="header-mob__link" href="#">Помощь</a>
+                    </li>
+                </ul>
+                <a class="header-mob__catalog" href="#">Каталог</a>
+                <a class="header-mob__icon" href="#">Избранное</a>
+            </div>
+        </header>
+        <main>
+            <section class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Личный кабинет</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Заказы</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="container">
+                <div class="main-title__wrap">
+                    <h1 class="main-title">+7 977 687 78 01</h1>
+                    <button class="main-title__contact" type="button">Связаться с менеджером</button>
+                    <div class="contact-manager">
+                        <h3 class="contact-manager__title">Ваш персональный менеджер</h3>
+                        <span class="contact-manager__name">Ирина</span>
+                        <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
+                    </div>
+                </div>
+                <div class="sections__wrap">
+                    <section class="aside">
+                        <ul class="aside__list">
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--log-off" href="#">Выйти из аккаунта</a>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--user" href="#">Аккаунт</a>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--company" href="#">Компании</a>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--favorites" href="#">Избранное</a>
+                            </li>
+                            <li class="aside__item">
+                                <span class="aside__link aside__link--orders aside__link--the-page">Заказы</span>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--documentation" href="#">Документы</a>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--notifications" href="#">Уведомления</a>
+                            </li>
+                            <li class="aside__item">
+                                <a class="aside__link aside__link--download" href="#" download>Скачать прайс-лист</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="orders">
+                        <div class="orders__title-wrap">
+                            <h2 class="orders__title">Мои заказы</h2>
+                            <ul class="orders__links">
+                                <li class="orders__item">
+                                    <span class="orders__link orders__link--the-page">Совершённые</span>
+                                </li>
+                                <li class="orders__item">
+                                    <a class="orders__link" href="#">Шаблоны заказов</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="orders__box">
+                            <div class="orders__filter">
+                                <label class="orders__label" for="inData">
+                                    <input class="orders__input" type="data" id="inData" placeholder="Выберите дату">
+                                </label>
+                                <select class="orders__select">
+                                    <option class="orders__select-item" value="one" selected disabled="disabled">
+                                        Выберите
+                                        номер заказа</option>
+                                    <option class="orders__select-item" value="275645">
+                                        275645
+                                    </option>
+                                    <option class="orders__select-item" value="275646">
+                                        275646
+                                    </option>
+                                    <option class="orders__select-item" value="275647">
+                                        275647
+                                    </option>
+                                </select>
+                                <select class="orders__select ">
+                                    <option class="orders__select-item" value="one" selected disabled="disabled">
+                                        Выберите плательщика
+                                    </option>
+                                    <option class="orders__select-item" value="“РВ-ИМПЭКС”">
+                                        ООО “РВ-ИМПЭКС”
+                                    </option>
+                                    <option class="orders__select-item" value="“ФУДСТРИМВЕР”">
+                                        ООО “ФУДСТРИМВЕР”
+                                    </option>
+                                    <option class="orders__select-item" value="“РВ-ИМПЭКС”">
+                                        ООО “РВ-ИМПЭКС”
+                                    </option>
+                                </select>
+                            </div>
+                            <ul class="orders__nav">
+                                <li class="orders__nax-item">
+                                    <button class="orders__nav-btn">
+                                        Номер заказа
+                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                    </button>
+                                </li>
+                                <li class="orders__nax-item">
+                                    <button class="orders__nav-btn">
+                                        Дата заказа
+                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                    </button>
+                                </li>
+                                <li class="orders__nax-item">
+                                    <button class="orders__nav-btn">
+                                        Сумма
+                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                    </button>
+                                </li>
+                                <li class="orders__nax-item">
+                                    <button class="orders__nav-btn">
+                                        Плательщик
+                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                    </button>
+                                </li>
+                                <li class="orders__nax-item">
+                                    <button class="orders__nav-btn">
+                                        Статус
+                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <ul class="orders__list">
+                                <li class="orders__order">
+                                    <span class="orders__order-text orders__order-text--num">275645</span>
+                                    <span class="orders__order-text orders__order-text--data">03.01.2021</span>
+                                    <span class="orders__order-text orders__order-text--sum">
+                                        212.0$
+                                        <span class="orders__order-info"></span>
+                                    </span>
+                                    <span class="orders__order-text orders__order-text--company">ООО “РВ-ИМПЭКС”</span>
+                                    <span class="orders__order-text orders__order-text--status orders__order-text--paid">Оплачен</span>
+                                </li>
+                                <li class="orders__order">
+                                    <span class="orders__order-text orders__order-text--num">275645</span>
+                                    <span class="orders__order-text orders__order-text--data">03.01.2021</span>
+                                    <span class="orders__order-text orders__order-text--sum">
+                                        212.0$
+                                        <span class="orders__order-info"></span>
+                                    </span>
+                                    <span class="orders__order-text orders__order-text--company">ООО “РВ-ИМПЭКС”</span>
+                                    <span class="orders__order-text orders__order-text--status orders__order-text--delivered">Доставлен</span>
+                                </li>
+                                <li class="orders__order">
+                                    <span class="orders__order-text orders__order-text--num">275645</span>
+                                    <span class="orders__order-text orders__order-text--data">03.01.2021</span>
+                                    <span class="orders__order-text orders__order-text--sum">
+                                        212.0$
+                                        <span class="orders__order-info"></span>
+                                    </span>
+                                    <span class="orders__order-text orders__order-text--company">ООО “РВ-ИМПЭКС”</span>
+                                    <span class="orders__order-text orders__order-text--status orders__order-text--canceled">Отменен</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__item">
+                                    <a class="pagination__link pagination__link--arrow" href="#">
+                                        <svg class="pagination__img" width="9" height="12" viewBox="0 0 9 12">
+                                            <path
+                                                d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">1</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">2</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">...</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">9</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">10</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link pagination__link--arrow pagination__link--right"
+                                        href="#">
+                                        <svg class="pagination__img" width="9" height="12" viewBox="0 0 9 12">
+                                            <path
+                                                d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__top">
+                        <div class="footer__left">
+                            <h2 class="footer__title">Контакты</h2>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link footer__link--phone" href="tel:+74952592467">+7 (495)
+                                        259-24-67</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link footer__link--email" href="#">streit.sale@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__right">
+                            <h2 class="footer__title footer__title--right">Есть вопросы? </h2>
+                            <p class="footer__text">Оставьте номер – и мы обязательно перезвоним</p>
+                            <form class="footer__form js-form">
+                                <label class="footer__label" for="footer-form"></label>
+                                <input class="footer__input" type="tel" id="footer-form" name="phone_user"
+                                    placeholder="+7 (___) ___ ____" required>
+                                <button class="footer__btn" type="submit">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <a class="logo" href="#">
+                            <img class="logo__img" src="img/logo-footer.svg" alt="logo">
+                        </a>
+                        <p class="footer__copy">Copyright © 2021 Streitsale. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/theia-sticky-sidebar.min.js"></script>
+    <script src="js/ResizeSensor.min.js"></script>
+    <script src="js/air-datepicker.js"></script>
+    <script>
+        new AirDatepicker('#inData');
+    </script>
+    <script src="js/select2.min.js"></script>
+    <script>
+        $(".orders__select").select2({
+        selectionCssClass: 'orders__select',
+        dropdownCssClass: 'orders__select-item'
+    });
+    </script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
