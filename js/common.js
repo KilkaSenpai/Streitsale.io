@@ -161,7 +161,7 @@ let prev = null;
 document.body.addEventListener("click", (e) => {
     let el = e.target;
     if (!el.classList.contains("js-more")) return false;
-    let other = el.parentElement.querySelector(".card-reviews__other");
+    let other = el.parentElement.querySelector(".card-reviews__other, .orders__all-other");
     if (prev === other) {
         other.style.display = "none";
         prev = null;
@@ -170,7 +170,7 @@ document.body.addEventListener("click", (e) => {
 
     if (prev) prev.style.display = "none";
     other.style.display = "block";
-    prev = el.parentElement.querySelector(".card-reviews__other");
+    prev = el.parentElement.querySelector(".card-reviews__other, .orders__all-other");
 
 });
 
@@ -249,4 +249,105 @@ $(document).ready(function () {
 
 $('.js-arrow').on('click', function () {
     $('.icon-up').toggleClass('icon-down');
+});
+
+$('.orders__button').on('click', function () {
+    $(this).toggleClass('active');
+});
+
+$('.main-title__contact').on('click', function () {
+    $('.contact-manager').toggleClass('active');
+});
+
+$('.orders__nav-btn').on('click', function () {
+    $(this).toggleClass('active-arrow');
+});
+
+$(function () {
+    $('.orders__check-title').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#username',
+        modal: true,
+    });
+    $(document).on('click', '.modal-notification__btn, .modal-notification__close', function (e) {
+        e.preventDefault();
+        $.magnificPopup.close();
+    });
+});
+
+$('.orders__check-title').on('click', function () {
+    $(this).closest(".orders__check-item").addClass("active-item");
+});
+
+
+$(".js-inBtn").click(function () {
+    $('.orders__edit-input').prop('readonly', function (i, currentValue) {
+        $('.orders__edit-label').addClass('active');
+        return !currentValue;
+    });
+});
+
+$(".js-inBtn-save").click(function () {
+    $('.orders__edit-input').prop('readonly', function (i, currentValue) {
+        $('.orders__edit-label').removeClass('active');
+        return !currentValue;
+    });
+});
+
+$(".js-addText-1").on("change", function () {
+    //Getting Value
+    var selValue = $(".js-addText-1").val();
+    //Setting Value
+    $(".js-addTextIn-1").val(selValue);
+});
+
+$(".js-addText-2").on("change", function () {
+    //Getting Value
+    var selValue = $(".js-addText-2").val();
+    //Setting Value
+    $(".js-addTextIn-2").val(selValue);
+});
+
+$('.js-addSelect-1').on('click', function () {
+    $('.orders__select-wrap-1').addClass('active');
+    $('.js-addTextIn-1').addClass('hidden-text');
+
+});
+
+$('.js-addSelect-2').on('click', function () {
+    $('.orders__select-wrap-2').addClass('active');
+    $('.js-addTextIn-2').addClass('hidden-text');
+});
+
+$('.js-removeSelect-1').on('click', function () {
+    $('.orders__select-wrap-1').removeClass('active');
+    $('.js-addTextIn-1').removeClass('hidden-text');
+});
+
+$('.js-removeSelect-2').on('click', function () {
+    $('.orders__select-wrap-2').removeClass('active');
+    $('.js-addTextIn-2').removeClass('hidden-text');
+});
+
+$('.orders__edit-box').on('click', function () {
+    $(this).children(".orders__edit-btn--edit").toggleClass('active');
+    $(this).children(".orders__edit-btn--save").toggleClass('active');
+});
+
+$(".orders__edit-form").submit(function (e) {
+    e.preventDefault();
+    let form_data = $(this).serializeArray();
+    $.ajax({
+        type: "POST",
+        url: "../../mail.php",
+        data: form_data,
+        success: function (response) {
+            $(".theank-click").click();
+        },
+        error: function (error) {
+            $(".theank-click").click();
+        }
+    });
+    return false;
 });
