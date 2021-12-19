@@ -208,21 +208,21 @@
                                         </li>
                                     </ul>
                                 </ul>
-                                <button class="orders__all-btn js-more">Подробнее</button>
+                                <button class="orders__all-btn js-more" data-show="false">Подробнее</button>
                             </div>
                         </div>
                         <div class="orders__title-wrap">
-                            <h2 class="orders__title orders__title--info">Заказ 275645</h2>
+                            <h2 class="orders__title orders__title--info">Что в заказе</h2>
                             <ul class="orders__title-list">
                                 <li class="orders__icon">
-                                    <button class="orders__button">
+                                    <button class="orders__button orders__button--js">
                                         <svg class="orders__img orders__img--heart" width="22" height="20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="m11 18-1.305-1.151C5.06 12.777 2 10.092 2 6.796 2 4.11 4.178 2 6.95 2c1.566 0 3.069.706 4.05 1.822A5.462 5.462 0 0 1 15.05 2C17.822 2 20 4.11 20 6.796c0 3.296-3.06 5.981-7.695 10.062L11 18Z"
                                                 stroke="" stroke-width="2.4" stroke-linejoin="round" />
                                         </svg>
-                                        В избранное
+                                        <span class="js-to-favorites" data-show="false">В избранное</span>
                                     </button>
                                 </li>
                                 <li class="orders__icon">
@@ -248,14 +248,14 @@
                                     </button>
                                 </li>
                                 <li class="orders__icon">
-                                    <button class="orders__button">
+                                    <button class="orders__button orders__button--js">
                                         <svg class="orders__img orders__img--basket" width="23" height="21" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M11.5 2.1c-.815 0-1.609.253-2.267.721a3.74 3.74 0 0 0-1.392 1.883L6.977 7.35h9.046l-.864-2.646a3.74 3.74 0 0 0-1.392-1.883 3.912 3.912 0 0 0-2.267-.72Zm6.788 5.25-1.071-3.28a5.842 5.842 0 0 0-2.175-2.944A6.112 6.112 0 0 0 11.5 0a6.111 6.111 0 0 0-3.542 1.126 5.842 5.842 0 0 0-2.175 2.943L4.713 7.35H2.158c-.337 0-.67.077-.97.224a2.146 2.146 0 0 0-.764.625 2.044 2.044 0 0 0-.332 1.86l1.213 3.896 1.499 4.809a3.152 3.152 0 0 0 1.17 1.616 3.3 3.3 0 0 0 1.93.62h11.19a3.3 3.3 0 0 0 1.93-.62 3.16 3.16 0 0 0 1.17-1.616l1.499-4.81 1.213-3.895a2.044 2.044 0 0 0-.332-1.86 2.145 2.145 0 0 0-.764-.625 2.21 2.21 0 0 0-.97-.224h-2.553ZM5.502 9.45H2.159l.982 3.15h4.08L6.78 9.45H5.502Zm3.457 0L9.4 12.6h4.2l.443-3.15H8.957Zm7.262 0-.443 3.15h4.082l.98-3.15h-4.619Zm2.984 5.25h-3.721l-.589 4.2h2.2a1.1 1.1 0 0 0 .643-.207 1.05 1.05 0 0 0 .39-.538l1.076-3.455h.001Zm-6.488 4.2.588-4.2H9.694l.59 4.2h2.433Zm-4.613 0-.589-4.2h-3.72l1.076 3.455c.067.215.204.404.39.538a1.1 1.1 0 0 0 .643.207h2.2Z"
                                                 fill="" stroke="none" />
                                         </svg>
-                                        В корзину
+                                        <span class="js-to-basket" data-show="false">В корзинe</span>
                                     </button>
                                 </li>
                             </ul>
@@ -318,7 +318,7 @@
                                     </button>
                                 </li>
                             </ul>
-                            <ul class="orders__list">
+                            <ul class="orders__list" id="controls-2">
                                 <li class="orders__order">
                                     <label class="basket__label" for="ordersCheck-2">
                                         <input class="basket__input" type="checkbox" id="ordersCheck-2">
