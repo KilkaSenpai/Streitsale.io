@@ -171,7 +171,6 @@ document.body.addEventListener("click", (e) => {
     if (prev) prev.style.display = "none";
     other.style.display = "block";
     prev = el.parentElement.querySelector(".card-reviews__other, .orders__all-other");
-
 });
 
 $('.more-text').on('click', function () {
@@ -193,6 +192,38 @@ $('#InCheck-1').click(function () {
         $('#controls input:checkbox').prop('checked', true);
     } else {
         $('#controls input:checkbox').prop('checked', false);
+    }
+});
+
+$('#ordersCheck-1').click(function () {
+    if ($(this).is(':checked')) {
+        $('#controls-2 input:checkbox').prop('checked', true);
+    } else {
+        $('#controls-2 input:checkbox').prop('checked', false);
+    }
+});
+
+$('#templateCheck').click(function () {
+    if ($(this).is(':checked')) {
+        $('#controls-3 input:checkbox').prop('checked', true);
+    } else {
+        $('#controls-3 input:checkbox').prop('checked', false);
+    }
+});
+
+$('#waitingCheck').click(function () {
+    if ($(this).is(':checked')) {
+        $('#controls-4 input:checkbox').prop('checked', true);
+    } else {
+        $('#controls-4 input:checkbox').prop('checked', false);
+    }
+});
+
+$('#notificationsCheck').click(function () {
+    if ($(this).is(':checked')) {
+        $('#controls-5 input:checkbox').prop('checked', true);
+    } else {
+        $('#controls-5 input:checkbox').prop('checked', false);
     }
 });
 
@@ -248,10 +279,10 @@ $(document).ready(function () {
 
 
 $('.js-arrow').on('click', function () {
-    $('.icon-up').toggleClass('icon-down');
+    $(this).children('.icon-up').toggleClass('icon-down');
 });
 
-$('.orders__button').on('click', function () {
+$('.orders__button--js').on('click', function () {
     $(this).toggleClass('active');
 });
 
@@ -351,3 +382,77 @@ $(".orders__edit-form").submit(function (e) {
     });
     return false;
 });
+
+$('.js-pa-active').on('click', function () {
+    $(this).toggleClass('active');
+});
+
+$('.orders__all-btn').click(function () {
+    if ($(this).attr('data-show') === "true") {
+        $(this).text("Подробнее");
+        $(this).attr('data-show', "false");
+    }
+    else {
+        $(this).text("Показать меньше");
+        $(this).attr('data-show', "true");
+    }
+});
+
+$('.js-to-favorites').click(function () {
+    if ($(this).attr('data-show') === "true") {
+        $(this).text("В избранное");
+        $(this).attr('data-show', "false");
+    }
+    else {
+        $(this).text("В избранном");
+        $(this).attr('data-show', "true");
+    }
+});
+$('.js-to-basket').click(function () {
+    if ($(this).attr('data-show') === "true") {
+        $(this).text("В корзину");
+        $(this).attr('data-show', "false");
+    }
+    else {
+        $(this).text("В корзине");
+        $(this).attr('data-show', "true");
+    }
+});
+$('.js-to-waiting-list').click(function () {
+    if ($(this).attr('data-show') === "true") {
+        $(this).text("В лист ожидания");
+        $(this).attr('data-show', "false");
+    }
+    else {
+        $(this).text("В листе ожидания");
+        $(this).attr('data-show', "true");
+    }
+});
+
+$('.orders__btn--basket').on('click', function () {
+    $(this).toggleClass('active');
+});
+
+$('.orders__btn--del').on('click', function () {
+    $(this).closest(".orders__order").remove();
+});
+
+$('.basket__btn-icon--del-card').on('click', function () {
+    $(this).closest(".orders__check-item").remove();
+});
+
+$('.basket__btn-icon-svg--del-card').on('click', function () {
+    $(this).closest(".basket__item").remove();
+});
+
+$('.basket__btn-icon ').on('click', function () {
+    $(this).children(".basket__btn-icon-svg--like").toggleClass('active');
+});
+$('.orders__btn').on('click', function () {
+    $(this).children(".orders__btn-svg--basket").toggleClass('active');
+});
+
+$('.js-del').on('click', function () {
+    $(this).closest(".orders__order").remove();
+});
+
