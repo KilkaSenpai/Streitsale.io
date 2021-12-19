@@ -93,7 +93,7 @@
             </div>
         </header>
         <main>
-            <section class="breadcrumbs">
+            <section class="breadcrumbs breadcrumbs--basket">
                 <div class="container">
                     <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__item">
@@ -147,29 +147,31 @@
                                     </label>
                                 </div>
                                 <div class="basket__check-box">
-                                    <a class="basket__btn js-active" href="#"><svg
+                                    <button class="basket__btn js-active"><svg
                                             class="basket__icon basket__icon--favorites" width="22" height="20"
                                             viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M11 18L9.695 16.849C5.06 12.7771 2 10.0916 2 6.79564C2 4.11008 4.178 2 6.95 2C8.516 2 10.019 2.70627 11 3.82234C11.981 2.70627 13.484 2 15.05 2C17.822 2 20 4.11008 20 6.79564C20 10.0916 16.94 12.7771 12.305 16.8578L11 18Z"
                                                 stroke="" stroke-width="2.3" stroke-linejoin="round" />
-                                        </svg>В избранное</a>
-                                    <a class="basket__btn js-active" href="#"><svg
+                                        </svg>
+                                        <span class="js-to-favorites" data-show="false">В избранное</span>
+                                    </button>
+                                    <button class="basket__btn js-active"><svg
                                             class="basket__icon basket__icon--expectations" width="20" height="20"
                                             viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M2 10C2 7.87827 2.84285 5.84344 4.34315 4.34315C5.84344 2.84285 7.87827 2 10 2C12.1217 2 14.1566 2.84285 15.6569 4.34315C17.1571 5.84344 18 7.87827 18 10C18 12.1217 17.1571 14.1566 15.6569 15.6569C14.1566 17.1571 12.1217 18 10 18C7.87827 18 5.84344 17.1571 4.34315 15.6569C2.84285 14.1566 2 12.1217 2 10ZM10 0C4.477 0 0 4.477 0 10C0 15.523 4.477 20 10 20C15.523 20 20 15.523 20 10C20 4.477 15.523 0 10 0ZM11 4C11 3.73478 10.8946 3.48043 10.7071 3.29289C10.5196 3.10536 10.2652 3 10 3C9.73478 3 9.48043 3.10536 9.29289 3.29289C9.10536 3.48043 9 3.73478 9 4V10C9.00006 10.2652 9.10545 10.5195 9.293 10.707L12.293 13.707C12.4816 13.8892 12.7342 13.99 12.9964 13.9877C13.2586 13.9854 13.5094 13.8802 13.6948 13.6948C13.8802 13.5094 13.9854 13.2586 13.9877 12.9964C13.99 12.7342 13.8892 12.4816 13.707 12.293L11 9.586V4Z"
                                                 fill="" />
-                                        </svg> В лист
-                                        ожидания</a>
+                                        </svg>
+                                        <span class="js-to-waiting-list" data-show="false">В лист ожидания</span>
+                                    </button>
                                     <button class="basket__btn basket__btn--btn" type="button">
                                         <svg class="basket__icon basket__icon--del" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M4.5 5.5L19.5 20.5" stroke="" stroke-width="1.6" />
                                             <path d="M19.5 5.5L4.5 20.5" stroke="" stroke-width="1.6" />
                                         </svg>
-                                        Удалить
-                                        выбранное</button>
+                                        Удалить выбранное</button>
                                 </div>
                             </div>
                             <ul class="basket__list" id="controls">
@@ -229,10 +231,16 @@
                                         </div>
                                     </div>
                                     <div class="basket__buttons">
-                                        <button class="basket__btn-icon basket__btn-icon--like" type="button"
-                                            style="background-image: url(img/icons/like.svg);"></button>
-                                        <button class="basket__btn-icon basket__btn-icon--del-card" type="button"
-                                            style="background-image: url(img/icons/close.svg);"></button>
+                                        <button class="basket__btn-icon " type="button">
+                                            <svg class="basket__btn-icon-svg basket__btn-icon-svg--like " width="22" height="20" fill="none" viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="m12 20-1.45-1.295C5.4 14.125 2 11.103 2 7.395 2 4.374 4.42 2 7.5 2c1.74 0 3.41.795 4.5 2.05A6.037 6.037 0 0 1 16.5 2C19.58 2 22 4.374 22 7.395c0 3.708-3.4 6.73-8.55 11.32L12 20Z" stroke="" fill="" stroke-width="2.3" stroke-linejoin="round"/>
+                                              </svg>
+                                        </button>
+                                        <button class="basket__btn-icon" type="button">
+                                            <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card" width="22" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z" stroke=""/>
+                                              </svg>
+                                        </button>
                                     </div>
                                 </li>
                                 <li class="basket__item">
@@ -291,10 +299,16 @@
                                         </div>
                                     </div>
                                     <div class="basket__buttons">
-                                        <button class="basket__btn-icon basket__btn-icon--like" type="button"
-                                            style="background-image: url(img/icons/like.svg);"></button>
-                                        <button class="basket__btn-icon basket__btn-icon--del-card" type="button"
-                                            style="background-image: url(img/icons/close.svg);"></button>
+                                        <button class="basket__btn-icon " type="button">
+                                            <svg class="basket__btn-icon-svg basket__btn-icon-svg--like " width="22" height="20" fill="none" viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="m12 20-1.45-1.295C5.4 14.125 2 11.103 2 7.395 2 4.374 4.42 2 7.5 2c1.74 0 3.41.795 4.5 2.05A6.037 6.037 0 0 1 16.5 2C19.58 2 22 4.374 22 7.395c0 3.708-3.4 6.73-8.55 11.32L12 20Z" stroke="" fill="" stroke-width="2.3" stroke-linejoin="round"/>
+                                              </svg>
+                                        </button>
+                                        <button class="basket__btn-icon" type="button">
+                                            <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card" width="22" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z" stroke=""/>
+                                              </svg>
+                                        </button>
                                     </div>
                                 </li>
                             </ul>
@@ -353,7 +367,7 @@
                                     <p class="add-to-basket__file-return"></p>
                                 </div>
                             </form>
-                            <a class="add-to-basket__span">формат файла .csv</a>
+                            <span class="add-to-basket__span">формат файла .csv</span>
                             <a class="add-to-basket__download" href="#" download>Скачать пример файла</a>
                         </div>
                     </div>
