@@ -116,7 +116,7 @@
             <div class="container">
                 <div class="main-title__wrap">
                     <h1 class="main-title">+7 977 687 78 01</h1>
-                    <button class="main-title__contact" type="button">Связаться с менеджером</button>
+                    <button class="main-title__contact js-contact" type="button">Связаться с менеджером</button>
                     <div class="contact-manager">
                         <h3 class="contact-manager__title">Ваш персональный менеджер</h3>
                         <span class="contact-manager__name">Ирина</span>
@@ -164,10 +164,10 @@
                                                 d="M0 14.2525V18.0025H3.75L14.81 6.9425L11.06 3.1925L0 14.2525ZM17.71 4.0425C18.1 3.6525 18.1 3.0225 17.71 2.6325L15.37 0.2925C14.98 -0.0975 14.35 -0.0975 13.96 0.2925L12.13 2.1225L15.88 5.8725L17.71 4.0425Z"
                                                 fill="" />
                                         </svg>
-                                        Добавить или удалить пользователя
+                                        Отправить запрос на изменение данных
                                     </button>
                                     <a class="orders__back" href="#">
-                                        Все заказы
+                                        К списку компаний
                                         <svg class="orders__back-img" width="8" height="15" viewBox="0 0 8 15"
                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -248,88 +248,117 @@
                         <div class="orders__box companies-info">
                             <ul class="orders__nav">
                                 <li class="orders__nax-item">
-                                    <button class="orders__nav-btn">
+                                    <button class="orders__nav-btn first__click">
                                         ФИО
-                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-top"
+                                            style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-bottom"
+                                            style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
                                     </button>
                                 </li>
                                 <li class="orders__nax-item">
-                                    <button class="orders__nav-btn">
+                                    <button class="orders__nav-btn first__click">
                                         Телефон
-                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-top"
+                                            style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-bottom"
+                                            style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
                                     </button>
                                 </li>
                                 <li class="orders__nax-item">
-                                    <button class="orders__nav-btn">
+                                    <button class="orders__nav-btn first__click">
                                         Роль
-                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-top"
+                                            style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-bottom"
+                                            style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
                                     </button>
                                 </li>
                                 <li class="orders__nax-item">
-                                    <button class="orders__nav-btn">
+                                    <button class="orders__nav-btn first__click">
                                         Статус
-                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-top"
+                                            style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-bottom"
+                                            style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
                                     </button>
                                 </li>
                             </ul>
                             <ul class="orders__list">
                                 <li class="orders__order">
-                                    <span class="orders__order-text orders__order-text--name">Иванов Иван Иванович</span>
+                                    <span class="orders__order-text orders__order-text--name">Иванов Иван
+                                        Иванович</span>
                                     <span class="orders__order-text orders__order-text--phone">+7 (999) 746-73-29</span>
                                     <span class="orders__order-text orders__order-text--role">Администратор</span>
-                                    <span class="orders__order-text orders__order-text--status orders__order-text--paid"></span>
+                                    <span
+                                        class="orders__order-text orders__order-text--status orders__order-text--paid"></span>
                                 </li>
                                 <li class="orders__order">
-                                    <span class="orders__order-text orders__order-text--name">Васильева Анна Викторовна</span>
+                                    <span class="orders__order-text orders__order-text--name">Васильева Анна
+                                        Викторовна</span>
                                     <span class="orders__order-text orders__order-text--phone">+7 (999) 746-73-29</span>
                                     <span class="orders__order-text orders__order-text--role">Администратор</span>
-                                    <span class="orders__order-text orders__order-text--status orders__order-text--paid"></span>
+                                    <span
+                                        class="orders__order-text orders__order-text--status orders__order-text--paid"></span>
                                 </li>
                                 <li class="orders__order">
-                                    <span class="orders__order-text orders__order-text--name orders__order-text--none">(имя не указано)</span>
+                                    <span
+                                        class="orders__order-text orders__order-text--name orders__order-text--none">(имя
+                                        не указано)</span>
                                     <span class="orders__order-text orders__order-text--phone">+7 (999) 746-73-29</span>
                                     <span class="orders__order-text orders__order-text--role">Пользователь</span>
-                                    <span class="orders__order-text orders__order-text--status orders__order-text--canceled"></span>
+                                    <span
+                                        class="orders__order-text orders__order-text--status orders__order-text--canceled"></span>
                                 </li>
                                 <li class="orders__order">
-                                    <span class="orders__order-text orders__order-text--name">Иванов Иван Иванович</span>
+                                    <span class="orders__order-text orders__order-text--name">Иванов Иван
+                                        Иванович</span>
                                     <span class="orders__order-text orders__order-text--phone">+7 (999) 746-73-29</span>
                                     <span class="orders__order-text orders__order-text--role">Администратор</span>
-                                    <span class="orders__order-text orders__order-text--status orders__order-text--paid"></span>
+                                    <span
+                                        class="orders__order-text orders__order-text--status orders__order-text--paid"></span>
                                 </li>
                                 <li class="orders__order">
-                                    <span class="orders__order-text orders__order-text--name">Васильева Анна Викторовна</span>
+                                    <span class="orders__order-text orders__order-text--name">Васильева Анна
+                                        Викторовна</span>
                                     <span class="orders__order-text orders__order-text--phone">+7 (999) 746-73-29</span>
                                     <span class="orders__order-text orders__order-text--role">Администратор</span>
-                                    <span class="orders__order-text orders__order-text--status orders__order-text--paid"></span>
+                                    <span
+                                        class="orders__order-text orders__order-text--status orders__order-text--paid"></span>
                                 </li>
                                 <li class="orders__order">
-                                    <span class="orders__order-text orders__order-text--name orders__order-text--none">(имя не указано)</span>
+                                    <span
+                                        class="orders__order-text orders__order-text--name orders__order-text--none">(имя
+                                        не указано)</span>
                                     <span class="orders__order-text orders__order-text--phone">+7 (999) 746-73-29</span>
                                     <span class="orders__order-text orders__order-text--role">Пользователь</span>
-                                    <span class="orders__order-text orders__order-text--status orders__order-text--canceled"></span>
+                                    <span
+                                        class="orders__order-text orders__order-text--status orders__order-text--canceled"></span>
                                 </li>
                                 <li class="orders__order">
-                                    <span class="orders__order-text orders__order-text--name">Иванов Иван Иванович</span>
+                                    <span class="orders__order-text orders__order-text--name">Иванов Иван
+                                        Иванович</span>
                                     <span class="orders__order-text orders__order-text--phone">+7 (999) 746-73-29</span>
                                     <span class="orders__order-text orders__order-text--role">Администратор</span>
-                                    <span class="orders__order-text orders__order-text--status orders__order-text--paid"></span>
+                                    <span
+                                        class="orders__order-text orders__order-text--status orders__order-text--paid"></span>
                                 </li>
                                 <li class="orders__order">
-                                    <span class="orders__order-text orders__order-text--name">Васильева Анна Викторовна</span>
+                                    <span class="orders__order-text orders__order-text--name">Васильева Анна
+                                        Викторовна</span>
                                     <span class="orders__order-text orders__order-text--phone">+7 (999) 746-73-29</span>
                                     <span class="orders__order-text orders__order-text--role">Администратор</span>
-                                    <span class="orders__order-text orders__order-text--status orders__order-text--paid"></span>
+                                    <span
+                                        class="orders__order-text orders__order-text--status orders__order-text--paid"></span>
                                 </li>
                                 <li class="orders__order">
-                                    <span class="orders__order-text orders__order-text--name orders__order-text--none">(имя не указано)</span>
+                                    <span
+                                        class="orders__order-text orders__order-text--name orders__order-text--none">(имя
+                                        не указано)</span>
                                     <span class="orders__order-text orders__order-text--phone">+7 (999) 746-73-29</span>
                                     <span class="orders__order-text orders__order-text--role">Пользователь</span>
-                                    <span class="orders__order-text orders__order-text--status orders__order-text--canceled"></span>
+                                    <span
+                                        class="orders__order-text orders__order-text--status orders__order-text--canceled"></span>
                                 </li>
                             </ul>
                         </div>
