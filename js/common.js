@@ -240,6 +240,7 @@ $('#InCheck-mob').click(function () {
 });
 
 
+
 $(document).ready(function () {
     function change($tr, val) {
         var $input = $tr.find('input');
@@ -286,12 +287,8 @@ $('.orders__button--js').on('click', function () {
     $(this).toggleClass('active');
 });
 
-$('.main-title__contact').on('click', function () {
+$('.js-contact').on('click', function () {
     $('.contact-manager').toggleClass('active');
-});
-
-$('.orders__nav-btn').on('click', function () {
-    $(this).toggleClass('active-arrow');
 });
 
 $(function () {
@@ -313,17 +310,11 @@ $('.orders__check-title').on('click', function () {
 
 
 $(".js-inBtn").click(function () {
-    $('.orders__edit-input').prop('readonly', function (i, currentValue) {
-        $('.orders__edit-label').addClass('active');
-        return !currentValue;
-    });
+    $(this).closest(".orders__edit-text-wrap").children(".orders__edit-label").addClass("active").children("input").removeAttr("readonly");
 });
 
 $(".js-inBtn-save").click(function () {
-    $('.orders__edit-input').prop('readonly', function (i, currentValue) {
-        $('.orders__edit-label').removeClass('active');
-        return !currentValue;
-    });
+    $(this).closest(".orders__edit-text-wrap").children(".orders__edit-label").removeClass("active").children("input").attr("readonly","true");
 });
 
 $(".js-addText-1").on("change", function () {
@@ -418,6 +409,16 @@ $('.js-to-basket').click(function () {
         $(this).attr('data-show', "true");
     }
 });
+$('.js-add-to-basket').click(function () {
+    if ($(this).attr('data-show') === "true") {
+        $(this).text("Добавить в корзину");
+        $(this).attr('data-show', "false");
+    }
+    else {
+        $(this).text("В корзине");
+        $(this).attr('data-show', "true");
+    }
+});
 $('.js-to-waiting-list').click(function () {
     if ($(this).attr('data-show') === "true") {
         $(this).text("В лист ожидания");
@@ -444,6 +445,9 @@ $('.basket__btn-icon--del-card').on('click', function () {
 $('.basket__btn-icon-svg--del-card').on('click', function () {
     $(this).closest(".basket__item").remove();
 });
+$('.basket__btn-icon-svg--del-card').on('click', function () {
+    $(this).closest(".orders__check-item").remove();
+});
 
 $('.basket__btn-icon ').on('click', function () {
     $(this).children(".basket__btn-icon-svg--like").toggleClass('active');
@@ -456,3 +460,75 @@ $('.js-del').on('click', function () {
     $(this).closest(".orders__order").remove();
 });
 
+$(".first__click").on("click", function (){
+    $(this).removeClass("first__click");
+    $(this).addClass("second__click");
+    $(".second__click").on("click", function(){
+        $(this).removeClass("second__click");
+        $(this).addClass("therth__click");
+        $(".therth__click").on("click", function(){
+            $(this).removeClass("therth__click");
+            $(this).addClass("first__click");
+        });
+    });
+});
+
+$('.minus').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    let price_defautl_min = $(this).closest(".orders__order-text--number").siblings(".orders__order-text--price").children(".price_item").text();
+    let price_all_min = $(this).closest(".orders__order-text--number").siblings(".orders__order-text--sum").children(".price").text();
+    let min = price_all_min * 1 - price_defautl_min * 1;
+    $(this).closest(".orders__order-text--number").siblings(".orders__order-text--sum").children(".price").text(min);
+});
+$('.plus').click(function () {
+    var $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    let price_defautl = $(this).closest(".orders__order-text--number").siblings(".orders__order-text--price").children(".price_item").text();
+    let price_all = $(this).closest(".orders__order-text--number").siblings(".orders__order-text--sum").children(".price").text();
+    let sum = price_defautl * 1 + price_all * 1;
+    $(this).closest(".orders__order-text--number").siblings(".orders__order-text--sum").children(".price").text(sum);
+    return false;
+});
+
+$('.mob-list__btn').on('click', function () {
+    $(this).closest('.mob-list').children('.aside__list').toggleClass('active');
+    $(this).toggleClass('active');
+});
+
+$('.open-filter').on('click', function () {
+    $('.pa-filter').toggleClass('js_open-menu');
+    $(this).closest('html').toggleClass('hidden-pa');
+});
+$('.filter__close').on('click', function () {
+    $(this).closest('.pa-filter').removeClass('js_open-menu');
+    $(this).closest('html').removeClass('hidden-pa');
+});
+
+const menuBtn3 = $('.open-filter'),
+    menu3 = $('.pa-filter');
+$(document).click(function (e) {
+    if (!menuBtn3.is(e.target) && !menu3.is(e.target) && menu3.has(e.target).length === 0) {
+        menu3.removeClass('js_open-menu');
+        $('html').removeClass('hidden-pa');
+        $('.pa-filter').removeClass('js_open-menu');
+    };
+});
+
+$('#js-activeCheck').click(function () {
+    if ($(this).children('.basket__input').is(':checked')) {
+        $('.orders__order').addClass('check-active');
+        $(this).toggleClass('active');
+        $('#controls-mob-2 input:checkbox').prop('checked', true);
+    } else {
+        $('#controls-mob-2 input:checkbox').prop('checked', false);
+        $('.orders__order').removeClass('check-active');
+    }
+}); 
+$('.add-filter__btn').on('click', function() {
+    $(this).closest('.add-filter').children('.orders__title-list').toggleClass('active');
+});
