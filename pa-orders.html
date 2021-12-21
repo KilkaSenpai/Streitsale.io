@@ -95,7 +95,7 @@
             </div>
         </header>
         <main>
-            <section class="breadcrumbs">
+            <section class="breadcrumbs breadcrumbs--pa">
                 <div class="container">
                     <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__item">
@@ -110,6 +110,50 @@
                     </ul>
                 </div>
             </section>
+            <div class="mob-title">
+                <div class="container">
+                    <div class="main-title__wrap">
+                        <h1 class="main-title">+7 977 687 78 01
+                            <a class="main-title__log-off" href="#">Выйти из аккаунта</a>
+                        </h1>
+                        <button class="main-title__contact js-contact" type="button">Связаться с менеджером</button>
+                        <div class="contact-manager">
+                            <h3 class="contact-manager__title">Ваш персональный менеджер</h3>
+                            <span class="contact-manager__name">Ирина</span>
+                            <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
+                        </div>
+                        <div class="mob-list">
+                            <button class="mob-list__btn">
+                                <span class="aside__link aside__link--orders aside__link--the-page">Заказы</span>
+                            </button>
+                            <ul class="aside__list">
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--user" href="#">Аккаунт</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--company" href="#">Компании</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--favorites" href="#">Избранное</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--documentation" href="#">Документы</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--notifications" href="#">Уведомления</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--download" href="#" download>Скачать
+                                        прайс-лист</a>
+                                </li>
+                                <li class="aside__item">
+                                    <button class="main-title__contact-mob">Связаться с менеджером</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="main-title__wrap">
                     <h1 class="main-title">+7 977 687 78 01</h1>
@@ -120,7 +164,7 @@
                         <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
                     </div>
                 </div>
-                <div class="sections__wrap">
+                <div class="sections__wrap sections__wrap--orders">
                     <section class="aside">
                         <ul class="aside__list">
                             <li class="aside__item">
@@ -151,13 +195,20 @@
                     </section>
                     <section class="orders">
                         <div class="orders__title-wrap">
-                            <h2 class="orders__title">Мои заказы</h2>
+                            <h2 class="orders__title">Мои заказы 
+                                <button class="orders__title-filter open-filter"
+                                style="background-image: url(img/icons/filter-icon.svg);">
+                            </button>
+                        </h2>
                             <ul class="orders__links">
                                 <li class="orders__item">
                                     <span class="orders__link orders__link--the-page">Совершённые</span>
                                 </li>
                                 <li class="orders__item">
-                                    <a class="orders__link" href="#">Шаблоны заказов</a>
+                                    <a class="orders__link desktop-text" href="#">
+                                        Шаблоны заказов   
+                                        <span class="mob-text">Шаблоны</span>    
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -314,6 +365,47 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="pa-filter">
+                            <h2 class="filter__title">Фильтр</h2>
+                            <button class="filter__close"></button>
+                            <div class="orders__filter">
+                                <label class="orders__label" for="inData-mob">
+                                    <input class="orders__input" type="data" id="inData-mob" placeholder="Выберите дату">
+                                </label>
+                                <select class="orders__select">
+                                    <option class="orders__select-item" value="one" selected">
+                                        Выберите
+                                        номер заказа</option>
+                                    <option class="orders__select-item" value="275645">
+                                        275645
+                                    </option>
+                                    <option class="orders__select-item" value="275646">
+                                        275646
+                                    </option>
+                                    <option class="orders__select-item" value="275647">
+                                        275647
+                                    </option>
+                                </select>
+                                <select class="orders__select ">
+                                    <option class="orders__select-item" value="one" selected>
+                                        Выберите плательщика
+                                    </option>
+                                    <option class="orders__select-item" value="“РВ-ИМПЭКС”">
+                                        ООО “РВ-ИМПЭКС”
+                                    </option>
+                                    <option class="orders__select-item" value="“ФУДСТРИМВЕР”">
+                                        ООО “ФУДСТРИМВЕР”
+                                    </option>
+                                    <option class="orders__select-item" value="“РВ-ИМПЭКС”">
+                                        ООО “РВ-ИМПЭКС”
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="filter-box">
+                                <button class="filter-box__btn-menu" type="button" href="#">Применить</button>
+                                <a class="filter-box__reset" href="#">Сбросить</a>
+                            </div>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -366,6 +458,9 @@
     <script src="js/air-datepicker.js"></script>
     <script>
         new AirDatepicker('#inData', {
+            autoClose: true,
+        });
+        new AirDatepicker('#inData-mob', {
             autoClose: true,
         });
     </script>
