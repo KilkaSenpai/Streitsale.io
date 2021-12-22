@@ -96,7 +96,7 @@
             </div>
         </header>
         <main>
-            <section class="breadcrumbs">
+            <section class="breadcrumbs breadcrumbs--pa">
                 <div class="container">
                     <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__item">
@@ -114,6 +114,51 @@
                     </ul>
                 </div>
             </section>
+            <div class="mob-title">
+                <div class="container">
+                    <div class="main-title__wrap">
+                        <h1 class="main-title">+7 977 687 78 01
+                            <a class="main-title__log-off" href="#">Выйти из аккаунта</a>
+                        </h1>
+                        <button class="main-title__contact js-contact" type="button">Связаться с менеджером</button>
+                        <div class="contact-manager">
+                            <h3 class="contact-manager__title">Ваш персональный менеджер</h3>
+                            <span class="contact-manager__name">Ирина</span>
+                            <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
+                        </div>
+                        <div class="mob-list mob-list--notifications">
+                            <button class="mob-list__btn">
+                                <span
+                                    class="aside__link aside__link--notifications  aside__link--the-page">Уведомления</span>
+                            </button>
+                            <ul class="aside__list">
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--user" href="#">Аккаунт</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--company" href="#">Компании</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--favorites" href="#">Избранное</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--documentation" href="#">Документы</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link  aside__link--orders" href="#">Заказы</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--download" href="#" download>Скачать
+                                        прайс-лист</a>
+                                </li>
+                                <li class="aside__item">
+                                    <button class="main-title__contact-mob">Связаться с менеджером</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="main-title__wrap">
                     <h1 class="main-title">+7 977 687 78 01</h1>
@@ -124,7 +169,7 @@
                         <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
                     </div>
                 </div>
-                <div class="sections__wrap">
+                <div class="sections__wrap sections__wrap--orders">
                     <section class="aside aside--list-notifications">
                         <ul class="aside__list">
                             <li class="aside__item">
@@ -158,9 +203,18 @@
                     <section class="orders orders--list-notifications">
                         <div class="orders__title-wrap">
                             <h2 class="orders__title">Уведомления</h2>
+                            <label class="mobil-check" for="notifi-mob" id="js-activenotifi">
+                                <input class="basket__input" type="checkbox" id="notifi-mob">
+                                <span class="basket__check-style"></span>
+                                Выбрать
+                                <span class="hide-text">Отменить</span>
+                            </label>
                             <ul class="orders__links">
                                 <li class="orders__item">
-                                    <span class="orders__link orders__link--the-page">Список уведомлений</span>
+                                    <span class="orders__link desktop-text orders__link--the-page">
+                                        Список уведомлений
+                                        <span class="mob-text">Список</span>
+                                    </span>
                                 </li>
                                 <li class="orders__item">
                                     <a class="orders__link" href="#">Настройки</a>
@@ -180,8 +234,8 @@
                                         </div>
                                         <div class="basket__check-box">
                                             <button class="basket__btn">
-                                                <svg class="basket__icon basket__icon--read" width="20" height="19" viewBox="0 0 20 19" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
+                                                <svg class="basket__icon basket__icon--read" width="20" height="19"
+                                                    viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
                                                         d="M19.99 7C19.99 6.28 19.62 5.65 19.05 5.3L10 0L0.95 5.3C0.38 5.65 0 6.28 0 7V17C0 18.1 0.9 19 2 19H18C19.1 19 20 18.1 20 17L19.99 7ZM10 12L1.74 6.84L10 2L18.26 6.84L10 12Z"
                                                         fill="" />
@@ -207,13 +261,18 @@
                                                 </label>
                                             </div>
                                             <div class="orders__check-content">
-                                                <a class="orders__check-title" href="#modal-notifi-1">Молоко овсяное с какао</a>
+                                                <a class="orders__check-title" href="#modal-notifi-1">Молоко овсяное с
+                                                    какао</a>
                                             </div>
                                             <div class="orders__check-buttons">
                                                 <button class="basket__btn-icon" type="button">
-                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card" width="22" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z" stroke=""/>
-                                                      </svg>
+                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card"
+                                                        width="22" height="20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z"
+                                                            stroke="" />
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </li>
@@ -226,16 +285,21 @@
                                                 </label>
                                             </div>
                                             <div class="orders__check-content">
-                                                <a class="orders__check-title" href="#modal-notifi-2">Молоко овсяное с какао</a>
+                                                <a class="orders__check-title" href="#modal-notifi-2">Молоко овсяное с
+                                                    какао</a>
                                             </div>
                                             <div class="orders__check-buttons">
                                                 <span class="orders__check-icon"
                                                     style="background-image: url(img/icons/read.svg);"></span>
-                                                    <button class="basket__btn-icon" type="button">
-                                                        <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card" width="22" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z" stroke=""/>
-                                                          </svg>
-                                                    </button>
+                                                <button class="basket__btn-icon" type="button">
+                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card"
+                                                        width="22" height="20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z"
+                                                            stroke="" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </li>
                                         <li class="orders__check-item">
@@ -247,13 +311,18 @@
                                                 </label>
                                             </div>
                                             <div class="orders__check-content">
-                                                <a class="orders__check-title" href="#modal-notifi-3">Молоко овсяное с какао</a>
+                                                <a class="orders__check-title" href="#modal-notifi-3">Молоко овсяное с
+                                                    какао</a>
                                             </div>
                                             <div class="orders__check-buttons">
                                                 <button class="basket__btn-icon" type="button">
-                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card" width="22" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z" stroke=""/>
-                                                      </svg>
+                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card"
+                                                        width="22" height="20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z"
+                                                            stroke="" />
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </li>
@@ -266,13 +335,18 @@
                                                 </label>
                                             </div>
                                             <div class="orders__check-content">
-                                                <a class="orders__check-title" href="#modal-notifi-4">Молоко овсяное с какао</a>
+                                                <a class="orders__check-title" href="#modal-notifi-4">Молоко овсяное с
+                                                    какао</a>
                                             </div>
                                             <div class="orders__check-buttons">
                                                 <button class="basket__btn-icon" type="button">
-                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card" width="22" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z" stroke=""/>
-                                                      </svg>
+                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card"
+                                                        width="22" height="20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z"
+                                                            stroke="" />
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </li>
@@ -285,13 +359,18 @@
                                                 </label>
                                             </div>
                                             <div class="orders__check-content">
-                                                <a class="orders__check-title" href="#modal-notifi-5">Молоко овсяное с какао</a>
+                                                <a class="orders__check-title" href="#modal-notifi-5">Молоко овсяное с
+                                                    какао</a>
                                             </div>
                                             <div class="orders__check-buttons">
                                                 <button class="basket__btn-icon" type="button">
-                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card" width="22" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z" stroke=""/>
-                                                      </svg>
+                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card"
+                                                        width="22" height="20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z"
+                                                            stroke="" />
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </li>
@@ -304,13 +383,18 @@
                                                 </label>
                                             </div>
                                             <div class="orders__check-content">
-                                                <a class="orders__check-title" href="#modal-notifi-6">Молоко овсяное с какао</a>
+                                                <a class="orders__check-title" href="#modal-notifi-6">Молоко овсяное с
+                                                    какао</a>
                                             </div>
                                             <div class="orders__check-buttons">
                                                 <button class="basket__btn-icon" type="button">
-                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card" width="22" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z" stroke=""/>
-                                                      </svg>
+                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card"
+                                                        width="22" height="20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z"
+                                                            stroke="" />
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </li>
@@ -323,13 +407,18 @@
                                                 </label>
                                             </div>
                                             <div class="orders__check-content">
-                                                <a class="orders__check-title" href="#modal-notifi-7">Молоко овсяное с какао</a>
+                                                <a class="orders__check-title" href="#modal-notifi-7">Молоко овсяное с
+                                                    какао</a>
                                             </div>
                                             <div class="orders__check-buttons">
                                                 <button class="basket__btn-icon" type="button">
-                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card" width="22" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z" stroke=""/>
-                                                      </svg>
+                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card"
+                                                        width="22" height="20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z"
+                                                            stroke="" />
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </li>
@@ -342,13 +431,18 @@
                                                 </label>
                                             </div>
                                             <div class="orders__check-content">
-                                                <a class="orders__check-title" href="#modal-notifi-8">Молоко овсяное с какао</a>
+                                                <a class="orders__check-title" href="#modal-notifi-8">Молоко овсяное с
+                                                    какао</a>
                                             </div>
                                             <div class="orders__check-buttons">
                                                 <button class="basket__btn-icon" type="button">
-                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card" width="22" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z" stroke=""/>
-                                                      </svg>
+                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card"
+                                                        width="22" height="20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z"
+                                                            stroke="" />
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </li>
@@ -361,13 +455,18 @@
                                                 </label>
                                             </div>
                                             <div class="orders__check-content">
-                                                <a class="orders__check-title" href="#modal-notifi-9">Молоко овсяное с какао</a>
+                                                <a class="orders__check-title" href="#modal-notifi-9">Молоко овсяное с
+                                                    какао</a>
                                             </div>
                                             <div class="orders__check-buttons">
                                                 <button class="basket__btn-icon" type="button">
-                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card" width="22" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z" stroke=""/>
-                                                      </svg>
+                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card"
+                                                        width="22" height="20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z"
+                                                            stroke="" />
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </li>
@@ -380,13 +479,18 @@
                                                 </label>
                                             </div>
                                             <div class="orders__check-content">
-                                                <a class="orders__check-title" href="#modal-notifi-10">Молоко овсяное с какао</a>
+                                                <a class="orders__check-title" href="#modal-notifi-10">Молоко овсяное с
+                                                    какао</a>
                                             </div>
                                             <div class="orders__check-buttons">
                                                 <button class="basket__btn-icon" type="button">
-                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card" width="22" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z" stroke=""/>
-                                                      </svg>
+                                                    <svg class="basket__btn-icon-svg basket__btn-icon-svg--del-card"
+                                                        width="22" height="20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M4.334 4.349a1.141 1.141 0 0 1 1.615 0l6.044 6.049 6.044-6.05a1.142 1.142 0 1 1 1.614 1.617l-6.043 6.049 6.043 6.05a1.143 1.143 0 0 1-1.614 1.615l-6.044-6.049-6.044 6.05a1.141 1.141 0 0 1-1.615-1.617l6.044-6.049-6.044-6.05a1.143 1.143 0 0 1 0-1.615Z"
+                                                            stroke="" />
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </li>
@@ -427,6 +531,30 @@
                                                 d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z" />
                                         </svg>
                                     </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="add-filter">
+                            <button class="add-filter__btn"></button>
+                            <ul class="orders__title-list">
+                                <li class="orders__icon">
+                                    <button class="basket__btn basket__btn--btn" type="button">
+                                        <svg class="basket__icon basket__icon--read" width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19.99 7C19.99 6.28 19.62 5.65 19.05 5.3L10 0L0.95 5.3C0.38 5.65 0 6.28 0 7V17C0 18.1 0.9 19 2 19H18C19.1 19 20 18.1 20 17L19.99 7ZM10 12L1.74 6.84L10 2L18.26 6.84L10 12Z"
+                                                fill="#88868F" />
+                                        </svg>
+                                        Прочитано</button>
+                                </li>
+                                <li class="orders__icon">
+                                    <button class="basket__btn basket__btn--btn" type="button">
+                                        <svg class="basket__icon basket__icon--del" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.5 5.5L19.5 20.5" stroke="" stroke-width="1.6" />
+                                            <path d="M19.5 5.5L4.5 20.5" stroke="" stroke-width="1.6" />
+                                        </svg>
+                                        Удалить выбранное</button>
                                 </li>
                             </ul>
                         </div>
@@ -475,7 +603,8 @@
     <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-1">
         <h3 class="modal-notification__title">Изменение статуса заказа</h3>
         <p class="modal-notification__text">
-            <span class="modal-notification__num">Ваш заказ №909090 прибыл на таможню и проходит процедуру таможенного оформления</span>
+            <span class="modal-notification__num">Ваш заказ №909090 прибыл на таможню и проходит процедуру таможенного
+                оформления</span>
         </p>
         <button class="modal-notification__btn">Понятно, спасибо</button>
         <button class="modal-notification__close"></button>
@@ -483,7 +612,8 @@
     <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-2">
         <h3 class="modal-notification__title">Изменение статуса заказа</h3>
         <p class="modal-notification__text">
-            <span class="modal-notification__num">Ваш заказ №909091 прибыл на таможню и проходит процедуру таможенного оформления</span>
+            <span class="modal-notification__num">Ваш заказ №909091 прибыл на таможню и проходит процедуру таможенного
+                оформления</span>
         </p>
         <button class="modal-notification__btn">Понятно, спасибо</button>
         <button class="modal-notification__close"></button>
@@ -491,7 +621,8 @@
     <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-3">
         <h3 class="modal-notification__title">Изменение статуса заказа</h3>
         <p class="modal-notification__text">
-            <span class="modal-notification__num">Ваш заказ №909092 прибыл на таможню и проходит процедуру таможенного оформления</span>
+            <span class="modal-notification__num">Ваш заказ №909092 прибыл на таможню и проходит процедуру таможенного
+                оформления</span>
         </p>
         <button class="modal-notification__btn">Понятно, спасибо</button>
         <button class="modal-notification__close"></button>
@@ -499,7 +630,8 @@
     <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-4">
         <h3 class="modal-notification__title">Изменение статуса заказа</h3>
         <p class="modal-notification__text">
-            <span class="modal-notification__num">Ваш заказ №909093 прибыл на таможню и проходит процедуру таможенного оформления</span>
+            <span class="modal-notification__num">Ваш заказ №909093 прибыл на таможню и проходит процедуру таможенного
+                оформления</span>
         </p>
         <button class="modal-notification__btn">Понятно, спасибо</button>
         <button class="modal-notification__close"></button>
@@ -507,7 +639,8 @@
     <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-5">
         <h3 class="modal-notification__title">Изменение статуса заказа</h3>
         <p class="modal-notification__text">
-            <span class="modal-notification__num">Ваш заказ №909094 прибыл на таможню и проходит процедуру таможенного оформления</span>
+            <span class="modal-notification__num">Ваш заказ №909094 прибыл на таможню и проходит процедуру таможенного
+                оформления</span>
         </p>
         <button class="modal-notification__btn">Понятно, спасибо</button>
         <button class="modal-notification__close"></button>
@@ -515,7 +648,8 @@
     <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-6">
         <h3 class="modal-notification__title">Изменение статуса заказа</h3>
         <p class="modal-notification__text">
-            <span class="modal-notification__num">Ваш заказ №909095 прибыл на таможню и проходит процедуру таможенного оформления</span>
+            <span class="modal-notification__num">Ваш заказ №909095 прибыл на таможню и проходит процедуру таможенного
+                оформления</span>
         </p>
         <button class="modal-notification__btn">Понятно, спасибо</button>
         <button class="modal-notification__close"></button>
@@ -523,7 +657,8 @@
     <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-7">
         <h3 class="modal-notification__title">Изменение статуса заказа</h3>
         <p class="modal-notification__text">
-            <span class="modal-notification__num">Ваш заказ №909096 прибыл на таможню и проходит процедуру таможенного оформления</span>
+            <span class="modal-notification__num">Ваш заказ №909096 прибыл на таможню и проходит процедуру таможенного
+                оформления</span>
         </p>
         <button class="modal-notification__btn">Понятно, спасибо</button>
         <button class="modal-notification__close"></button>
@@ -531,7 +666,8 @@
     <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-8">
         <h3 class="modal-notification__title">Изменение статуса заказа</h3>
         <p class="modal-notification__text">
-            <span class="modal-notification__num">Ваш заказ №909097 прибыл на таможню и проходит процедуру таможенного оформления</span>
+            <span class="modal-notification__num">Ваш заказ №909097 прибыл на таможню и проходит процедуру таможенного
+                оформления</span>
         </p>
         <button class="modal-notification__btn">Понятно, спасибо</button>
         <button class="modal-notification__close"></button>
@@ -539,7 +675,8 @@
     <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-9">
         <h3 class="modal-notification__title">Изменение статуса заказа</h3>
         <p class="modal-notification__text">
-            <span class="modal-notification__num">Ваш заказ №909098 прибыл на таможню и проходит процедуру таможенного оформления</span>
+            <span class="modal-notification__num">Ваш заказ №909098 прибыл на таможню и проходит процедуру таможенного
+                оформления</span>
         </p>
         <button class="modal-notification__btn">Понятно, спасибо</button>
         <button class="modal-notification__close"></button>
@@ -547,7 +684,8 @@
     <div class="modal-notification mfp-hide white-popup-block" id="modal-notifi-10">
         <h3 class="modal-notification__title">Изменение статуса заказа</h3>
         <p class="modal-notification__text">
-            <span class="modal-notification__num">Ваш заказ №909099 прибыл на таможню и проходит процедуру таможенного оформления</span>
+            <span class="modal-notification__num">Ваш заказ №909099 прибыл на таможню и проходит процедуру таможенного
+                оформления</span>
         </p>
         <button class="modal-notification__btn">Понятно, спасибо</button>
         <button class="modal-notification__close"></button>

@@ -95,7 +95,7 @@
             </div>
         </header>
         <main>
-            <section class="breadcrumbs">
+            <section class="breadcrumbs breadcrumbs--pa">
                 <div class="container">
                     <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__item">
@@ -110,6 +110,51 @@
                     </ul>
                 </div>
             </section>
+            <div class="mob-title">
+                <div class="container">
+                    <div class="main-title__wrap">
+                        <h1 class="main-title">+7 977 687 78 01
+                            <a class="main-title__log-off" href="#">Выйти из аккаунта</a>
+                        </h1>
+                        <button class="main-title__contact js-contact" type="button">Связаться с менеджером</button>
+                        <div class="contact-manager">
+                            <h3 class="contact-manager__title">Ваш персональный менеджер</h3>
+                            <span class="contact-manager__name">Ирина</span>
+                            <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
+                        </div>
+                        <div class="mob-list  mob-list--documentation">
+                            <button class="mob-list__btn">
+                                <span
+                                    class="aside__link aside__link--documentation aside__link--the-page">Документы</span>
+                            </button>
+                            <ul class="aside__list">
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--orders" href="#">Заказы</a>
+                                </li>
+                                <li class="aside__item">
+                                    <span class="aside__link aside__link--user">Аккаунт</span>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--company " href="#">Компании</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--favorites" href="#">Избранное</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--notifications" href="#">Уведомления</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--download" href="#" download>Скачать
+                                        прайс-лист</a>
+                                </li>
+                                <li class="aside__item">
+                                    <button class="main-title__contact-mob">Связаться с менеджером</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="main-title__wrap">
                     <h1 class="main-title">+7 977 687 78 01</h1>
@@ -118,9 +163,9 @@
                         <h3 class="contact-manager__title">Ваш персональный менеджер</h3>
                         <span class="contact-manager__name">Ирина</span>
                         <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
-                    </div>  
+                    </div>
                 </div>
-                <div class="sections__wrap">
+                <div class="sections__wrap sections__wrap--pa-orders-info">
                     <section class="aside aside--documentation">
                         <ul class="aside__list">
                             <li class="aside__item">
@@ -139,7 +184,8 @@
                                 <a class="aside__link aside__link--orders" href="#">Заказы</a>
                             </li>
                             <li class="aside__item">
-                                <span class="aside__link aside__link--documentation aside__link--the-page">Документы</span>
+                                <span
+                                    class="aside__link aside__link--documentation aside__link--the-page">Документы</span>
                             </li>
                             <li class="aside__item">
                                 <a class="aside__link aside__link--notifications" href="#">Уведомления</a>
@@ -151,12 +197,17 @@
                     </section>
                     <section class="orders orders--documentation">
                         <div class="orders__title-wrap">
-                            <h2 class="orders__title">Документы</h2>
+                            <h2 class="orders__title">
+                                Документы
+                                <button class="orders__title-filter open-filter"
+                                style="background-image: url(img/icons/filter-icon.svg);">
+                            </h2>
                         </div>
                         <div class="orders__box">
                             <div class="orders__filter">
                                 <label class="orders__label" for="inData">
-                                    <input class="orders__input" type="data" id="inData" placeholder="Выберите дату заказа">
+                                    <input class="orders__input" type="data" id="inData"
+                                        placeholder="Выберите дату заказа">
                                 </label>
                                 <select class="orders__select">
                                     <option class="orders__select-item" value="one" selected>
@@ -191,29 +242,37 @@
                                 <li class="orders__nax-item">
                                     <button class="orders__nav-btn first__click">
                                         Номер заказа
-                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-top"
+                                            style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-bottom"
+                                            style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
                                     </button>
                                 </li>
                                 <li class="orders__nax-item">
                                     <button class="orders__nav-btn first__click">
                                         Дата
-                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-top"
+                                            style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-bottom"
+                                            style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
                                     </button>
                                 </li>
                                 <li class="orders__nax-item">
                                     <button class="orders__nav-btn first__click">
                                         Документ
-                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-top"
+                                            style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-bottom"
+                                            style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
                                     </button>
                                 </li>
                                 <li class="orders__nax-item">
                                     <button class="orders__nav-btn first__click">
                                         Плательщик
-                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-top"
+                                            style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                        <span class="orders__arrow orders__arrow-bottom"
+                                            style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
                                     </button>
                                 </li>
                             </ul>
@@ -224,8 +283,10 @@
                                     <span class="orders__order-text orders__order-text--document">Акт сверки</span>
                                     <span class="orders__order-text orders__order-text--company">ООО “РВ-ИМПЭКС”</span>
                                     <span class="orders__order-text orders__order-text--links">
-                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf" target="_blank">Посмотреть</a>
-                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf" download>Скачать</a>
+                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf"
+                                            target="_blank">Посмотреть</a>
+                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf"
+                                            download>Скачать</a>
                                     </span>
                                 </li>
                                 <li class="orders__order">
@@ -234,8 +295,10 @@
                                     <span class="orders__order-text orders__order-text--document">Акт сверки</span>
                                     <span class="orders__order-text orders__order-text--company">ООО “РВ-ИМПЭКС”</span>
                                     <span class="orders__order-text orders__order-text--links">
-                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf" target="_blank">Посмотреть</a>
-                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf" download>Скачать</a>
+                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf"
+                                            target="_blank">Посмотреть</a>
+                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf"
+                                            download>Скачать</a>
                                     </span>
                                 </li>
                                 <li class="orders__order">
@@ -244,8 +307,10 @@
                                     <span class="orders__order-text orders__order-text--document">Договор 679054</span>
                                     <span class="orders__order-text orders__order-text--company">ООО “РВ-ИМПЭКС”</span>
                                     <span class="orders__order-text orders__order-text--links">
-                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf" target="_blank">Посмотреть</a>
-                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf" download>Скачать</a>
+                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf"
+                                            target="_blank">Посмотреть</a>
+                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf"
+                                            download>Скачать</a>
                                     </span>
                                 </li>
                                 <li class="orders__order">
@@ -254,18 +319,23 @@
                                     <span class="orders__order-text orders__order-text--document">Акт 99090-1</span>
                                     <span class="orders__order-text orders__order-text--company">ООО “РВ-ИМПЭКС”</span>
                                     <span class="orders__order-text orders__order-text--links">
-                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf" target="_blank">Посмотреть</a>
-                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf" download>Скачать</a>
+                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf"
+                                            target="_blank">Посмотреть</a>
+                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf"
+                                            download>Скачать</a>
                                     </span>
                                 </li>
                                 <li class="orders__order">
                                     <span class="orders__order-text orders__order-text--num">275645</span>
                                     <span class="orders__order-text orders__order-text--data">03.01.2021</span>
-                                    <span class="orders__order-text orders__order-text--document">Товарная накладн...</span>
+                                    <span class="orders__order-text orders__order-text--document">Товарная
+                                        накладн...</span>
                                     <span class="orders__order-text orders__order-text--company">ООО “РВ-ИМПЭКС”</span>
                                     <span class="orders__order-text orders__order-text--links">
-                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf" target="_blank">Посмотреть</a>
-                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf" download>Скачать</a>
+                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf"
+                                            target="_blank">Посмотреть</a>
+                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf"
+                                            download>Скачать</a>
                                     </span>
                                 </li>
                                 <li class="orders__order">
@@ -274,8 +344,10 @@
                                     <span class="orders__order-text orders__order-text--document">Договор 679054</span>
                                     <span class="orders__order-text orders__order-text--company">ООО “РВ-ИМПЭКС”</span>
                                     <span class="orders__order-text orders__order-text--links">
-                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf" target="_blank">Посмотреть</a>
-                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf" download>Скачать</a>
+                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf"
+                                            target="_blank">Посмотреть</a>
+                                        <a class="orders__order-text orders__order-text--link" href="file/doc.pdf"
+                                            download>Скачать</a>
                                     </span>
                                 </li>
                             </ul>
@@ -315,6 +387,47 @@
                                     </a>
                                 </li>
                             </ul>
+                        </div>
+                        <div class="pa-filter">
+                            <h2 class="filter__title">Фильтр</h2>
+                            <button class="filter__close"></button>
+                            <div class="orders__filter">
+                                <label class="orders__label" for="docData-mob">
+                                    <input class="orders__input" type="data" id="docData-mob" placeholder="Выберите дату">
+                                </label>
+                                <select class="orders__select">
+                                    <option class="orders__select-item" value="one" selected">
+                                        Выберите
+                                        номер заказа</option>
+                                    <option class="orders__select-item" value="275645">
+                                        275645
+                                    </option>
+                                    <option class="orders__select-item" value="275646">
+                                        275646
+                                    </option>
+                                    <option class="orders__select-item" value="275647">
+                                        275647
+                                    </option>
+                                </select>
+                                <select class="orders__select ">
+                                    <option class="orders__select-item" value="one" selected>
+                                        Выберите плательщика
+                                    </option>
+                                    <option class="orders__select-item" value="“РВ-ИМПЭКС”">
+                                        ООО “РВ-ИМПЭКС”
+                                    </option>
+                                    <option class="orders__select-item" value="“ФУДСТРИМВЕР”">
+                                        ООО “ФУДСТРИМВЕР”
+                                    </option>
+                                    <option class="orders__select-item" value="“РВ-ИМПЭКС”">
+                                        ООО “РВ-ИМПЭКС”
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="filter-box">
+                                <button class="filter-box__btn-menu" type="button" href="#">Применить</button>
+                                <a class="filter-box__reset" href="#">Сбросить</a>
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -370,13 +483,16 @@
         new AirDatepicker('#inData', {
             autoClose: true,
         });
+        new AirDatepicker('#docData-mob', {
+            autoClose: true,
+        });
     </script>
     <script src="js/select2.min.js"></script>
     <script>
         $(".orders__select").select2({
-        selectionCssClass: 'orders__select',
-        dropdownCssClass: 'orders__select-item'
-    });
+            selectionCssClass: 'orders__select',
+            dropdownCssClass: 'orders__select-item'
+        });
     </script>
     <script src="js/common.js"></script>
 </body>

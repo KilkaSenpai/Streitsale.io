@@ -95,7 +95,7 @@
             </div>
         </header>
         <main>
-            <section class="breadcrumbs">
+            <section class="breadcrumbs breadcrumbs--pa">
                 <div class="container">
                     <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__item">
@@ -113,6 +113,50 @@
                     </ul>
                 </div>
             </section>
+            <div class="mob-title">
+                <div class="container">
+                    <div class="main-title__wrap">
+                        <h1 class="main-title">+7 977 687 78 01
+                            <a class="main-title__log-off" href="#">Выйти из аккаунта</a>
+                        </h1>
+                        <button class="main-title__contact js-contact" type="button">Связаться с менеджером</button>
+                        <div class="contact-manager">
+                            <h3 class="contact-manager__title">Ваш персональный менеджер</h3>
+                            <span class="contact-manager__name">Ирина</span>
+                            <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
+                        </div>
+                        <div class="mob-list">
+                            <button class="mob-list__btn">
+                                <span class="aside__link aside__link--orders aside__link--the-page">Заказы</span>
+                            </button>
+                            <ul class="aside__list">
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--user" href="#">Аккаунт</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--company" href="#">Компании</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--favorites" href="#">Избранное</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--documentation" href="#">Документы</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--notifications" href="#">Уведомления</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--download" href="#" download>Скачать
+                                        прайс-лист</a>
+                                </li>
+                                <li class="aside__item">
+                                    <button class="main-title__contact-mob">Связаться с менеджером</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="main-title__wrap">
                     <h1 class="main-title">+7 977 687 78 01</h1>
@@ -123,7 +167,7 @@
                         <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
                     </div>
                 </div>
-                <div class="sections__wrap">
+                <div class="sections__wrap sections__wrap--pa-orders-info">
                     <section class="aside">
                         <ul class="aside__list">
                             <li class="aside__item">
@@ -179,27 +223,34 @@
                                         <li class="orders__edit-item">
                                             <span class="orders__edit-category">Адрес доставки</span>
                                             <div class="orders__edit-text-wrap">
-                                                <input class="orders__edit-text js-addTextIn-1" type="text" value="120321, г.Москва, Нахимовский проспект, 4, офис 5" readonly>  
-                                                    <div class="orders__select-wrap-1">
-                                                        <select class="orders__select js-addText-1" >
-                                                            <option class="orders__select-item" value="120321, г.Москва, Нахимовский проспект, 4, офис 5" selected>
-                                                                120321, г.Москва, Нахимовский проспект, 4, офис 5
-                                                            </option>
-                                                            <option class="orders__select-item" value="120321, г.Москва, Нахимовский проспект, 42, офис 1">
-                                                                120321, г.Москва, Нахимовский проспект, 42, офис 1
-                                                            </option>
-                                                            <option class="orders__select-item" value="120321, г.Москва, Нахимовский проспект, 41, офис 8">
-                                                                120321, г.Москва, Нахимовский проспект, 41, офис 8
-                                                            </option>
-                                                            <option class="orders__select-item" value="120321, г.Москва, Нахимовский проспект, 47, офис 10">
-                                                                120321, г.Москва, Нахимовский проспект, 47, офис 10
-                                                            </option>
-                                                        </select>
-                                                    </div>
-                                                
+                                                <input class="orders__edit-text js-addTextIn-1" type="text"
+                                                    value="120321, г.Москва, Нахимовский проспект, 4, офис 5" readonly>
+                                                <div class="orders__select-wrap-1">
+                                                    <select class="orders__select js-addText-1">
+                                                        <option class="orders__select-item"
+                                                            value="120321, г.Москва, Нахимовский проспект, 4, офис 5"
+                                                            selected>
+                                                            120321, г.Москва, Нахимовский проспект, 4, офис 5
+                                                        </option>
+                                                        <option class="orders__select-item"
+                                                            value="120321, г.Москва, Нахимовский проспект, 42, офис 1">
+                                                            120321, г.Москва, Нахимовский проспект, 42, офис 1
+                                                        </option>
+                                                        <option class="orders__select-item"
+                                                            value="120321, г.Москва, Нахимовский проспект, 41, офис 8">
+                                                            120321, г.Москва, Нахимовский проспект, 41, офис 8
+                                                        </option>
+                                                        <option class="orders__select-item"
+                                                            value="120321, г.Москва, Нахимовский проспект, 47, офис 10">
+                                                            120321, г.Москва, Нахимовский проспект, 47, офис 10
+                                                        </option>
+                                                    </select>
+                                                </div>
+
                                                 <div class="orders__edit-box">
                                                     <button
-                                                        class="orders__edit-btn orders__edit-btn--edit active js-addSelect-1" type="button">Изменить</button>
+                                                        class="orders__edit-btn orders__edit-btn--edit active js-addSelect-1"
+                                                        type="button">Изменить</button>
                                                     <button
                                                         class="orders__edit-btn orders__edit-btn--save js-removeSelect-1">Сохранить</button>
                                                 </div>
@@ -208,9 +259,10 @@
                                         <li class="orders__edit-item">
                                             <span class="orders__edit-category">Заказчик</span>
                                             <div class="orders__edit-text-wrap">
-                                                <input class="orders__edit-text js-addTextIn-2" type="text" value="РВ-Импэкс" readonly>
+                                                <input class="orders__edit-text js-addTextIn-2" type="text"
+                                                    value="РВ-Импэкс" readonly>
                                                 <div class="orders__select-wrap-2">
-                                                    <select class="orders__select js-addText-2"> 
+                                                    <select class="orders__select js-addText-2">
                                                         <option class="orders__select-item" value="РВ-Импэкс" selected>
                                                             РВ-Импэкс
                                                         </option>
@@ -227,7 +279,8 @@
                                                 </div>
                                                 <div class="orders__edit-box">
                                                     <button
-                                                        class="orders__edit-btn orders__edit-btn--edit active  js-addSelect-2" type="button">Изменить</button>
+                                                        class="orders__edit-btn orders__edit-btn--edit active  js-addSelect-2"
+                                                        type="button">Изменить</button>
                                                     <button
                                                         class="orders__edit-btn orders__edit-btn--save js-removeSelect-2">Сохранить</button>
                                                 </div>
@@ -242,302 +295,509 @@
                                                 </label>
                                                 <div class="orders__edit-box">
                                                     <button
-                                                        class="orders__edit-btn orders__edit-btn--edit js-inBtn active" type="button">Изменить</button>
+                                                        class="orders__edit-btn orders__edit-btn--edit js-inBtn active"
+                                                        type="button">Изменить</button>
                                                     <button
                                                         class="orders__edit-btn orders__edit-btn--save js-inBtn-save"">Сохранить</button>
                                                 </div>
                                             </div>
                                         </li>
-                                        <ul class="orders__all-other">
-                                            <li class="orders__edit-item">
-                                                <span class="orders__edit-category">Сумма заказа</span>
-                                                <span class="orders__edit-text orders__edit-text--price">
-                                                    424.0$
-                                                    <span class="orders__order-info"></span>
-                                                </span>
-                                            </li>
-                                            <li class="orders__edit-item">
-                                                <span class="orders__edit-category">Адрес доставки</span>
-                                                <div class="orders__edit-text-wrap">
-                                                    <input class="orders__edit-text js-addTextIn-1" type="text" value="120321, г.Москва, Нахимовский проспект, 4, офис 5" readonly>  
-                                                        <div class="orders__select-wrap-1">
-                                                            <select class="orders__select js-addText-1" >
-                                                                <option class="orders__select-item" value="120321, г.Москва, Нахимовский проспект, 4, офис 5" selected>
-                                                                    120321, г.Москва, Нахимовский проспект, 4, офис 5
-                                                                </option>
-                                                                <option class="orders__select-item" value="120321, г.Москва, Нахимовский проспект, 42, офис 1">
-                                                                    120321, г.Москва, Нахимовский проспект, 42, офис 1
-                                                                </option>
-                                                                <option class="orders__select-item" value="120321, г.Москва, Нахимовский проспект, 41, офис 8">
-                                                                    120321, г.Москва, Нахимовский проспект, 41, офис 8
-                                                                </option>
-                                                                <option class="orders__select-item" value="120321, г.Москва, Нахимовский проспект, 47, офис 10">
-                                                                    120321, г.Москва, Нахимовский проспект, 47, офис 10
-                                                                </option>
-                                                            </select>
-                                                        </div>
-                                                    
-                                                    <div class="orders__edit-box">
-                                                        <button
-                                                            class="orders__edit-btn orders__edit-btn--edit active js-addSelect-1" type="button">Изменить</button>
-                                                        <button
-                                                            class="orders__edit-btn orders__edit-btn--save js-removeSelect-1">Сохранить</button>
-                                                    </div>
+                                        <ul class=" orders__all-other">
+                                        <li class="orders__edit-item">
+                                            <span class="orders__edit-category">Сумма заказа</span>
+                                            <span class="orders__edit-text orders__edit-text--price">
+                                                424.0$
+                                                <span class="orders__order-info"></span>
+                                            </span>
+                                        </li>
+                                        <li class="orders__edit-item">
+                                            <span class="orders__edit-category">Адрес доставки</span>
+                                            <div class="orders__edit-text-wrap">
+                                                <input class="orders__edit-text js-addTextIn-1" type="text"
+                                                    value="120321, г.Москва, Нахимовский проспект, 4, офис 5" readonly>
+                                                <div class="orders__select-wrap-1">
+                                                    <select class="orders__select js-addText-1">
+                                                        <option class="orders__select-item"
+                                                            value="120321, г.Москва, Нахимовский проспект, 4, офис 5"
+                                                            selected>
+                                                            120321, г.Москва, Нахимовский проспект, 4, офис 5
+                                                        </option>
+                                                        <option class="orders__select-item"
+                                                            value="120321, г.Москва, Нахимовский проспект, 42, офис 1">
+                                                            120321, г.Москва, Нахимовский проспект, 42, офис 1
+                                                        </option>
+                                                        <option class="orders__select-item"
+                                                            value="120321, г.Москва, Нахимовский проспект, 41, офис 8">
+                                                            120321, г.Москва, Нахимовский проспект, 41, офис 8
+                                                        </option>
+                                                        <option class="orders__select-item"
+                                                            value="120321, г.Москва, Нахимовский проспект, 47, офис 10">
+                                                            120321, г.Москва, Нахимовский проспект, 47, офис 10
+                                                        </option>
+                                                    </select>
                                                 </div>
-                                            </li>
-                                            <li class="orders__edit-item">
-                                                <span class="orders__edit-category">Заказчик</span>
-                                                <div class="orders__edit-text-wrap">
-                                                    <input class="orders__edit-text js-addTextIn-2" type="text" value="РВ-Импэкс" readonly>
-                                                    <div class="orders__select-wrap-2">
-                                                        <select class="orders__select js-addText-2"> 
-                                                            <option class="orders__select-item" value="РВ-Импэкс" selected>
-                                                                РВ-Импэкс
-                                                            </option>
-                                                            <option class="orders__select-item" value="1 РВ-Импэкс">
-                                                                1 РВ-Импэкс
-                                                            </option>
-                                                            <option class="orders__select-item" value="2 РВ-Импэкс">
-                                                                2 РВ-Импэкс
-                                                            </option>
-                                                            <option class="orders__select-item" value="2 РВ-Импэкс">
-                                                                2 РВ-Импэкс
-                                                            </option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="orders__edit-box">
-                                                        <button
-                                                            class="orders__edit-btn orders__edit-btn--edit active  js-addSelect-2" type="button">Изменить</button>
-                                                        <button
-                                                            class="orders__edit-btn orders__edit-btn--save js-removeSelect-2">Сохранить</button>
-                                                    </div>
+
+                                                <div class="orders__edit-box">
+                                                    <button
+                                                        class="orders__edit-btn orders__edit-btn--edit active js-addSelect-1"
+                                                        type="button">Изменить</button>
+                                                    <button
+                                                        class="orders__edit-btn orders__edit-btn--save js-removeSelect-1">Сохранить</button>
                                                 </div>
-                                            </li>
-                                            <li class="orders__edit-item">
-                                                <span class="orders__edit-category">Получатель</span>
-                                                <div class="orders__edit-text-wrap">
-                                                    <label class="orders__edit-label">
-                                                        <input class="orders__edit-input" type="text" value="Елена"
-                                                            readonly>
-                                                    </label>
-                                                    <div class="orders__edit-box">
-                                                        <button
-                                                            class="orders__edit-btn orders__edit-btn--edit js-inBtn active" type="button">Изменить</button>
-                                                        <button
-                                                            class="orders__edit-btn orders__edit-btn--save js-inBtn-save"">Сохранить</button>
+                                            </div>
+                                        </li>
+                                        <li class="orders__edit-item">
+                                            <span class="orders__edit-category">Заказчик</span>
+                                            <div class="orders__edit-text-wrap">
+                                                <input class="orders__edit-text js-addTextIn-2" type="text"
+                                                    value="РВ-Импэкс" readonly>
+                                                <div class="orders__select-wrap-2">
+                                                    <select class="orders__select js-addText-2">
+                                                        <option class="orders__select-item" value="РВ-Импэкс" selected>
+                                                            РВ-Импэкс
+                                                        </option>
+                                                        <option class="orders__select-item" value="1 РВ-Импэкс">
+                                                            1 РВ-Импэкс
+                                                        </option>
+                                                        <option class="orders__select-item" value="2 РВ-Импэкс">
+                                                            2 РВ-Импэкс
+                                                        </option>
+                                                        <option class="orders__select-item" value="2 РВ-Импэкс">
+                                                            2 РВ-Импэкс
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="orders__edit-box">
+                                                    <button
+                                                        class="orders__edit-btn orders__edit-btn--edit active  js-addSelect-2"
+                                                        type="button">Изменить</button>
+                                                    <button
+                                                        class="orders__edit-btn orders__edit-btn--save js-removeSelect-2">Сохранить</button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="orders__edit-item">
+                                            <span class="orders__edit-category">Получатель</span>
+                                            <div class="orders__edit-text-wrap">
+                                                <label class="orders__edit-label">
+                                                    <input class="orders__edit-input" type="text" value="Елена"
+                                                        readonly>
+                                                </label>
+                                                <div class="orders__edit-box">
+                                                    <button
+                                                        class="orders__edit-btn orders__edit-btn--edit js-inBtn active"
+                                                        type="button">Изменить</button>
+                                                    <button
+                                                        class="orders__edit-btn orders__edit-btn--save js-inBtn-save"">Сохранить</button>
                                                     </div>
                                                 </div>
                                             </li>
                                         </ul>
                                     </ul>
                                 </form>
-                                <button class="orders__all-btn js-more" data-show="false">Подробнее</button>
-                            </div>
-                        </div>
-                        <div class="orders__title-wrap">
-                            <h2 class="orders__title orders__title--info">Заказ 275645</h2>
-                            <ul class="orders__title-list">
-                                <li class="orders__icon">
-                                    <button class="orders__button orders__button--js">
-                                        <svg class="orders__img orders__img--heart" width="22" height="20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="m11 18-1.305-1.151C5.06 12.777 2 10.092 2 6.796 2 4.11 4.178 2 6.95 2c1.566 0 3.069.706 4.05 1.822A5.462 5.462 0 0 1 15.05 2C17.822 2 20 4.11 20 6.796c0 3.296-3.06 5.981-7.695 10.062L11 18Z"
-                                                stroke="" stroke-width="2.4" stroke-linejoin="round" />
-                                        </svg>
-                                        <span class="js-to-favorites" data-show="false">В избранное</span>
-                                    </button>
-                                </li>
-                                <li class="orders__icon">
-                                    <button class="orders__button">
-                                        <svg class="orders__img orders__img--printer" width="18" height="16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M2.7.941a.96.96 0 0 1 .264-.665A.88.88 0 0 1 3.6 0h10.8c.239 0 .468.1.636.276A.963.963 0 0 1 15.3.94v5.647c.716 0 1.403.298 1.91.827.505.53.79 1.248.79 1.997v3.765a2.89 2.89 0 0 1-.79 1.996A2.642 2.642 0 0 1 15.3 16H2.7a2.642 2.642 0 0 1-1.91-.827A2.89 2.89 0 0 1 0 13.177V9.412c0-.749.284-1.467.79-1.997a2.642 2.642 0 0 1 1.91-.827V.941Zm0 7.53a.88.88 0 0 0-.636.275.963.963 0 0 0-.264.666v3.765c0 .25.095.489.264.665a.88.88 0 0 0 .636.276h12.6a.88.88 0 0 0 .636-.276.963.963 0 0 0 .264-.665V9.412a.963.963 0 0 0-.264-.666.88.88 0 0 0-.636-.275v1.882c0 .25-.095.49-.264.666a.88.88 0 0 1-.636.275H3.6a.88.88 0 0 1-.636-.275.963.963 0 0 1-.264-.666V8.471Zm1.8-6.589v7.53h9v-7.53h-9Zm1.8 2.824c0-.25.095-.489.264-.666a.88.88 0 0 1 .636-.275h3.6a.88.88 0 0 1 .636.275.963.963 0 0 1 .264.666c0 .25-.095.489-.264.666a.88.88 0 0 1-.636.275H7.2a.88.88 0 0 1-.636-.275.964.964 0 0 1-.264-.666Zm0 2.824c0-.25.095-.49.264-.666a.88.88 0 0 1 .636-.276h3.6c.239 0 .468.1.636.276a.963.963 0 0 1 .264.666.96.96 0 0 1-.264.665.88.88 0 0 1-.636.276H7.2a.88.88 0 0 1-.636-.276.964.964 0 0 1-.264-.665Z"
-                                                fill="" stroke="none" />
-                                        </svg>
-                                        Распечатать счёт
-                                    </button>
-                                </li>
-                                <li class="orders__icon">
-                                    <button class="orders__button orders__button--js">
-                                        <svg class="orders__img orders__img--basket" width="23" height="21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M11.5 2.1c-.815 0-1.609.253-2.267.721a3.74 3.74 0 0 0-1.392 1.883L6.977 7.35h9.046l-.864-2.646a3.74 3.74 0 0 0-1.392-1.883 3.912 3.912 0 0 0-2.267-.72Zm6.788 5.25-1.071-3.28a5.842 5.842 0 0 0-2.175-2.944A6.112 6.112 0 0 0 11.5 0a6.111 6.111 0 0 0-3.542 1.126 5.842 5.842 0 0 0-2.175 2.943L4.713 7.35H2.158c-.337 0-.67.077-.97.224a2.146 2.146 0 0 0-.764.625 2.044 2.044 0 0 0-.332 1.86l1.213 3.896 1.499 4.809a3.152 3.152 0 0 0 1.17 1.616 3.3 3.3 0 0 0 1.93.62h11.19a3.3 3.3 0 0 0 1.93-.62 3.16 3.16 0 0 0 1.17-1.616l1.499-4.81 1.213-3.895a2.044 2.044 0 0 0-.332-1.86 2.145 2.145 0 0 0-.764-.625 2.21 2.21 0 0 0-.97-.224h-2.553ZM5.502 9.45H2.159l.982 3.15h4.08L6.78 9.45H5.502Zm3.457 0L9.4 12.6h4.2l.443-3.15H8.957Zm7.262 0-.443 3.15h4.082l.98-3.15h-4.619Zm2.984 5.25h-3.721l-.589 4.2h2.2a1.1 1.1 0 0 0 .643-.207 1.05 1.05 0 0 0 .39-.538l1.076-3.455h.001Zm-6.488 4.2.588-4.2H9.694l.59 4.2h2.433Zm-4.613 0-.589-4.2h-3.72l1.076 3.455c.067.215.204.404.39.538a1.1 1.1 0 0 0 .643.207h2.2Z"
-                                                fill="" stroke="none" />
-                                        </svg>
-                                        <span class="js-to-basket" data-show="false">В корзину</span>
-                                    </button>
-                                </li>
-                                <li class="orders__icon">
-                                    <button class="basket__btn basket__btn--btn" type="button">
-                                        <svg class="basket__icon basket__icon--del" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.5 5.5L19.5 20.5" stroke="" stroke-width="1.6" />
-                                            <path d="M19.5 5.5L4.5 20.5" stroke="" stroke-width="1.6" />
-                                        </svg>
-                                        Удалить выбранное</button>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="orders__box orders-info">
-                            <ul class="orders__nav">
-                                <li class="orders__nax-item">
-                                    <label class="basket__label" for="templateCheck">
-                                        <input class="basket__input" type="checkbox" id="templateCheck">
-                                        <span class="basket__check-style"></span>
-                                    </label>
-                                </li>
-                                <li class="orders__nax-item">
-                                    <button class="orders__nav-btn first__click">
-                                        Артикул
-                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                    </button>
-                                </li>
-                                <li class="orders__nax-item">
-                                    <button class="orders__nav-btn first__click">
-                                        Наименование
-                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                    </button>
-                                </li>
-                                <li class="orders__nax-item">
-                                    <button class="orders__nav-btn first__click">
-                                        Доступность
-                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                    </button>
-                                </li>
-                                <li class="orders__nax-item">
-                                    <button class="orders__nav-btn first__click">
-                                        Статус
-                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                    </button>
-                                </li>
-                                <li class="orders__nax-item">
-                                    <button class="orders__nav-btn first__click">
-                                        Цена
-                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                    </button>
-                                </li>
-                                <li class="orders__nax-item">
-                                    <button class="orders__nav-btn first__click">
-                                        Кол-во
-                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                    </button>
-                                </li>
-                                <li class="orders__nax-item">
-                                    <button class="orders__nav-btn first__click">
-                                        Сумма
-                                        <span class="orders__arrow orders__arrow-top" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                        <span class="orders__arrow orders__arrow-bottom" style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
-                                    </button>
-                                </li>
-                            </ul>
-                            <ul class="orders__list" id="controls-3">
-                                <li class="orders__order">
-                                    <label class="basket__label" for="templateCheck-2">
-                                        <input class="basket__input" type="checkbox" id="templateCheck-2">
-                                        <span class="basket__check-style"></span>
-                                    </label>
-                                    <span class="orders__order-text orders__order-text--num">275645</span>
-                                    <span class="orders__order-text orders__order-text--name">Оливковое масло</span>
-                                    <span class="orders__order-text orders__order-text--availability">В НАЛИЧИИ</span>
-                                    <span
-                                        class="orders__order-text orders__order-text--status orders__order-text--delivered">Оплачен</span>
-                                    <span class="orders__order-text orders__order-text--price">
-                                        <span class="price_item">212</span>$
-                                        <span class="orders__order-info"></span>
-                                    </span>
-                                    <span class="orders__order-text orders__order-text--number">
-                                        <div class="count__input-number">
-                                            <button class="count__calc minus" type="button" id="down">
-                                                <span class="count__span count__span--minus"
-                                                    style="background-image: url(img/icons/minus.png);"></span>
-                                            </button>
-                                            <label class="count__label" for="countIn">
-                                                <input class="count__input" name="quantity" value="1" type="text"
-                                                    id="priceIn">
-                                            </label>
-                                            <button class="count__calc plus" type="button" id="up">
-                                                <span class="count__span count__span--plus"
-                                                    style="background-image: url(img/icons/plus.png);"></span>
-                                            </button>
-                                        </div>
-                                    </span>
-                                    <span class="orders__order-text orders__order-text--sum">
-                                        <span class="price" data-price="212">212</span>$
-                                        <span class="orders__order-info"></span>
-                                    </span>
-                                </li>
-                                <li class="orders__order">
-                                    <label class="basket__label" for="templateCheck-2">
-                                        <input class="basket__input" type="checkbox" id="templateCheck-2">
-                                        <span class="basket__check-style"></span>
-                                    </label>
-                                    <span class="orders__order-text orders__order-text--num">275645</span>
-                                    <span class="orders__order-text orders__order-text--name">Оливковое масло</span>
-                                    <span
-                                        class="orders__order-text orders__order-text--availability orders__order-text--availability-off">НЕДОСТУПНО</span>
-                                    <span
-                                        class="orders__order-text orders__order-text--status orders__order-text--delivered">Оплачен</span>
-                                    <span class="orders__order-text orders__order-text--price">
-                                        <span class="price_item">212</span>$
-                                        <span class="orders__order-info"></span>
-                                    </span>
-                                    <span class="orders__order-text orders__order-text--number">
-                                        <div class="count__input-number">
-                                            <button class="count__calc minus" type="button" id="down">
-                                                <span class="count__span count__span--minus"
-                                                    style="background-image: url(img/icons/minus.png);"></span>
-                                            </button>
-                                            <label class="count__label" for="countIn">
-                                                <input class="count__input" name="quantity" value="1" type="text" 
-                                                    id="priceIn">
-                                            </label>
-                                            <button class="count__calc plus" type="button" id="up">
-                                                <span class="count__span count__span--plus"
-                                                    style="background-image: url(img/icons/plus.png);"></span>
-                                            </button>
-                                        </div>
-                                    </span>
-                                    <span class="orders__order-text orders__order-text--sum">
-                                        <span class="price" data-price="212">212</span>$
-                                        <span class="orders__order-info"></span>
-                                    </span>
-                                </li>
-                            </ul>
-                            <ul class="orders__buttom">
-                                <li class="orders__buttom-item">
-                                    <span class="orders__buttom-text">Сумма</span>
-                                    <span class="orders__buttom-num-wrap">
-                                        <span class="orders__buttom-num">2554.0</span>$
-                                        <span class="orders__order-info"></span>
-                                    </span>
-                                </li>
-                                <li class="orders__buttom-item">
-                                    <span class="orders__buttom-text">Доставка</span>
-                                    <span class="orders__buttom-num-wrap">
-                                        <span class="orders__buttom-num">-</span>
-                                        <span class="orders__order-info"></span>
-                                    </span>
-                                </li>
-                                <li class="orders__buttom-item">
-                                    <span class="orders__buttom-text orders__buttom-text--bold">Итого (включая
-                                        НДС)</span>
-                                    <span class="orders__buttom-num-wrap">
-                                        <span class="orders__buttom-num">2653.0</span>$
-                                        <span class="orders__order-info"></span>
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                        <button class="orders__del-template btn-hover">Удалить шаблон</button>
+                                <button class=" orders__all-btn js-more" data-show="false">Подробнее</button>
+                                                </div>
+                                            </div>
+                                            <div class="orders__title-wrap">
+                                                <h2 class="orders__title orders__title--info">Что в шаблоне</h2>
+                                                <label class="mobil-check" for="ordersCheck-mob-2"
+                                                    id="js-activeCheck-2">
+                                                    <input class="basket__input" type="checkbox" id="ordersCheck-mob-2">
+                                                    <span class="basket__check-style"></span>
+                                                    Выбрать
+                                                    <span class="hide-text">Отменить</span>
+                                                </label>
+                                                <ul class="orders__title-list">
+                                                    <li class="orders__icon">
+                                                        <button class="orders__button orders__button--js">
+                                                            <svg class="orders__img orders__img--heart" width="22"
+                                                                height="20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="m11 18-1.305-1.151C5.06 12.777 2 10.092 2 6.796 2 4.11 4.178 2 6.95 2c1.566 0 3.069.706 4.05 1.822A5.462 5.462 0 0 1 15.05 2C17.822 2 20 4.11 20 6.796c0 3.296-3.06 5.981-7.695 10.062L11 18Z"
+                                                                    stroke="" stroke-width="2.4"
+                                                                    stroke-linejoin="round" />
+                                                            </svg>
+                                                            <span class="js-to-favorites" data-show="false">В
+                                                                избранное</span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="orders__icon">
+                                                        <button class="orders__button">
+                                                            <svg class="orders__img orders__img--printer" width="18"
+                                                                height="16" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M2.7.941a.96.96 0 0 1 .264-.665A.88.88 0 0 1 3.6 0h10.8c.239 0 .468.1.636.276A.963.963 0 0 1 15.3.94v5.647c.716 0 1.403.298 1.91.827.505.53.79 1.248.79 1.997v3.765a2.89 2.89 0 0 1-.79 1.996A2.642 2.642 0 0 1 15.3 16H2.7a2.642 2.642 0 0 1-1.91-.827A2.89 2.89 0 0 1 0 13.177V9.412c0-.749.284-1.467.79-1.997a2.642 2.642 0 0 1 1.91-.827V.941Zm0 7.53a.88.88 0 0 0-.636.275.963.963 0 0 0-.264.666v3.765c0 .25.095.489.264.665a.88.88 0 0 0 .636.276h12.6a.88.88 0 0 0 .636-.276.963.963 0 0 0 .264-.665V9.412a.963.963 0 0 0-.264-.666.88.88 0 0 0-.636-.275v1.882c0 .25-.095.49-.264.666a.88.88 0 0 1-.636.275H3.6a.88.88 0 0 1-.636-.275.963.963 0 0 1-.264-.666V8.471Zm1.8-6.589v7.53h9v-7.53h-9Zm1.8 2.824c0-.25.095-.489.264-.666a.88.88 0 0 1 .636-.275h3.6a.88.88 0 0 1 .636.275.963.963 0 0 1 .264.666c0 .25-.095.489-.264.666a.88.88 0 0 1-.636.275H7.2a.88.88 0 0 1-.636-.275.964.964 0 0 1-.264-.666Zm0 2.824c0-.25.095-.49.264-.666a.88.88 0 0 1 .636-.276h3.6c.239 0 .468.1.636.276a.963.963 0 0 1 .264.666.96.96 0 0 1-.264.665.88.88 0 0 1-.636.276H7.2a.88.88 0 0 1-.636-.276.964.964 0 0 1-.264-.665Z"
+                                                                    fill="" stroke="none" />
+                                                            </svg>
+                                                            Распечатать счёт
+                                                        </button>
+                                                    </li>
+                                                    <li class="orders__icon">
+                                                        <button class="orders__button orders__button--js">
+                                                            <svg class="orders__img orders__img--basket" width="23"
+                                                                height="21" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M11.5 2.1c-.815 0-1.609.253-2.267.721a3.74 3.74 0 0 0-1.392 1.883L6.977 7.35h9.046l-.864-2.646a3.74 3.74 0 0 0-1.392-1.883 3.912 3.912 0 0 0-2.267-.72Zm6.788 5.25-1.071-3.28a5.842 5.842 0 0 0-2.175-2.944A6.112 6.112 0 0 0 11.5 0a6.111 6.111 0 0 0-3.542 1.126 5.842 5.842 0 0 0-2.175 2.943L4.713 7.35H2.158c-.337 0-.67.077-.97.224a2.146 2.146 0 0 0-.764.625 2.044 2.044 0 0 0-.332 1.86l1.213 3.896 1.499 4.809a3.152 3.152 0 0 0 1.17 1.616 3.3 3.3 0 0 0 1.93.62h11.19a3.3 3.3 0 0 0 1.93-.62 3.16 3.16 0 0 0 1.17-1.616l1.499-4.81 1.213-3.895a2.044 2.044 0 0 0-.332-1.86 2.145 2.145 0 0 0-.764-.625 2.21 2.21 0 0 0-.97-.224h-2.553ZM5.502 9.45H2.159l.982 3.15h4.08L6.78 9.45H5.502Zm3.457 0L9.4 12.6h4.2l.443-3.15H8.957Zm7.262 0-.443 3.15h4.082l.98-3.15h-4.619Zm2.984 5.25h-3.721l-.589 4.2h2.2a1.1 1.1 0 0 0 .643-.207 1.05 1.05 0 0 0 .39-.538l1.076-3.455h.001Zm-6.488 4.2.588-4.2H9.694l.59 4.2h2.433Zm-4.613 0-.589-4.2h-3.72l1.076 3.455c.067.215.204.404.39.538a1.1 1.1 0 0 0 .643.207h2.2Z"
+                                                                    fill="" stroke="none" />
+                                                            </svg>
+                                                            <span class="js-to-basket" data-show="false">В
+                                                                корзину</span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="orders__icon">
+                                                        <button class="basket__btn basket__btn--btn" type="button">
+                                                            <svg class="basket__icon basket__icon--del" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M4.5 5.5L19.5 20.5" stroke=""
+                                                                    stroke-width="1.6" />
+                                                                <path d="M19.5 5.5L4.5 20.5" stroke=""
+                                                                    stroke-width="1.6" />
+                                                            </svg>
+                                                            Удалить выбранное</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="orders__box orders-info">
+                                                <ul class="orders__nav">
+                                                    <li class="orders__nax-item">
+                                                        <label class="basket__label" for="templateCheck">
+                                                            <input class="basket__input" type="checkbox"
+                                                                id="templateCheck">
+                                                            <span class="basket__check-style"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="orders__nax-item">
+                                                        <button class="orders__nav-btn first__click">
+                                                            Артикул
+                                                            <span class="orders__arrow orders__arrow-top"
+                                                                style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                                            <span class="orders__arrow orders__arrow-bottom"
+                                                                style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="orders__nax-item">
+                                                        <button class="orders__nav-btn first__click">
+                                                            Наименование
+                                                            <span class="orders__arrow orders__arrow-top"
+                                                                style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                                            <span class="orders__arrow orders__arrow-bottom"
+                                                                style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="orders__nax-item">
+                                                        <button class="orders__nav-btn first__click">
+                                                            Доступность
+                                                            <span class="orders__arrow orders__arrow-top"
+                                                                style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                                            <span class="orders__arrow orders__arrow-bottom"
+                                                                style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="orders__nax-item">
+                                                        <button class="orders__nav-btn first__click">
+                                                            Статус
+                                                            <span class="orders__arrow orders__arrow-top"
+                                                                style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                                            <span class="orders__arrow orders__arrow-bottom"
+                                                                style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="orders__nax-item">
+                                                        <button class="orders__nav-btn first__click">
+                                                            Цена
+                                                            <span class="orders__arrow orders__arrow-top"
+                                                                style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                                            <span class="orders__arrow orders__arrow-bottom"
+                                                                style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="orders__nax-item">
+                                                        <button class="orders__nav-btn first__click">
+                                                            Кол-во
+                                                            <span class="orders__arrow orders__arrow-top"
+                                                                style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                                            <span class="orders__arrow orders__arrow-bottom"
+                                                                style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="orders__nax-item">
+                                                        <button class="orders__nav-btn first__click">
+                                                            Сумма
+                                                            <span class="orders__arrow orders__arrow-top"
+                                                                style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                                            <span class="orders__arrow orders__arrow-bottom"
+                                                                style="background-image: url(img/icons/orders-arrow-top.svg);"></span>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                                <ul class="orders__list" id="controls-3">
+                                                    <li class="orders__order">
+                                                        <label class="basket__label" for="templateCheck">
+                                                            <input class="basket__input" type="checkbox"
+                                                                id="templateCheck">
+                                                            <span class="basket__check-style"></span>
+                                                        </label>
+                                                        <span
+                                                            class="orders__order-text orders__order-text--num">275645</span>
+                                                        <span
+                                                            class="orders__order-text orders__order-text--name">Оливковое
+                                                            масло</span>
+                                                        <span
+                                                            class="orders__order-text orders__order-text--availability">В
+                                                            НАЛИЧИИ</span>
+                                                        <span
+                                                            class="orders__order-text orders__order-text--status orders__order-text--delivered">Оплачен</span>
+                                                        <span class="orders__order-text orders__order-text--price">
+                                                            <span class="price_item">212</span>$
+                                                            <span class="orders__order-info"></span>
+                                                        </span>
+                                                        <span class="orders__order-text orders__order-text--number">
+                                                            <div class="count__input-number">
+                                                                <button class="count__calc minus" type="button"
+                                                                    id="down">
+                                                                    <span class="count__span count__span--minus"
+                                                                        style="background-image: url(img/icons/minus.png);"></span>
+                                                                </button>
+                                                                <label class="count__label" for="countIn">
+                                                                    <input class="count__input" name="quantity"
+                                                                        value="1" type="text" id="priceIn">
+                                                                </label>
+                                                                <button class="count__calc plus" type="button" id="up">
+                                                                    <span class="count__span count__span--plus"
+                                                                        style="background-image: url(img/icons/plus.png);"></span>
+                                                                </button>
+                                                            </div>
+                                                        </span>
+                                                        <span class="orders__order-text orders__order-text--sum">
+                                                            <span class="price" data-price="212">212</span>$
+                                                            <span class="orders__order-info"></span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="orders__order">
+                                                        <label class="basket__label" for="templateCheck-3">
+                                                            <input class="basket__input" type="checkbox"
+                                                                id="templateCheck-3">
+                                                            <span class="basket__check-style"></span>
+                                                        </label>
+                                                        <span
+                                                            class="orders__order-text orders__order-text--num">275645</span>
+                                                        <span
+                                                            class="orders__order-text orders__order-text--name">Оливковое
+                                                            масло</span>
+                                                        <span
+                                                            class="orders__order-text orders__order-text--availability orders__order-text--availability-off">НЕДОСТУПНО</span>
+                                                        <span
+                                                            class="orders__order-text orders__order-text--status orders__order-text--delivered">Оплачен</span>
+                                                        <span class="orders__order-text orders__order-text--price">
+                                                            <span class="price_item">212</span>$
+                                                            <span class="orders__order-info"></span>
+                                                        </span>
+                                                        <span class="orders__order-text orders__order-text--number">
+                                                            <div class="count__input-number">
+                                                                <button class="count__calc minus" type="button"
+                                                                    id="down">
+                                                                    <span class="count__span count__span--minus"
+                                                                        style="background-image: url(img/icons/minus.png);"></span>
+                                                                </button>
+                                                                <label class="count__label" for="countIn">
+                                                                    <input class="count__input" name="quantity"
+                                                                        value="1" type="text" id="priceIn">
+                                                                </label>
+                                                                <button class="count__calc plus" type="button" id="up">
+                                                                    <span class="count__span count__span--plus"
+                                                                        style="background-image: url(img/icons/plus.png);"></span>
+                                                                </button>
+                                                            </div>
+                                                        </span>
+                                                        <span class="orders__order-text orders__order-text--sum">
+                                                            <span class="price" data-price="212">212</span>$
+                                                            <span class="orders__order-info"></span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                                <ul class="orders__list orders__list--mob" id="controls-mob-3">
+                                                    <li class="orders__order">
+                                                        <label class="basket__label" for="templateInCheck-2">
+                                                            <input class="basket__input" type="checkbox"
+                                                                id="templateInCheck-2">
+                                                            <span class="basket__check-style"></span>
+                                                        </label>
+                                                        <span
+                                                            class="orders__order-text orders__order-text--num">275645</span>
+                                                        <span
+                                                            class="orders__order-text orders__order-text--name">Оливковое
+                                                            масло</span>
+                                                        <span
+                                                            class="orders__order-text orders__order-text--availability">В
+                                                            НАЛИЧИИ</span>
+                                                        <div class="orders__order-text-wrap">
+                                                            <span class="orders__order-text orders__order-text--price">
+                                                                212.0$
+                                                                <span class="orders__order-info"></span>
+                                                            </span>
+                                                            <span class="number"> 2x </span>
+                                                            <span class="orders__order-text orders__order-text--sum">
+                                                                <span class="price" data-price="212">212</span>$
+                                                                <span class="orders__order-info"></span>
+                                                            </span>
+                                                        </div>
+                                                        <span class="orders__order-text orders__order-text--number">
+                                                            <div class="count__input-number">
+                                                                <button class="count__calc minus" type="button"
+                                                                    id="down">
+                                                                    <span class="count__span count__span--minus"
+                                                                        style="background-image: url(img/icons/minus.png);"></span>
+                                                                </button>
+                                                                <label class="count__label" for="countIn">
+                                                                    <input class="count__input" name="quantity"
+                                                                        value="1" type="text" id="priceIn">
+                                                                </label>
+                                                                <button class="count__calc plus" type="button" id="up">
+                                                                    <span class="count__span count__span--plus"
+                                                                        style="background-image: url(img/icons/plus.png);"></span>
+                                                                </button>
+                                                            </div>
+                                                        </span>
+                                                    </li>
+                                                    <li class="orders__order">
+                                                        <label class="basket__label" for="templateInCheck-3">
+                                                            <input class="basket__input" type="checkbox"
+                                                                id="templateInCheck-3">
+                                                            <span class="basket__check-style"></span>
+                                                        </label>
+                                                        <span
+                                                            class="orders__order-text orders__order-text--num">275645</span>
+                                                        <span
+                                                            class="orders__order-text orders__order-text--name">Оливковое
+                                                            масло</span>
+                                                        <span
+                                                            class="orders__order-text orders__order-text--availability">В
+                                                            НАЛИЧИИ</span>
+                                                        <div class="orders__order-text-wrap">
+                                                            <span class="orders__order-text orders__order-text--price">
+                                                                212.0$
+                                                                <span class="orders__order-info"></span>
+                                                            </span>
+                                                            <span class="number"> 2x </span>
+                                                            <span class="orders__order-text orders__order-text--sum">
+                                                                <span class="price" data-price="212">212</span>$
+                                                                <span class="orders__order-info"></span>
+                                                            </span>
+                                                        </div>
+                                                        <span class="orders__order-text orders__order-text--number">
+                                                            <div class="count__input-number">
+                                                                <button class="count__calc minus" type="button"
+                                                                    id="down">
+                                                                    <span class="count__span count__span--minus"
+                                                                        style="background-image: url(img/icons/minus.png);"></span>
+                                                                </button>
+                                                                <label class="count__label" for="countIn">
+                                                                    <input class="count__input" name="quantity"
+                                                                        value="1" type="text" id="priceIn">
+                                                                </label>
+                                                                <button class="count__calc plus" type="button" id="up">
+                                                                    <span class="count__span count__span--plus"
+                                                                        style="background-image: url(img/icons/plus.png);"></span>
+                                                                </button>
+                                                            </div>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                                <ul class="orders__buttom">
+                                                    <li class="orders__buttom-item">
+                                                        <span class="orders__buttom-text">Сумма</span>
+                                                        <span class="orders__buttom-num-wrap">
+                                                            <span class="orders__buttom-num">2554.0</span>$
+                                                            <span class="orders__order-info"></span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="orders__buttom-item">
+                                                        <span class="orders__buttom-text">Доставка</span>
+                                                        <span class="orders__buttom-num-wrap">
+                                                            <span class="orders__buttom-num">-</span>
+                                                            <span class="orders__order-info"></span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="orders__buttom-item">
+                                                        <span
+                                                            class="orders__buttom-text orders__buttom-text--bold">Итого
+                                                            (включая
+                                                            НДС)</span>
+                                                        <span class="orders__buttom-num-wrap">
+                                                            <span class="orders__buttom-num">2653.0</span>$
+                                                            <span class="orders__order-info"></span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <button class="orders__del-template btn-hover">Удалить шаблон</button>
+                                            <div class="add-filter">
+                                                <button class="add-filter__btn"></button>
+                                                <ul class="orders__title-list">
+                                                    <li class="orders__icon">
+                                                        <button class="orders__button orders__button--js">
+                                                            <svg class="orders__img orders__img--heart" width="22" height="20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="m11 18-1.305-1.151C5.06 12.777 2 10.092 2 6.796 2 4.11 4.178 2 6.95 2c1.566 0 3.069.706 4.05 1.822A5.462 5.462 0 0 1 15.05 2C17.822 2 20 4.11 20 6.796c0 3.296-3.06 5.981-7.695 10.062L11 18Z"
+                                                                    stroke="" stroke-width="2.4" stroke-linejoin="round" />
+                                                            </svg>
+                                                            <svg class="orders__img orders__img--heart orders__img--mob" width="24"
+                                                                height="22" viewBox="0 0 24 22" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M12 19.9927L10.55 18.6979C5.4 14.1169 2 11.0957 2 7.38777C2 4.36652 4.42 1.99268 7.5 1.99268C9.24 1.99268 10.91 2.78723 12 4.04281C13.09 2.78723 14.76 1.99268 16.5 1.99268C19.58 1.99268 22 4.36652 22 7.38777C22 11.0957 18.6 14.1169 13.45 18.7077L12 19.9927Z"
+                                                                    stroke="#88868F" stroke-width="2.3" stroke-linejoin="round" />
+                                                            </svg>
+                    
+                                                            <span class="js-to-favorites" data-show="false">В избранное</span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="orders__icon">
+                                                        <button class="orders__button">
+                                                            <svg class="orders__img orders__img--printer" width="18" height="16" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M2.7.941a.96.96 0 0 1 .264-.665A.88.88 0 0 1 3.6 0h10.8c.239 0 .468.1.636.276A.963.963 0 0 1 15.3.94v5.647c.716 0 1.403.298 1.91.827.505.53.79 1.248.79 1.997v3.765a2.89 2.89 0 0 1-.79 1.996A2.642 2.642 0 0 1 15.3 16H2.7a2.642 2.642 0 0 1-1.91-.827A2.89 2.89 0 0 1 0 13.177V9.412c0-.749.284-1.467.79-1.997a2.642 2.642 0 0 1 1.91-.827V.941Zm0 7.53a.88.88 0 0 0-.636.275.963.963 0 0 0-.264.666v3.765c0 .25.095.489.264.665a.88.88 0 0 0 .636.276h12.6a.88.88 0 0 0 .636-.276.963.963 0 0 0 .264-.665V9.412a.963.963 0 0 0-.264-.666.88.88 0 0 0-.636-.275v1.882c0 .25-.095.49-.264.666a.88.88 0 0 1-.636.275H3.6a.88.88 0 0 1-.636-.275.963.963 0 0 1-.264-.666V8.471Zm1.8-6.589v7.53h9v-7.53h-9Zm1.8 2.824c0-.25.095-.489.264-.666a.88.88 0 0 1 .636-.275h3.6a.88.88 0 0 1 .636.275.963.963 0 0 1 .264.666c0 .25-.095.489-.264.666a.88.88 0 0 1-.636.275H7.2a.88.88 0 0 1-.636-.275.964.964 0 0 1-.264-.666Zm0 2.824c0-.25.095-.49.264-.666a.88.88 0 0 1 .636-.276h3.6c.239 0 .468.1.636.276a.963.963 0 0 1 .264.666.96.96 0 0 1-.264.665.88.88 0 0 1-.636.276H7.2a.88.88 0 0 1-.636-.276.964.964 0 0 1-.264-.665Z"
+                                                                    fill="" stroke="none" />
+                                                            </svg>
+                                                            Распечатать счёт
+                                                        </button>
+                                                    </li>
+                                                    <li class="orders__icon">
+                                                        <button class="orders__button orders__button--js">
+                                                            <svg class="orders__img orders__img--basket" width="23" height="21" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M11.5 2.1c-.815 0-1.609.253-2.267.721a3.74 3.74 0 0 0-1.392 1.883L6.977 7.35h9.046l-.864-2.646a3.74 3.74 0 0 0-1.392-1.883 3.912 3.912 0 0 0-2.267-.72Zm6.788 5.25-1.071-3.28a5.842 5.842 0 0 0-2.175-2.944A6.112 6.112 0 0 0 11.5 0a6.111 6.111 0 0 0-3.542 1.126 5.842 5.842 0 0 0-2.175 2.943L4.713 7.35H2.158c-.337 0-.67.077-.97.224a2.146 2.146 0 0 0-.764.625 2.044 2.044 0 0 0-.332 1.86l1.213 3.896 1.499 4.809a3.152 3.152 0 0 0 1.17 1.616 3.3 3.3 0 0 0 1.93.62h11.19a3.3 3.3 0 0 0 1.93-.62 3.16 3.16 0 0 0 1.17-1.616l1.499-4.81 1.213-3.895a2.044 2.044 0 0 0-.332-1.86 2.145 2.145 0 0 0-.764-.625 2.21 2.21 0 0 0-.97-.224h-2.553ZM5.502 9.45H2.159l.982 3.15h4.08L6.78 9.45H5.502Zm3.457 0L9.4 12.6h4.2l.443-3.15H8.957Zm7.262 0-.443 3.15h4.082l.98-3.15h-4.619Zm2.984 5.25h-3.721l-.589 4.2h2.2a1.1 1.1 0 0 0 .643-.207 1.05 1.05 0 0 0 .39-.538l1.076-3.455h.001Zm-6.488 4.2.588-4.2H9.694l.59 4.2h2.433Zm-4.613 0-.589-4.2h-3.72l1.076 3.455c.067.215.204.404.39.538a1.1 1.1 0 0 0 .643.207h2.2Z"
+                                                                    fill="" stroke="none" />
+                                                            </svg>
+                                                            <svg class="orders__img orders__img--basket orders__img--mob" width="22"
+                                                                height="20" viewBox="0 0 22 20" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M11 2.00038C10.2203 2.00044 9.46091 2.2408 8.83171 2.68666C8.20251 3.13252 7.73618 3.76073 7.50026 4.48032L6.67412 7.00027H15.3259L14.4997 4.48032C14.2638 3.76073 13.7975 3.13252 13.1683 2.68666C12.5391 2.2408 11.7797 2.00044 11 2.00038ZM17.4924 7.00027L16.468 3.87534C16.0997 2.75083 15.3712 1.76909 14.3881 1.07234C13.4049 0.375583 12.2183 0 11 0C9.78171 0 8.59506 0.375583 7.61195 1.07234C6.62884 1.76909 5.90034 2.75083 5.53199 3.87534L4.50757 7.00027H2.0653C1.74284 7.00028 1.42487 7.0734 1.13685 7.21377C0.848817 7.35414 0.598731 7.55787 0.406612 7.80864C0.214493 8.05941 0.085679 8.35025 0.0304834 8.65789C-0.0247121 8.96552 -0.00475557 9.28139 0.0887552 9.58022L1.24948 13.2901L2.68283 17.87C2.87562 18.4861 3.26794 19.0258 3.80183 19.4093C4.33572 19.7929 4.98287 20 5.64764 20H16.3524C17.017 19.9998 17.6639 19.7926 18.1975 19.409C18.7312 19.0255 19.1234 18.486 19.3161 17.87L20.7505 13.2901L21.9112 9.58022C22.0048 9.28139 22.0247 8.96552 21.9695 8.65789C21.9143 8.35025 21.7855 8.05941 21.5934 7.80864C21.4013 7.55787 21.1512 7.35414 20.8632 7.21377C20.5751 7.0734 20.2572 7.00028 19.9347 7.00027H17.4924ZM5.26246 9.00023H2.0653L3.004 12.0002H6.90751L6.48411 9.00023H5.26246ZM8.56908 9.00023L8.99145 12.0002H13.0086L13.4319 9.00023H8.56805H8.56908ZM15.5159 9.00023L15.0925 12.0002H18.996L19.9347 9.00023H15.5159ZM18.3702 14.0001H14.8106L14.2478 18H16.3513C16.5729 18 16.7886 17.931 16.9666 17.8032C17.1446 17.6753 17.2753 17.4954 17.3396 17.2901L18.3692 14.0001H18.3702ZM12.1638 18L12.7266 14.0001H9.27233L9.83617 18H12.1638ZM7.7512 18L7.1884 14.0001H3.6298L4.65938 17.2901C4.72364 17.4954 4.85441 17.6753 5.03237 17.8032C5.21034 17.931 5.42605 18 5.64764 18H7.7512Z"
+                                                                    fill="#88868F" />
+                                                            </svg>
+                    
+                                                            <span class="js-to-basket" data-show="false">В корзину</span>
+                                                        </button>
+                                                    </li>
+                                                    <li class="orders__icon">
+                                                        <button class="basket__btn basket__btn--btn" type="button">
+                                                            <svg class="basket__icon basket__icon--del" width="24" height="24"
+                                                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M4.5 5.5L19.5 20.5" stroke="" stroke-width="1.6" />
+                                                                <path d="M19.5 5.5L4.5 20.5" stroke="" stroke-width="1.6" />
+                                                            </svg>
+                                                            Удалить выбранное</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
                     </section>
                 </div>
             </div>

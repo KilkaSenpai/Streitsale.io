@@ -95,7 +95,7 @@
             </div>
         </header>
         <main>
-            <section class="breadcrumbs">
+            <section class="breadcrumbs breadcrumbs--pa">
                 <div class="container">
                     <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__item">
@@ -113,6 +113,51 @@
                     </ul>
                 </div>
             </section>
+            <div class="mob-title">
+                <div class="container">
+                    <div class="main-title__wrap">
+                        <h1 class="main-title">+7 977 687 78 01
+                            <a class="main-title__log-off" href="#">Выйти из аккаунта</a>
+                        </h1>
+                        <button class="main-title__contact js-contact" type="button">Связаться с менеджером</button>
+                        <div class="contact-manager">
+                            <h3 class="contact-manager__title">Ваш персональный менеджер</h3>
+                            <span class="contact-manager__name">Ирина</span>
+                            <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
+                        </div>
+                        <div class="mob-list mob-list--notifications">
+                            <button class="mob-list__btn">
+                                <span
+                                    class="aside__link aside__link--notifications  aside__link--the-page">Уведомления</span>
+                            </button>
+                            <ul class="aside__list">
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--user" href="#">Аккаунт</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--company" href="#">Компании</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--favorites" href="#">Избранное</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--documentation" href="#">Документы</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link  aside__link--orders" href="#">Заказы</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--download" href="#" download>Скачать
+                                        прайс-лист</a>
+                                </li>
+                                <li class="aside__item">
+                                    <button class="main-title__contact-mob">Связаться с менеджером</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="main-title__wrap">
                     <h1 class="main-title">+7 977 687 78 01</h1>
@@ -123,7 +168,7 @@
                         <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
                     </div>
                 </div>
-                <div class="sections__wrap">
+                <div class="sections__wrap sections__wrap--orders">
                     <section class="aside aside--list-notifications">
                         <ul class="aside__list">
                             <li class="aside__item">
@@ -156,9 +201,18 @@
                     <section class="orders orders--list-notifications">
                         <div class="orders__title-wrap">
                             <h2 class="orders__title">Уведомления</h2>
+                            <label class="mobil-check" for="notifi-mob" id="js-activenotifi">
+                                <input class="basket__input" type="checkbox" id="notifi-mob">
+                                <span class="basket__check-style"></span>
+                                Выбрать
+                                <span class="hide-text">Отменить</span>
+                            </label>
                             <ul class="orders__links">
                                 <li class="orders__item">
-                                    <span class="orders__link orders__link--the-page">Список уведомлений</span>
+                                    <span class="orders__link desktop-text orders__link--the-page">
+                                        Список уведомлений
+                                        <span class="mob-text">Список</span>
+                                    </span>
                                 </li>
                                 <li class="orders__item">
                                     <a class="orders__link" href="#">Настройки</a>
@@ -259,6 +313,30 @@
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+                        <div class="add-filter">
+                            <button class="add-filter__btn"></button>
+                            <ul class="orders__title-list">
+                                <li class="orders__icon">
+                                    <button class="basket__btn basket__btn--btn" type="button">
+                                        <svg class="basket__icon basket__icon--read" width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19.99 7C19.99 6.28 19.62 5.65 19.05 5.3L10 0L0.95 5.3C0.38 5.65 0 6.28 0 7V17C0 18.1 0.9 19 2 19H18C19.1 19 20 18.1 20 17L19.99 7ZM10 12L1.74 6.84L10 2L18.26 6.84L10 12Z"
+                                                fill="#88868F" />
+                                        </svg>
+                                        Прочитано</button>
+                                </li>
+                                <li class="orders__icon">
+                                    <button class="basket__btn basket__btn--btn" type="button">
+                                        <svg class="basket__icon basket__icon--del" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.5 5.5L19.5 20.5" stroke="" stroke-width="1.6" />
+                                            <path d="M19.5 5.5L4.5 20.5" stroke="" stroke-width="1.6" />
+                                        </svg>
+                                        Удалить выбранное</button>
+                                </li>
+                            </ul>
                         </div>
                     </section>
                 </div>

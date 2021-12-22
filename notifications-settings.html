@@ -95,7 +95,7 @@
             </div>
         </header>
         <main>
-            <section class="breadcrumbs">
+            <section class="breadcrumbs breadcrumbs--pa">
                 <div class="container">
                     <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__item">
@@ -110,6 +110,51 @@
                     </ul>
                 </div>
             </section>
+            <div class="mob-title">
+                <div class="container">
+                    <div class="main-title__wrap">
+                        <h1 class="main-title">+7 977 687 78 01
+                            <a class="main-title__log-off" href="#">Выйти из аккаунта</a>
+                        </h1>
+                        <button class="main-title__contact js-contact" type="button">Связаться с менеджером</button>
+                        <div class="contact-manager">
+                            <h3 class="contact-manager__title">Ваш персональный менеджер</h3>
+                            <span class="contact-manager__name">Ирина</span>
+                            <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
+                        </div>
+                        <div class="mob-list mob-list--notifications">
+                            <button class="mob-list__btn">
+                                <span
+                                    class="aside__link aside__link--notifications  aside__link--the-page">Уведомления</span>
+                            </button>
+                            <ul class="aside__list">
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--user" href="#">Аккаунт</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--company" href="#">Компании</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--favorites" href="#">Избранное</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--documentation" href="#">Документы</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link  aside__link--orders" href="#">Заказы</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--download" href="#" download>Скачать
+                                        прайс-лист</a>
+                                </li>
+                                <li class="aside__item">
+                                    <button class="main-title__contact-mob">Связаться с менеджером</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="main-title__wrap">
                     <h1 class="main-title">+7 977 687 78 01</h1>
@@ -120,7 +165,7 @@
                         <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
                     </div>
                 </div>
-                <div class="sections__wrap">
+                <div class="sections__wrap sections__wrap--orders">
                     <section class="aside aside--list-notifications">
                         <ul class="aside__list">
                             <li class="aside__item">
@@ -156,7 +201,10 @@
                                 <h2 class="orders__title">Уведомления</h2>
                                 <ul class="orders__links">
                                     <li class="orders__item">
-                                        <a class="orders__link" href="#">Список уведомлений</a>
+                                        <a class="orders__link desktop-text" href="#">
+                                            Список уведомлений
+                                            <span class="mob-text">Список</span>
+                                        </a>
                                     </li>
                                     <li class="orders__item">
                                         <span class="orders__link orders__link--the-page">Настройки</span>
@@ -175,7 +223,8 @@
                                                 </label>
                                                 <div class="orders__edit-box">
                                                     <button
-                                                        class="orders__edit-btn orders__edit-btn--edit js-inBtn active" type="button">Изменить</button>
+                                                        class="orders__edit-btn orders__edit-btn--edit js-inBtn active"
+                                                        type="button">Изменить</button>
                                                     <button
                                                         class="orders__edit-btn orders__edit-btn--save js-inBtn-save"">Сохранить</button>
                                                 </div>
@@ -185,58 +234,145 @@
                                 </form>
                             </div>
                         </section>
-                        <section class="notifications-settings">
-                            <ul class="notifications-settings__list">
-                                <li class="notifications-settings__item notifications-settings__item--top">
-                                    <span class="notifications-settings__category">Тип уведомлений</span>
-                                    <span class="notifications-settings__category">В личном кабинете</span>
-                                    <span class="notifications-settings__category">По e-mail</span>
-                                </li>
-                                <li class="notifications-settings__item">
-                                    <span class="notifications-settings__name">Изменение статуса заказов</span>
-                                    <label class="basket__label" for="settingsCheck-1">
-                                        <input class="basket__input" type="radio" id="settingsCheck-1" name="settingsCheck-1">
-                                        <span class="basket__check-style"></span>
-                                    </label>
-                                    <label class="basket__label" for="settingsCheck-2">
-                                        <input class="basket__input" type="radio" id="settingsCheck-2"  name="settingsCheck-1">
-                                        <span class="basket__check-style"></span>
-                                    </label>
-                                </li>
-                                <li class="notifications-settings__item">
-                                    <span class="notifications-settings__name">Появление в наличии товаров из листа ожидания</span>
-                                    <label class="basket__label" for="settingsCheck-3">
-                                        <input class="basket__input" type="radio" id="settingsCheck-3" name="settingsCheck-2">
-                                        <span class="basket__check-style"></span>
-                                    </label>
-                                    <label class="basket__label" for="settingsCheck-4">
-                                        <input class="basket__input" type="radio" id="settingsCheck-4"  name="settingsCheck-2">
-                                        <span class="basket__check-style"></span>
-                                    </label>
-                                </li>
-                                <li class="notifications-settings__item">
-                                    <span class="notifications-settings__name">Изменение доступности товаров в корзине</span>
-                                    <label class="basket__label" for="settingsCheck-5">
-                                        <input class="basket__input" type="radio" id="settingsCheck-5" name="settingsCheck-3">
-                                        <span class="basket__check-style"></span>
-                                    </label>
-                                    <label class="basket__label" for="settingsCheck-6">
-                                        <input class="basket__input" type="radio" id="settingsCheck-6"  name="settingsCheck-3">
-                                        <span class="basket__check-style"></span>
-                                    </label>
-                                </li>
-                                <li class="notifications-settings__item">
-                                    <span class="notifications-settings__name">Вопросы, связанные с оформлением документов</span>
-                                    <label class="basket__label" for="settingsCheck-7">
-                                        <input class="basket__input" type="radio" id="settingsCheck-7" name="settingsCheck-4">
-                                        <span class="basket__check-style"></span>
-                                    </label>
-                                    <label class="basket__label" for="settingsCheck-8">
-                                        <input class="basket__input" type="radio" id="settingsCheck-8"  name="settingsCheck-4">
-                                        <span class="basket__check-style"></span>
-                                    </label>
-                                </li>
-                            </ul>
+                        <section class=" notifications-settings">
+                                                        <div class="notifications-settings__title-wrap">
+                                                            <h2 class="notifications-settings__title">Настройки</h2>
+                                                            <label class="mobil-check" for="settings-mob"
+                                                                id="js-activeSettings">
+                                                                <input class="basket__input" type="checkbox"
+                                                                    id="settings-mob">
+                                                                <span class="basket__check-style"></span>
+                                                                Выбрать
+                                                                <span class="hide-text">Отменить</span>
+                                                            </label>
+                                                        </div>
+
+                                                        <ul class="notifications-settings__list" id="controls-6">
+                                                            <li
+                                                                class="notifications-settings__item notifications-settings__item--top">
+                                                                <span class="notifications-settings__category">Тип
+                                                                    уведомлений</span>
+                                                                <span class="notifications-settings__category">В личном
+                                                                    кабинете</span>
+                                                                <span class="notifications-settings__category">По
+                                                                    e-mail</span>
+                                                            </li>
+                                                            <li class="notifications-settings__item">
+                                                                <div class="basket__item-check basket__item-check--mob">
+                                                                    <label class="basket__label" for="waitingCheck-2">
+                                                                        <input class="basket__input" type="checkbox"
+                                                                            id="waitingCheck-2">
+                                                                        <span class="basket__check-style"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <span class="notifications-settings__name">Изменение
+                                                                    статуса заказов</span>
+                                                                <label class="basket__label basket__label--mob-off"
+                                                                    for="settingsCheck-1">
+                                                                    <input class="basket__input" type="radio"
+                                                                        id="settingsCheck-1" name="settingsCheck-1">
+                                                                    <span class="basket__check-style"></span>
+                                                                </label>
+                                                                <label class="basket__label basket__label--mob-off"
+                                                                    for="settingsCheck-2">
+                                                                    <input class="basket__input" type="radio"
+                                                                        id="settingsCheck-2" name="settingsCheck-1">
+                                                                    <span class="basket__check-style"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li class="notifications-settings__item">
+                                                                <div class="basket__item-check basket__item-check--mob">
+                                                                    <label class="basket__label" for="waitingCheck-2">
+                                                                        <input class="basket__input" type="checkbox"
+                                                                            id="waitingCheck-2">
+                                                                        <span class="basket__check-style"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <span class="notifications-settings__name">Появление в
+                                                                    наличии товаров из листа ожидания</span>
+                                                                <label class="basket__label basket__label--mob-off"
+                                                                    for="settingsCheck-3">
+                                                                    <input class="basket__input" type="radio"
+                                                                        id="settingsCheck-3" name="settingsCheck-2">
+                                                                    <span class="basket__check-style"></span>
+                                                                </label>
+                                                                <label class="basket__label basket__label--mob-off"
+                                                                    for="settingsCheck-4">
+                                                                    <input class="basket__input" type="radio"
+                                                                        id="settingsCheck-4" name="settingsCheck-2">
+                                                                    <span class="basket__check-style"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li class="notifications-settings__item">
+                                                                <div class="basket__item-check basket__item-check--mob">
+                                                                    <label class="basket__label" for="waitingCheck-2">
+                                                                        <input class="basket__input" type="checkbox"
+                                                                            id="waitingCheck-2">
+                                                                        <span class="basket__check-style"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <span class="notifications-settings__name">Изменение
+                                                                    доступности товаров в корзине</span>
+                                                                <label class="basket__label basket__label--mob-off"
+                                                                    for="settingsCheck-5">
+                                                                    <input class="basket__input" type="radio"
+                                                                        id="settingsCheck-5" name="settingsCheck-3">
+                                                                    <span class="basket__check-style"></span>
+                                                                </label>
+                                                                <label class="basket__label basket__label--mob-off"
+                                                                    for="settingsCheck-6">
+                                                                    <input class="basket__input" type="radio"
+                                                                        id="settingsCheck-6" name="settingsCheck-3">
+                                                                    <span class="basket__check-style"></span>
+                                                                </label>
+                                                            </li>
+                                                            <li class="notifications-settings__item">
+                                                                <div class="basket__item-check basket__item-check--mob">
+                                                                    <label class="basket__label" for="waitingCheck-2">
+                                                                        <input class="basket__input" type="checkbox"
+                                                                            id="waitingCheck-2">
+                                                                        <span class="basket__check-style"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <span class="notifications-settings__name">Вопросы,
+                                                                    связанные с оформлением документов</span>
+                                                                <label class="basket__label basket__label--mob-off"
+                                                                    for="settingsCheck-7">
+                                                                    <input class="basket__input" type="radio"
+                                                                        id="settingsCheck-7" name="settingsCheck-4">
+                                                                    <span class="basket__check-style"></span>
+                                                                </label>
+                                                                <label class="basket__label basket__label--mob-off"
+                                                                    for="settingsCheck-8">
+                                                                    <input class="basket__input" type="radio"
+                                                                        id="settingsCheck-8" name="settingsCheck-4">
+                                                                    <span class="basket__check-style"></span>
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="add-filter">
+                                                            <button class="add-filter__btn"></button>
+                                                            <ul class="orders__title-list">
+                                                                <li class="orders__icon">
+                                                                    <label class="basket__label"
+                                                                    for="add-filterCheck-1">
+                                                                    <input class="basket__input" type="checkbox"
+                                                                        id="add-filterCheck-1">
+                                                                    <span class="basket__check-style"></span>
+                                                                    Получать уведомления в личном кабинете
+                                                                </label>
+                                                                </li>
+                                                                <li class="orders__icon">
+                                                                    <label class="basket__label"
+                                                                    for="add-filterCheck-2">
+                                                                    <input class="basket__input" type="checkbox"
+                                                                        id="add-filterCheck-2">
+                                                                    <span class="basket__check-style"></span>
+                                                                    Получать уведомления по e-mail
+                                                                </label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                         </section>
                     </div>
                 </div>

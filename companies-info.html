@@ -95,7 +95,7 @@
             </div>
         </header>
         <main>
-            <section class="breadcrumbs">
+            <section class="breadcrumbs breadcrumbs--pa">
                 <div class="container">
                     <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__item">
@@ -113,6 +113,50 @@
                     </ul>
                 </div>
             </section>
+            <div class="mob-title">
+                <div class="container">
+                    <div class="main-title__wrap">
+                        <h1 class="main-title">+7 977 687 78 01
+                            <a class="main-title__log-off" href="#">Выйти из аккаунта</a>
+                        </h1>
+                        <button class="main-title__contact js-contact" type="button">Связаться с менеджером</button>
+                        <div class="contact-manager">
+                            <h3 class="contact-manager__title">Ваш персональный менеджер</h3>
+                            <span class="contact-manager__name">Ирина</span>
+                            <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
+                        </div>
+                        <div class="mob-list  mob-list--companies">
+                            <button class="mob-list__btn">
+                                <span class="aside__link aside__link--company aside__link--the-page">Компании</span>
+                            </button>
+                            <ul class="aside__list">
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--orders" href="#">Заказы</a>
+                                </li>
+                                <li class="aside__item">
+                                    <span class="aside__link aside__link--user">Аккаунт</span>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--favorites" href="#">Избранное</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--documentation" href="#">Документы</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--notifications" href="#">Уведомления</a>
+                                </li>
+                                <li class="aside__item">
+                                    <a class="aside__link aside__link--download" href="#" download>Скачать
+                                        прайс-лист</a>
+                                </li>
+                                <li class="aside__item">
+                                    <button class="main-title__contact-mob">Связаться с менеджером</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="main-title__wrap">
                     <h1 class="main-title">+7 977 687 78 01</h1>
@@ -123,7 +167,7 @@
                         <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
                     </div>
                 </div>
-                <div class="sections__wrap">
+                <div class="sections__wrap sections__wrap--pa-orders-info">
                     <section class="aside aside--companies">
                         <ul class="aside__list">
                             <li class="aside__item">
@@ -396,6 +440,33 @@
                                         </svg>
                                     </a>
                                 </li>
+                            </ul>
+                        </div>
+                        <div class="add-filter">
+                            <button class="add-filter__btn"></button>
+                            <ul class="orders__title-list">
+                                <li class="orders__icon">
+                                    <button class="main-title__contact main-title__contact--edit main-title__contact--add" type="button">
+                                        <svg class="main-title__contact-img" width="19" height="19" viewBox="0 0 19 19"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 14.2525V18.0025H3.75L14.81 6.9425L11.06 3.1925L0 14.2525ZM17.71 4.0425C18.1 3.6525 18.1 3.0225 17.71 2.6325L15.37 0.2925C14.98 -0.0975 14.35 -0.0975 13.96 0.2925L12.13 2.1225L15.88 5.8725L17.71 4.0425Z"
+                                                fill="" />
+                                        </svg>
+                                        Отправить запрос на изменение данных
+                                    </button>
+                                </li>                    
+                                <li class="orders__icon">
+                                    <button class="orders__button-companies orders__button-companies--add">
+                                        <svg class="orders__img orders__img--edit" width="19" height="19" viewBox="0 0 19 19"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 14.2525V18.0025H3.75L14.81 6.9425L11.06 3.1925L0 14.2525ZM17.71 4.0425C18.1 3.6525 18.1 3.0225 17.71 2.6325L15.37 0.2925C14.98 -0.0975 14.35 -0.0975 13.96 0.2925L12.13 2.1225L15.88 5.8725L17.71 4.0425Z"
+                                                fill="" stroke=""></path>
+                                        </svg>
+                                        Добавить или удалить пользователя
+                                    </button>
+                                </li>                    
                             </ul>
                         </div>
                     </section>
