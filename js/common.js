@@ -314,7 +314,7 @@ $(".js-inBtn").click(function () {
 });
 
 $(".js-inBtn-save").click(function () {
-    $(this).closest(".orders__edit-text-wrap").children(".orders__edit-label").removeClass("active").children("input").attr("readonly","true");
+    $(this).closest(".orders__edit-text-wrap").children(".orders__edit-label").removeClass("active").children("input").attr("readonly", "true");
 });
 
 $(".js-addText-1").on("change", function () {
@@ -460,13 +460,13 @@ $('.js-del').on('click', function () {
     $(this).closest(".orders__order").remove();
 });
 
-$(".first__click").on("click", function (){
+$(".first__click").on("click", function () {
     $(this).removeClass("first__click");
     $(this).addClass("second__click");
-    $(".second__click").on("click", function(){
+    $(".second__click").on("click", function () {
         $(this).removeClass("second__click");
         $(this).addClass("therth__click");
-        $(".therth__click").on("click", function(){
+        $(".therth__click").on("click", function () {
             $(this).removeClass("therth__click");
             $(this).addClass("first__click");
         });
@@ -522,13 +522,63 @@ $(document).click(function (e) {
 $('#js-activeCheck').click(function () {
     if ($(this).children('.basket__input').is(':checked')) {
         $('.orders__order').addClass('check-active');
+        $('.add-filter').addClass('add-active');
         $(this).toggleClass('active');
         $('#controls-mob-2 input:checkbox').prop('checked', true);
     } else {
         $('#controls-mob-2 input:checkbox').prop('checked', false);
         $('.orders__order').removeClass('check-active');
+        $('.add-filter').removeClass('add-active');
     }
-}); 
-$('.add-filter__btn').on('click', function() {
+});
+$('#js-activeCheck-2').click(function () {
+    if ($(this).children('.basket__input').is(':checked')) {
+        $('.orders__order').addClass('check-active');
+        $('.add-filter').addClass('add-active');
+        $(this).toggleClass('active');
+        $('#controls-mob-3 input:checkbox').prop('checked', true);
+    } else {
+        $('#controls-mob-3 input:checkbox').prop('checked', false);
+        $('.orders__order').removeClass('check-active');
+        $('.add-filter').removeClass('add-active');
+    }
+});
+$('#js-activeWaiting').click(function () {
+    if ($(this).children('.basket__input').is(':checked')) {
+        $('.basket__item').addClass('check-active');
+        $(this).toggleClass('active');
+        $('.add-filter').addClass('add-active');
+        $('#controls-4 input:checkbox').prop('checked', true);
+    } else {
+        $('#controls-4 input:checkbox').prop('checked', false);
+        $('.basket__item').removeClass('check-active');
+        $('.add-filter').removeClass('add-active');
+    }
+});
+$('#js-activenotifi').click(function () {
+    if ($(this).children('.basket__input').is(':checked')) {
+        $('.orders__check-item').addClass('check-active');
+        $(this).toggleClass('active');
+        $('.add-filter').addClass('add-active');
+        $('#controls-5 input:checkbox').prop('checked', true);
+    } else {
+        $('#controls-5 input:checkbox').prop('checked', false);
+        $('.orders__check-item').removeClass('check-active');
+        $('.add-filter').removeClass('add-active');
+    }
+});
+$('#js-activeSettings').click(function () {
+    if ($(this).children('.basket__input').is(':checked')) {
+        $('.notifications-settings__item').addClass('check-active');
+        $('.add-filter').addClass('add-active');
+        $(this).toggleClass('active');
+        $('#controls-6 input:checkbox').prop('checked', true);
+    } else {
+        $('#controls-6 input:checkbox').prop('checked', false);
+        $('.notifications-settings__item').removeClass('check-active');
+        $('.add-filter').removeClass('add-active');
+    }
+});
+$('.add-filter__btn').on('click', function () {
     $(this).closest('.add-filter').children('.orders__title-list').toggleClass('active');
 });
