@@ -7544,7 +7544,7 @@ textarea {
       background: -o-linear-gradient(top, #EBEBEB 0%, rgba(242, 242, 242, 0) 100%);
       background: linear-gradient(180deg, #EBEBEB 0%, rgba(242, 242, 242, 0) 100%);
       border-radius: 16px;
-      z-index: -1; }
+      z-index: 1; }
       @media (max-width: 576px) {
         .about-company__img-wrap::before {
           display: none; } }
@@ -7552,6 +7552,8 @@ textarea {
       .about-company__img-wrap {
         margin: 0 auto 25px; } }
   .about-company__img {
+    position:relative;
+    z-index:2;
     width: 100%;
     height: 100%; }
   .about-company__info {
