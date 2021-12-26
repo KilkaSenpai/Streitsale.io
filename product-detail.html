@@ -129,8 +129,10 @@
                             </div>
                             <div class="scroll-card__box">
                                 <div class="scroll-card__price-wrap">
-                                    <span class="scroll-card__price "><span class="basket__calc-price" data-price="20">20</span>$</span>
-                                    <span class="scroll-card__price-min"><span class="basket__calc-price" data-price="1390">1390</span>р.</span>
+                                    <span class="scroll-card__price "><span class="basket__calc-price"
+                                            data-price="20">20</span>$</span>
+                                    <span class="scroll-card__price-min"><span class="basket__calc-price"
+                                            data-price="1390">1390</span>р.</span>
                                     <span class="scroll-card__info"
                                         style="background-image: url(img/icons/info.svg);"></span>
                                 </div>
@@ -150,9 +152,26 @@
                         </h2>
                         <span class="card-info__sale">В НАЛИЧИИ</span>
                         <div class="card-info__box">
-                            <span class="card-info__filter card-info__filter--like">В избранном</span>
-                            <button class="card-info__filter card-info__filter--comparison">Добавить к
-                                сравнению</button>
+                            <button class="card-info__filter active">
+                                <svg class="orders__img orders__img--heart" width="22" height="20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m11 18-1.305-1.151C5.06 12.777 2 10.092 2 6.796 2 4.11 4.178 2 6.95 2c1.566 0 3.069.706 4.05 1.822A5.462 5.462 0 0 1 15.05 2C17.822 2 20 4.11 20 6.796c0 3.296-3.06 5.981-7.695 10.062L11 18Z"
+                                        stroke="" stroke-width="2.4" stroke-linejoin="round" />
+                                </svg>
+                                <span class="js-to-favorites" data-show="true">В
+                                    избранном</span>
+                            </button>
+                            <button class="card-info__filter">
+                                <svg class="orders__img orders__img--filter" width="22" height="22" fill="none"
+                                    viewBox="0 0 19 22" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.375 3A2.375 2.375 0 0 0 3 5.375v3.562a2.375 2.375 0 0 0 2.375 2.375h3.563a2.375 2.375 0 0 0 2.374-2.375V5.375A2.375 2.375 0 0 0 8.938 3H5.374Zm0 2.375h3.563v3.562H5.374V5.375Zm9.5 0a1.188 1.188 0 0 0 0 2.375h5.938a1.188 1.188 0 0 0 0-2.375h-5.938Zm0 10.687a1.188 1.188 0 0 0 0 2.375h5.938a1.188 1.188 0 0 0 0-2.375h-5.938ZM3 16.062a2.375 2.375 0 0 1 2.375-2.375h3.563a2.375 2.375 0 0 1 2.374 2.375v3.563A2.375 2.375 0 0 1 8.938 22H5.374A2.375 2.375 0 0 1 3 19.625v-3.563Zm5.938 0H5.374v3.563h3.563v-3.563Z"
+                                        fill="" stroke="" stroke-width="0" opacity="" />
+                                </svg>
+                                <span class="js-to-comparison" data-show="false">Добавить к
+                                    сравнению</span>
+                            </button>
                         </div>
                     </div>
                     <div class="card-info__num-wrap">
@@ -176,11 +195,9 @@
                                                         style="background-image: url(img/icons/heart-active.svg);"></span>
                                                 </button>
                                                 <button class="product-card__icon">
-                                                    <span
-                                                        class="product-card__filter product-card__filter--hidden"
+                                                    <span class="product-card__filter product-card__filter--hidden"
                                                         style="background-image: url(img/icons/filter.svg);"></span>
-                                                    <span
-                                                        class="product-card__filter product-card__filter--active"
+                                                    <span class="product-card__filter product-card__filter--active"
                                                         style="background-image: url(img/icons/filter-active.svg);"></span>
                                                 </button>
                                             </div>
@@ -200,11 +217,9 @@
                                                         style="background-image: url(img/icons/heart-active.svg);"></span>
                                                 </button>
                                                 <button class="product-card__icon">
-                                                    <span
-                                                        class="product-card__filter product-card__filter--hidden"
+                                                    <span class="product-card__filter product-card__filter--hidden"
                                                         style="background-image: url(img/icons/filter.svg);"></span>
-                                                    <span
-                                                        class="product-card__filter product-card__filter--active"
+                                                    <span class="product-card__filter product-card__filter--active"
                                                         style="background-image: url(img/icons/filter-active.svg);"></span>
                                                 </button>
                                             </div>
@@ -314,8 +329,10 @@
                         <div class="basket-section">
                             <div class="basket__price-wrap">
                                 <div class="basket-section__box">
-                                    <span class="basket-section__price basket__price"><span class="basket__calc-price" data-price="20">20</span>$</span>
-                                    <span class="basket-section__min-price basket__min-price"> <span class="basket__calc-price" data-price="1390">1390</span>р.</span>
+                                    <span class="basket-section__price basket__price"><span class="basket__calc-price"
+                                            data-price="20">20</span>$</span>
+                                    <span class="basket-section__min-price basket__min-price"> <span
+                                            class="basket__calc-price" data-price="1390">1390</span>р.</span>
                                     <span class="basket-section__info"
                                         style="background-image: url(img/icons/info.svg);"></span>
                                 </div>
@@ -336,7 +353,7 @@
                                     </div>
                                 </div>
                             </div>
-                           
+
                             <button class="count__btn">
                                 <span class="count__text-desktop">Добавить в корзину</span>
                                 <span class="count__text-mobile">В корзину</span>
@@ -364,14 +381,26 @@
                         <div class="card-info__description-box">
                             <h3 class="card-info__description-qq">Частые вопросы</h3>
                             <ul class="card-info__description-list">
-                                <li class="card-info__description-item"><span
-                                        class="card-info__description-icon"></span> Условия доставки</li>
-                                <li class="card-info__description-item"><span
-                                        class="card-info__description-icon"></span> Обмен и возврат</li>
-                                <li class="card-info__description-item"><span
-                                        class="card-info__description-icon"></span> Как сделать заказ</li>
-                                <li class="card-info__description-item"><span
-                                        class="card-info__description-icon"></span> Правила продажи</li>
+                                <li class="card-info__description-item">
+                                    <a class="card-info__description-question" href="#">
+                                        <span class="card-info__description-icon"></span> Условия доставки
+                                    </a>
+                                </li>
+                                <li class="card-info__description-item">
+                                    <a class="card-info__description-question" href="#">
+                                        <span class="card-info__description-icon"></span> Обмен и возврат
+                                    </a>
+                                </li>
+                                <li class="card-info__description-item">
+                                    <a class="card-info__description-question" href="#">
+                                        <span class="card-info__description-icon"></span> Как сделать заказ
+                                    </a>
+                                </li>
+                                <li class="card-info__description-item">
+                                    <a class="card-info__description-question" href="#">
+                                        <span class="card-info__description-icon"></span> Правила продажи
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -824,11 +853,9 @@
                                                 style="background-image: url(img/icons/heart-active.svg);"></span>
                                         </button>
                                         <button class="product-card__icon">
-                                            <span
-                                                class="product-card__filter product-card__filter--hidden"
+                                            <span class="product-card__filter product-card__filter--hidden"
                                                 style="background-image: url(img/icons/filter.svg);"></span>
-                                            <span
-                                                class="product-card__filter product-card__filter--active"
+                                            <span class="product-card__filter product-card__filter--active"
                                                 style="background-image: url(img/icons/filter-active.svg);"></span>
                                         </button>
                                     </div>
@@ -871,11 +898,9 @@
                                                 style="background-image: url(img/icons/heart-active.svg);"></span>
                                         </button>
                                         <button class="product-card__icon">
-                                            <span
-                                                class="product-card__filter product-card__filter--hidden"
+                                            <span class="product-card__filter product-card__filter--hidden"
                                                 style="background-image: url(img/icons/filter.svg);"></span>
-                                            <span
-                                                class="product-card__filter product-card__filter--active"
+                                            <span class="product-card__filter product-card__filter--active"
                                                 style="background-image: url(img/icons/filter-active.svg);"></span>
                                         </button>
                                     </div>
@@ -918,11 +943,9 @@
                                                 style="background-image: url(img/icons/heart-active.svg);"></span>
                                         </button>
                                         <button class="product-card__icon">
-                                            <span
-                                                class="product-card__filter product-card__filter--hidden"
+                                            <span class="product-card__filter product-card__filter--hidden"
                                                 style="background-image: url(img/icons/filter.svg);"></span>
-                                            <span
-                                                class="product-card__filter product-card__filter--active"
+                                            <span class="product-card__filter product-card__filter--active"
                                                 style="background-image: url(img/icons/filter-active.svg);"></span>
                                         </button>
                                     </div>
@@ -965,11 +988,9 @@
                                                 style="background-image: url(img/icons/heart-active.svg);"></span>
                                         </button>
                                         <button class="product-card__icon">
-                                            <span
-                                                class="product-card__filter product-card__filter--hidden"
+                                            <span class="product-card__filter product-card__filter--hidden"
                                                 style="background-image: url(img/icons/filter.svg);"></span>
-                                            <span
-                                                class="product-card__filter product-card__filter--active"
+                                            <span class="product-card__filter product-card__filter--active"
                                                 style="background-image: url(img/icons/filter-active.svg);"></span>
                                         </button>
                                     </div>
@@ -1015,11 +1036,9 @@
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
                                             <button class="product-card__icon">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
@@ -1062,11 +1081,9 @@
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
                                             <button class="product-card__icon">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
@@ -1109,11 +1126,9 @@
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
                                             <button class="product-card__icon">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
@@ -1156,11 +1171,9 @@
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
                                             <button class="product-card__icon">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
