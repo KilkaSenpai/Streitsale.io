@@ -50,17 +50,17 @@ $('.filter_btn').on('click', function () {
     $(this).on(".filter_btn").toggleClass("filter_title");
 });
 
-// new Swiper('.catalog-slider__container', {
-//     pagination: {
-//         el: '.catalog-slider__pagination',
-//         clickable: true,
-//     },
-//     spaceBetween: 15,
-//     centeredSlides: true,
-//     autoplay: {
-//         delay: 5000,
-//     },
-// });
+new Swiper('.catalog-slider__container', {
+    pagination: {
+        el: '.catalog-slider__pagination',
+        clickable: true,
+    },
+    spaceBetween: 15,
+    centeredSlides: true,
+    autoplay: {
+        delay: 5000,
+    },
+});
 
 $('.jc_btn-sections').on('click', function () {
     $('.filter').toggleClass('js_open-menu');
@@ -110,23 +110,23 @@ $('.js-active').on('click', function () {
     $(this).toggleClass('icon-active');
 });
 
-// var swiper = new Swiper(".swiper-thumb", {
-//     spaceBetween: 5,
-//     slidesPerView: 3,
-//     watchSlidesProgress: true,
-// });
-// var swiper2 = new Swiper(".swiper-main", {
-//     slidesPerView: 1,
-//     spaceBetween: 10,
+var swiper = new Swiper(".swiper-thumb", {
+    spaceBetween: 5,
+    slidesPerView: 3,
+    watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".swiper-main", {
+    slidesPerView: 1,
+    spaceBetween: 10,
 
-//     thumbs: {
-//         swiper: swiper,
-//     },
-//     pagination: {
-//         el: '.card-info__pagination',
-//         clickable: true,
-//     },
-// });
+    thumbs: {
+        swiper: swiper,
+    },
+    pagination: {
+        el: '.card-info__pagination',
+        clickable: true,
+    },
+});
 
 $('.card-info__filter-box').on('click', function () {
     $(this).toggleClass('active');
@@ -177,15 +177,15 @@ $('.more-text').on('click', function () {
     $('.card-reviews__text').toggleClass('all-text');
 });
 
-// new Swiper('.similar-mobile', {
-//     pagination: {
-//         el: '.similar-products__pagination',
-//         clickable: true,
-//     },
-//     slidesPerView: 1,
-//     spaceBetween: 15,
-//     centeredSlides: true,
-// });
+new Swiper('.similar-mobile', {
+    pagination: {
+        el: '.similar-products__pagination',
+        clickable: true,
+    },
+    slidesPerView: 1,
+    spaceBetween: 15,
+    centeredSlides: true,
+});
 
 $('#InCheck-1').click(function () {
     if ($(this).is(':checked')) {
@@ -370,9 +370,6 @@ $(".orders__edit-form").submit(function (e) {
     return false;
 });
 
-$('.js-pa-active').on('click', function () {
-    $(this).toggleClass('active');
-});
 
 $('.orders__all-btn').click(function () {
     if ($(this).attr('data-show') === "true") {
@@ -422,6 +419,17 @@ $('.js-to-waiting-list').click(function () {
     }
     else {
         $(this).text("В листе ожидания");
+        $(this).attr('data-show', "true");
+    }
+});
+
+$('.js-to-comparison').click(function () {
+    if ($(this).attr('data-show') === "true") {
+        $(this).text("Добавить к сравнению");
+        $(this).attr('data-show', "false");
+    }
+    else {
+        $(this).text("Добавлено к сравнению");
         $(this).attr('data-show', "true");
     }
 });
@@ -577,4 +585,89 @@ $('#js-activeSettings').click(function () {
 });
 $('.add-filter__btn').on('click', function () {
     $(this).closest('.add-filter').children('.orders__title-list').toggleClass('active');
+});
+
+new Swiper('.comparison__container', {
+    navigation: {
+        nextEl: '.comparison__arrow--right',
+        prevEl: '.comparison__arrow--left',
+    },
+    slidesPerView: 3.2,
+    spaceBetween: 24,
+    loop: false,
+    breakpoints: {
+        320: {
+            slidesPerView: 1.1,
+            spaceBetween: 20,
+            centeredSlides: true,
+        },
+        576: {
+            slidesPerView: 1.5,
+            spaceBetween: 12,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 12,
+        },
+        991: {
+            slidesPerView: 3.3,
+            spaceBetween: 24,
+        }
+    }
+});
+new Swiper('.comparison__fix', {
+    navigation: {
+        nextEl: '.comparison__arrow-fix--right',
+        prevEl: '.comparison__arrow-fix--left',
+    },
+    slidesPerView: 3.2,
+    spaceBetween: 24,
+    loop: false,
+    breakpoints: {
+        320: {
+            slidesPerView: 1.1,
+            spaceBetween: 20,
+            centeredSlides: true,
+        },
+        576: {
+            slidesPerView: 1.5,
+            spaceBetween: 12,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 12,
+        },
+        991: {
+            slidesPerView: 3.3,
+            spaceBetween: 24,
+        }
+    }
+});
+
+$('.filter-box__btn-menu').on('click', function () {
+    $('.product-list__filter').children('.mob-filter').removeClass('js_open-menu');
+    $('html').removeClass('hidden-cheeses');
+});
+
+$('.filter-box__btn-menu').on('click', function () {
+    $('.filter__wrap').children('.filter').removeClass('js_open-menu');
+    $('html').removeClass('hidden-sections');
+});
+
+$('.filter-box__btn-menu').on('click', function () {
+    $('.orders').children('.pa-filter').removeClass('js_open-menu');
+    $('html').removeClass('hidden-pa');
+});
+
+$('.filter-box__btn-menu').on('click', function () {
+    $('.orders').children('.pa-filter').removeClass('js_open-menu');
+    $('html').removeClass('hidden-pa');
+});
+
+$('.card-info__filter').on('click', function () {
+    $(this).toggleClass('active');
+});
+
+$('.js-remove').on('click', function () {
+    $(this).closest('.product-list__item').remove();
 });
