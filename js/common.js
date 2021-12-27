@@ -39,7 +39,7 @@ $(".js-form").submit(function (e) {
     return false;
 });
 
-$('.footer__input').on('input', function () {
+$('.footer__input, .modal-notification__input').on('input', function () {
     $(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
 });
 
@@ -98,9 +98,31 @@ $(document).click(function (e) {
         $('.mob-filter').removeClass('js_open');
     };
 });
-
-$('.product-card__icon').on('click', function () {
+$('.add-fav').on('click', function () {
     $(this).toggleClass('active');
+    $(this).closest('.product-list__item').children('.fav-add-js').addClass('activ-add');
+    $(this).closest('.product-list__item').children('.fav-remove-js').removeClass('activ-add');
+    $('.add-fav').on('click', function () {
+        if ($(this).hasClass('active')) {
+            $(this).closest('.product-list__item').children('.fav-remove-js').addClass('activ-add');
+            $(this).closest('.product-list__item').children('.fav-add-js').removeClass('activ-add');
+        } 
+        $(this).closest('.product-list__item').children('.fav-remove-js').toggleClass('activ-add');
+        $(this).closest('.product-list__item').children('.fav-add-js').toggleClass('activ-add');
+    });
+});
+$('.add-comp').on('click', function () {
+    $(this).toggleClass('active');
+    $(this).closest('.product-list__item').children('.comp-add-js').addClass('activ-add');
+    $(this).closest('.product-list__item').children('.comp-remove-js').removeClass('activ-add');
+    $('.add-comp').on('click', function () {
+        if ($(this).hasClass('active')) {
+            $(this).closest('.product-list__item').children('.comp-remove-js').addClass('activ-add');
+            $(this).closest('.product-list__item').children('.comp-add-js').removeClass('activ-add');
+        } 
+        $(this).closest('.product-list__item').children('.comp-remove-js').toggleClass('activ-add');
+        $(this).closest('.product-list__item').children('.comp-add-js').toggleClass('activ-add');
+    });
 });
 
 $('.product-card__basket').on('click', function () {
@@ -464,31 +486,35 @@ $('.js-del').on('click', function () {
     $(this).closest(".orders__order").remove();
 });
 
-$(".first__click").on("click", function () {
-    $(this).removeClass("first__click");
-    $(this).addClass("second__click");
-    $(".second__click").on("click", function () {
-        $(this).removeClass("second__click");
-        $(this).addClass("therth__click");
-        $(".therth__click").on("click", function () {
-            $(this).removeClass("therth__click");
-            $(this).addClass("first__click");
-        });
-    });
+$(".orders__nav-btn").on("click", function () {
+    if ($(this).hasClass('first__click')) {
+        $(this).removeClass('first__click').addClass('second__click');
+    } else if ($(this).hasClass('second__click')) {
+        $(this).removeClass('second__click').addClass('therth__click');
+    } else if ($(this).hasClass('therth__click')) {
+        $(this).removeClass('therth__click').addClass('first__click');
+    }
 });
 
-$('.minus').click(function () {
+$('.orders__list .orders__order-text--number .minus').click(function () {
     var $input = $(this).parent().find('input');
     var count = parseInt($input.val()) - 1;
     count = count < 1 ? 1 : count;
     $input.val(count);
     $input.change();
-    let price_defautl_min = $(this).closest(".orders__order-text--number").siblings(".orders__order-text--price").children(".price_item").text();
-    let price_all_min = $(this).closest(".orders__order-text--number").siblings(".orders__order-text--sum").children(".price").text();
-    let min = price_all_min * 1 - price_defautl_min * 1;
-    $(this).closest(".orders__order-text--number").siblings(".orders__order-text--sum").children(".price").text(min);
+    let num = $(this).siblings("label").children("input").val();
+    if (num == 1) {
+        let price_defautl_min_2 = $(this).closest(".orders__order-text--number").siblings(".orders__order-text--price").children(".price_item").text();
+        $(this).closest(".orders__order-text--number").siblings(".orders__order-text--sum").children(".price").text(price_defautl_min_2);
+    } else {
+        let price_defautl_min = $(this).closest(".orders__order-text--number").siblings(".orders__order-text--price").children(".price_item").text();
+        let price_all_min = $(this).closest(".orders__order-text--number").siblings(".orders__order-text--sum").children(".price").text();
+        let min = price_all_min * 1 - price_defautl_min * 1;
+        $(this).closest(".orders__order-text--number").siblings(".orders__order-text--sum").children(".price").text(min);
+    }
 });
-$('.plus').click(function () {
+
+$('.orders__list .orders__order-text--number .plus').click(function () {
     var $input = $(this).parent().find('input');
     $input.val(parseInt($input.val()) + 1);
     $input.change();
@@ -592,14 +618,11 @@ new Swiper('.comparison__container', {
         nextEl: '.comparison__arrow--right',
         prevEl: '.comparison__arrow--left',
     },
-    slidesPerView: 3.2,
-    spaceBetween: 24,
     loop: false,
     breakpoints: {
         320: {
             slidesPerView: 1.1,
             spaceBetween: 20,
-            centeredSlides: true,
         },
         576: {
             slidesPerView: 1.5,
@@ -620,8 +643,6 @@ new Swiper('.comparison__fix', {
         nextEl: '.comparison__arrow-fix--right',
         prevEl: '.comparison__arrow-fix--left',
     },
-    slidesPerView: 3.2,
-    spaceBetween: 24,
     loop: false,
     breakpoints: {
         320: {
@@ -670,4 +691,58 @@ $('.card-info__filter').on('click', function () {
 
 $('.js-remove').on('click', function () {
     $(this).closest('.product-list__item').remove();
+});
+
+$(function () {
+    $('.header__icon--user').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#username',
+        modal: true,
+    });
+    $(document).on('click', '.modal-notification__btn, .modal-notification__close', function (e) {
+        e.preventDefault();
+        $.magnificPopup.close();
+    });
+});
+
+$(function () {
+    $('.framed-js, .js_please-login, .js-review, .modal-settings').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#username',
+        modal: true,
+    });
+    $(document).on('click', '.modal-notification__btn, .modal-notification__close', function (e) {
+        e.preventDefault();
+        $.magnificPopup.close();
+    });
+});
+$(".modal-notification__form").submit(function (e) {
+    e.preventDefault();
+    let form_data = $(this).serializeArray();
+    $.ajax({
+        type: "POST",
+        url: "../../mail.php",
+        data: form_data,
+        success: function (response) {
+            $(".theank-click").click();
+        },
+        error: function (error) {
+            $(".theank-click").click();
+        }
+    });
+    return false;
+});
+
+$('.product-card__info').on('click', function () {
+    $(this).closest('.product-card__price-wrap').children('.drop-info').toggleClass('activ-info');
+});
+
+$('.modal-add__close').on('click', function () {
+    $(this).closest('.fav-add-js, .comp-add-js, .fav-remove-js, .comp-remove-js').removeClass('activ-add');
+});
+$('.js-name').on('click', function () {
+    $(this).closest('.product-card__btn-wrap').children('.js-name').css('display', 'none');
+    $(this).closest('.product-card__btn-wrap').children('.js-name-add').css('display', 'flex');
 });
