@@ -201,7 +201,7 @@
                             <div class="orders__all-title-wrap orders__title-wrap--info">
                                 <h2 class="orders__all-title orders__all-title--info">ООО “Ромашка”</h2>
                                 <div class="orders__all-wrap-box">
-                                    <button class="main-title__contact main-title__contact--edit" type="button">
+                                    <a class="main-title__contact main-title__contact--edit modal-settings" href="#settings-1">
                                         <svg class="main-title__contact-img" width="19" height="19" viewBox="0 0 19 19"
                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -209,7 +209,7 @@
                                                 fill="" />
                                         </svg>
                                         Отправить запрос на изменение данных
-                                    </button>
+                                    </a>
                                     <a class="orders__back" href="#">
                                         К списку компаний
                                         <svg class="orders__back-img" width="8" height="15" viewBox="0 0 8 15"
@@ -273,7 +273,7 @@
                                     <span class="orders__title-span">4 удаленных</span>
                                 </div>
                             </div>
-                            <button class="orders__button-companies">
+                            <a class="orders__button-companies modal-settings" href="#settings-2">
                                 <svg class="orders__img orders__img--edit" width="19" height="19" viewBox="0 0 19 19"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -281,7 +281,7 @@
                                         fill="" stroke=""></path>
                                 </svg>
                                 Добавить или удалить пользователя
-                            </button>
+                            </a>
                         </div>
                         <form class="form">
                             <label class="form__label" for="companiesSearch"></label>
@@ -509,6 +509,40 @@
                 </div>
             </div>
         </footer>
+        <div class="modal-notification modal-notification--settings mfp-hide white-popup-block" id="settings-1">
+            <h3 class="modal-notification__title">Изменить данные о компании</h3>
+            <p class="modal-notification__text">
+                Опишите здесь все, что вы хотите изменить в карточке компании. Данные в личном кабинете обновятся после обработки запроса.
+            </p>
+            <form class="modal-notification__form js-form">
+                <textarea class="modal-notification__textarea"
+                    placeholder="Начните набирать текст"></textarea>
+                <button class="modal-notification__button" type="submit">Отправить</button>
+            </form>
+            <button class="modal-notification__close"></button>
+        </div>
+        <div class="modal-notification modal-notification--settings mfp-hide white-popup-block" id="settings-2">
+            <h3 class="modal-notification__title">Добавить или удалить пользователя</h3>
+            <p class="modal-notification__text">
+                Опишите здесь, какую именно информацию нужно добавить или удалить о пользователях. Данные в личном кабинете обновятся после обработки запроса.
+            </p>
+            <form class="modal-notification__form js-form">
+                <textarea class="modal-notification__textarea"
+                    placeholder="Начните набирать текст"></textarea>
+                <button class="modal-notification__button" type="submit">Отправить</button>
+            </form>
+            <button class="modal-notification__close"></button>
+        </div>
+        <div class="modal-notification modal-notification--note mfp-hide white-popup-block" id="note-1">
+            <div class="modal-notification__img modal-notification__img--note"></div>
+            <h3 class="modal-notification__title">Вы собираетесь покинуть компанию</h3>
+            <p class="modal-notification__text">
+                Отменить это действие будет невозможно. Для восстановления доступа обратитесь к администратору компании
+            </p>
+            <a class="modal-notification__button" href="#">Покинуть компанию</a>
+            <button class="modal-notification__btn">Отменить действие</button>
+            <button class="modal-notification__close"></button>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
