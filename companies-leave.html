@@ -102,7 +102,13 @@
                             <a class="breadcrumbs__link" href="#">Главная</a>
                         </li>
                         <li class="breadcrumbs__item">
-                            <span class="breadcrumbs__link">Информация об аккаунте</span>
+                            <a class="breadcrumbs__link" href="#">Личный кабинет</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Заказы</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">275645</span>
                         </li>
                     </ul>
                 </div>
@@ -114,6 +120,7 @@
                             <a class="main-title__log-off" href="#">Выйти из аккаунта</a>
                         </h1>
                         <button class="main-title__contact js-contact" type="button">Связаться с менеджером</button>
+                        
                         <div class="mob-list  mob-list--companies">
                             <button class="mob-list__btn">
                                 <span class="aside__link aside__link--company aside__link--the-page">Компании</span>
@@ -190,30 +197,91 @@
                             </li>
                         </ul>
                     </section>
-                    <section class="orders companies">
+                    <section class="orders orders--companies-info">
                         <div class="orders__all-wrap">
                             <div class="orders__all-title-wrap orders__title-wrap--info">
-                                <h2 class="orders__all-title orders__all-title--info">Ваши компании</h2>
+                                <h2 class="orders__all-title orders__all-title--info">ООО “Ромашка”</h2>
+                                <div class="orders__all-wrap-box">
+                                    <a class="main-title__contact main-title__contact--edit modal-settings" href="#note-1">
+                                        <svg class="main-title__contact-img" width="19" height="19" viewBox="0 0 19 19"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 14.2525V18.0025H3.75L14.81 6.9425L11.06 3.1925L0 14.2525ZM17.71 4.0425C18.1 3.6525 18.1 3.0225 17.71 2.6325L15.37 0.2925C14.98 -0.0975 14.35 -0.0975 13.96 0.2925L12.13 2.1225L15.88 5.8725L17.71 4.0425Z"
+                                                fill="" />
+                                        </svg>
+                                        Покинуть компанию
+                                    </a>
+                                    <a class="orders__back" href="#">
+                                        К списку компаний
+                                        <svg class="orders__back-img" width="8" height="15" viewBox="0 0 8 15"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0.271004 14.7257C0.104586 14.55 0.0110978 14.3118 0.0110978 14.0634C0.0110978 13.815 0.104586 13.5768 0.271004 13.4011L5.85729 7.50586L0.271003 1.61062C0.186219 1.5242 0.118592 1.42083 0.0720684 1.30654C0.025545 1.19225 0.00105715 1.06932 3.29019e-05 0.944934C-0.000991344 0.820547 0.0214692 0.697192 0.0661034 0.582064C0.110738 0.466935 0.176652 0.36234 0.26 0.274382C0.343349 0.186423 0.442462 0.116863 0.551556 0.0697603C0.660651 0.0226574 0.777543 -0.00104526 0.895411 3.62005e-05C1.01328 0.00111671 1.12976 0.0269603 1.23807 0.0760564C1.34637 0.125153 1.44432 0.196519 1.52621 0.285993L7.7401 6.84354C7.90651 7.01922 8 7.25745 8 7.50586C8 7.75426 7.90651 7.99249 7.7401 8.16817L1.52621 14.7257C1.35974 14.9013 1.13399 15 0.898606 15C0.663221 15 0.437472 14.9013 0.271004 14.7257Z"
+                                                fill="" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="orders__all">
+                                <ul class="orders__all-info">
+                                    <li class="orders__all-item">
+                                        <span class="orders__all-category">ИНН</span>
+                                        <span class="orders__all-text orders__all-text--inn">3664069397</span>
+                                    </li>
+                                    <li class="orders__all-item">
+                                        <span class="orders__all-category">Адрес</span>
+                                        <span class="orders__all-text">124533, Россия, Рязанская область, г.Рязань,
+                                            ул.Ленина, 52, корп.1, офис 5</span>
+                                    </li>
+                                    <li class="orders__all-item">
+                                        <span class="orders__all-category">Расчетный счет</span>
+                                        <span class="orders__all-text">40602810206000050025 в ОАО “Уралторгбанк России”,
+                                            г. Рязань</span>
+                                    </li>
+                                    <li class="orders__all-item">
+                                        <span class="orders__all-category">Основной договор</span>
+                                        <span class="orders__all-text">№20759 от 01.01.2021</span>
+                                    </li>
+                                    <ul class="orders__all-other">
+                                        <li class="orders__all-item">
+                                            <span class="orders__all-category">ИНН</span>
+                                            <span class="orders__all-text">3664069397</span>
+                                        </li>
+                                        <li class="orders__all-item">
+                                            <span class="orders__all-category">Адрес</span>
+                                            <span class="orders__all-text">124533, Россия, Рязанская область, г.Рязань,
+                                                ул.Ленина, 52, корп.1, офис 5</span>
+                                        </li>
+                                        <li class="orders__all-item">
+                                            <span class="orders__all-category">Расчетный счет</span>
+                                            <span class="orders__all-text">40602810206000050025 в ОАО “Уралторгбанк
+                                                России”, г. Рязань</span>
+                                        </li>
+                                        <li class="orders__all-item">
+                                            <span class="orders__all-category">Основной договор</span>
+                                            <span class="orders__all-text">№20759 от 01.01.2021</span>
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <button class="orders__all-btn js-more">Подробнее</button>
                             </div>
                         </div>
-                        <div class="orders__box">
-                            <ul class="orders__list">
-                                <li class="orders__order">
-                                    <a class="orders__order-text orders__order-text--company" href="#">ООО
-                                        “Информтехнологии”</a>
-                                    <span class="orders__order-text orders__order-text--inn">ИНН 3664069397</span>
-                                </li>
-                                <li class="orders__order">
-                                    <a class="orders__order-text orders__order-text--company" href="#">Streitsale</a>
-                                    <span class="orders__order-text orders__order-text--inn">ИНН 3664069397</span>
-                                </li>
-                                <li class="orders__order">
-                                    <a class="orders__order-text orders__order-text--company" href="#">ООО “Ромашка”</a>
-                                    <span class="orders__order-text orders__order-text--inn">ИНН 3664069397</span>
-                                </li>
+                        <div class="add-filter">
+                            <button class="add-filter__btn"></button>
+                            <ul class="orders__title-list">
+                                <li class="orders__icon">
+                                    <a class="main-title__contact main-title__contact--edit main-title__contact--add" href="#note-1">
+                                        <svg class="main-title__contact-img" width="19" height="19" viewBox="0 0 19 19"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 14.2525V18.0025H3.75L14.81 6.9425L11.06 3.1925L0 14.2525ZM17.71 4.0425C18.1 3.6525 18.1 3.0225 17.71 2.6325L15.37 0.2925C14.98 -0.0975 14.35 -0.0975 13.96 0.2925L12.13 2.1225L15.88 5.8725L17.71 4.0425Z"
+                                                fill="" />
+                                        </svg>
+                                        Покинуть компанию
+                                    </a>
+                                </li>                                      
                             </ul>
                         </div>
-                        <button class="orders__add-template btn-hover">Добавить компанию</button>
                     </section>
                 </div>
             </div>
@@ -255,6 +323,16 @@
                 </div>
             </div>
         </footer>
+        <div class="modal-notification modal-notification--note mfp-hide white-popup-block" id="note-1">
+            <div class="modal-notification__img modal-notification__img--note"></div>
+            <h3 class="modal-notification__title">Вы собираетесь покинуть компанию</h3>
+            <p class="modal-notification__text">
+                Отменить это действие будет невозможно. Для восстановления доступа обратитесь к администратору компании
+            </p>
+            <a class="modal-notification__button" href="#">Покинуть компанию</a>
+            <button class="modal-notification__btn">Отменить действие</button>
+            <button class="modal-notification__close"></button>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"

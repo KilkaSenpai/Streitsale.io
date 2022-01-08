@@ -120,11 +120,6 @@
                             <a class="main-title__log-off" href="#">Выйти из аккаунта</a>
                         </h1>
                         <button class="main-title__contact js-contact" type="button">Связаться с менеджером</button>
-                        <div class="contact-manager">
-                            <h3 class="contact-manager__title">Ваш персональный менеджер</h3>
-                            <span class="contact-manager__name">Ирина</span>
-                            <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
-                        </div>
                         <div class="mob-list">
                             <button class="mob-list__btn">
                                 <span class="aside__link aside__link--orders aside__link--the-page">Заказы</span>
@@ -150,7 +145,12 @@
                                         прайс-лист</a>
                                 </li>
                                 <li class="aside__item">
-                                    <button class="main-title__contact-mob">Связаться с менеджером</button>
+                                    <button class="main-title__contact-mob js-contact">Связаться с менеджером</button>
+                                    <div class="contact-manager">
+                                        <h3 class="contact-manager__title">Ваш персональный менеджер</h3>
+                                        <span class="contact-manager__name">Ирина</span>
+                                        <a class="contact-manager__link" href="tel:+79776120000">+7 (977) 612-00-00</a>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -223,7 +223,7 @@
                                         <li class="orders__edit-item">
                                             <span class="orders__edit-category">Адрес доставки</span>
                                             <div class="orders__edit-text-wrap">
-                                                <textarea class="orders__edit-text js-addTextIn-1" type="text"
+                                                <textarea class="orders__edit-text orders__edit-text--in js-addTextIn-1" type="text"
                                                     value="" readonly placeholder="не заполнено">120321, г.Москва, Нахимовский проспект, 4, офис 5</textarea>
                                                 <div class="orders__select-wrap-1">
                                                     <select class="orders__select js-addText-1">
@@ -313,10 +313,10 @@
                                         <li class="orders__edit-item">
                                             <span class="orders__edit-category">Адрес доставки</span>
                                             <div class="orders__edit-text-wrap">
-                                                <input class="orders__edit-text js-addTextIn-1" type="text"
-                                                    value="120321, г.Москва, Нахимовский проспект, 4, офис 5" readonly placeholder="не заполнено">
-                                                <div class="orders__select-wrap-1">
-                                                    <select class="orders__select js-addText-1">
+                                                <textarea class="orders__edit-text orders__edit-text--in js-addTextIn-3" type="text"
+                                                    value="" readonly placeholder="не заполнено">120321, г.Москва, Нахимовский проспект, 4, офис 5</textarea>
+                                                <div class="orders__select-wrap-3">
+                                                    <select class="orders__select js-addText-3">
                                                         <option class="orders__select-item"
                                                             value="120321, г.Москва, Нахимовский проспект, 4, офис 5"
                                                             selected>
@@ -339,20 +339,20 @@
 
                                                 <div class="orders__edit-box">
                                                     <button
-                                                        class="orders__edit-btn orders__edit-btn--edit active js-addSelect-1"
+                                                        class="orders__edit-btn orders__edit-btn--edit active js-addSelect-3"
                                                         type="button">Изменить</button>
                                                     <button
-                                                        class="orders__edit-btn orders__edit-btn--save js-removeSelect-1">Сохранить</button>
+                                                        class="orders__edit-btn orders__edit-btn--save js-removeSelect-3">Сохранить</button>
                                                 </div>
                                             </div>
                                         </li>
                                         <li class="orders__edit-item">
                                             <span class="orders__edit-category">Заказчик</span>
                                             <div class="orders__edit-text-wrap">
-                                                <input class="orders__edit-text js-addTextIn-2" type="text"
+                                                <input class="orders__edit-text js-addTextIn-4" type="text"
                                                     value="РВ-Импэкс" readonly>
-                                                <div class="orders__select-wrap-2">
-                                                    <select class="orders__select js-addText-2">
+                                                <div class="orders__select-wrap-4">
+                                                    <select class="orders__select js-addText-4">
                                                         <option class="orders__select-item" value="РВ-Импэкс" selected>
                                                             РВ-Импэкс
                                                         </option>
@@ -369,10 +369,10 @@
                                                 </div>
                                                 <div class="orders__edit-box">
                                                     <button
-                                                        class="orders__edit-btn orders__edit-btn--edit active  js-addSelect-2"
+                                                        class="orders__edit-btn orders__edit-btn--edit active  js-addSelect-4"
                                                         type="button">Изменить</button>
                                                     <button
-                                                        class="orders__edit-btn orders__edit-btn--save js-removeSelect-2">Сохранить</button>
+                                                        class="orders__edit-btn orders__edit-btn--save js-removeSelect-4">Сохранить</button>
                                                 </div>
                                             </div>
                                         </li>
@@ -827,6 +827,7 @@
                                     placeholder="+7 (___) ___ ____" required>
                                 <button class="footer__btn" type="submit">Отправить</button>
                             </form>
+                            <div class="footer__thanks">Спасибо за заявку! Мы скоро свяжемся с Вами</div>
                         </div>
                     </div>
                     <div class="footer__bottom">
