@@ -20,27 +20,27 @@
                     <button class="header__burger js_btn js_btn-menu"
                         style="background-image: url(img/icons/burger.svg);"></button>
                     <div class="header__left">
-                        <a class="logo" href="#">
+                        <a class="logo" href="index.html">
                             <img class="logo__img" src="img/logo.svg" alt="logo">
                         </a>
                         <span class="header__span">Для бизнеса</span>
                     </div>
                     <ul class="header__menu">
                         <li class="header__item">
-                            <a class="header__link" href="#">О компании</a>
+                            <a class="header__link" href="about-company.html">О компании</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#">Сервисы</a>
+                            <a class="header__link" href="about-info.html">Сервисы</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#">Сервисы</a>
+                            <a class="header__link" href="about-company.html">Контакты</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#">Помощь</a>
+                            <a class="header__link" href="faq-section.html">Помощь</a>
                         </li>
                     </ul>
                     <div class="header__box">
-                        <a class="header__catalog" href="#">Каталог</a>
+                        <a class="header__catalog" href="catalog.html">Каталог</a>
                         <form class="form">
                             <label class="form__label" for="form"></label>
                             <input class="form__input" type="search" id="form" placeholder="Я ищу что-то конкретное">
@@ -55,7 +55,7 @@
                                     style="background-image: url(img/icons/basket.svg);"></a>
                             </li>
                             <li class="header__item">
-                                <a class="header__icon header__icon--like" href="#"
+                                <a class="header__icon header__icon--like" href="selected-products.html"
                                     style="background-image: url(img//icons/like.svg);"></a>
                             </li>
                             <li class="header__item">
@@ -76,20 +76,20 @@
                 </div>
                 <ul class="header-mob__menu">
                     <li class="header-mob__item">
-                        <a class="header-mob__link" href="#">О компании</a>
+                        <a class="header-mob__link" href="about-company.html">О компании</a>
                     </li>
                     <li class="header-mob__item">
-                        <a class="header-mob__link" href="#">Сервисы</a>
+                        <a class="header-mob__link" href="about-info.html">Сервисы</a>
                     </li>
                     <li class="header-mob__item">
-                        <a class="header-mob__link" href="#">Сервисы</a>
+                        <a class="header-mob__link" href="about-company.html">Контакты</a>
                     </li>
                     <li class="header-mob__item">
-                        <a class="header-mob__link" href="#">Помощь</a>
+                        <a class="header-mob__link" href="faq-section.html">Помощь</a>
                     </li>
                 </ul>
-                <a class="header-mob__catalog" href="#">Каталог</a>
-                <a class="header-mob__icon" href="#">Избранное</a>
+                <a class="header-mob__catalog" href="catalog.html">Каталог</a>
+                <a class="header-mob__icon" href="selected-products.html">Избранное</a>
             </div>
         </header>
         <main>
@@ -154,8 +154,12 @@
                                                 d="M11 18L9.695 16.849C5.06 12.7771 2 10.0916 2 6.79564C2 4.11008 4.178 2 6.95 2C8.516 2 10.019 2.70627 11 3.82234C11.981 2.70627 13.484 2 15.05 2C17.822 2 20 4.11008 20 6.79564C20 10.0916 16.94 12.7771 12.305 16.8578L11 18Z"
                                                 stroke="" stroke-width="2.3" stroke-linejoin="round" />
                                         </svg>
-                                        <span class="js-to-favorites" data-show="false">В избранное</span>
-                                    </button>
+                                        <span class="text-active">В
+                                            избранное
+                                        </span>
+                                        <span class="text-hidden">В
+                                            избранном
+                                        </span> </button>
                                     <button class="basket__btn js-active"><svg
                                             class="basket__icon basket__icon--expectations" width="20" height="20"
                                             viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -163,7 +167,11 @@
                                                 d="M2 10C2 7.87827 2.84285 5.84344 4.34315 4.34315C5.84344 2.84285 7.87827 2 10 2C12.1217 2 14.1566 2.84285 15.6569 4.34315C17.1571 5.84344 18 7.87827 18 10C18 12.1217 17.1571 14.1566 15.6569 15.6569C14.1566 17.1571 12.1217 18 10 18C7.87827 18 5.84344 17.1571 4.34315 15.6569C2.84285 14.1566 2 12.1217 2 10ZM10 0C4.477 0 0 4.477 0 10C0 15.523 4.477 20 10 20C15.523 20 20 15.523 20 10C20 4.477 15.523 0 10 0ZM11 4C11 3.73478 10.8946 3.48043 10.7071 3.29289C10.5196 3.10536 10.2652 3 10 3C9.73478 3 9.48043 3.10536 9.29289 3.29289C9.10536 3.48043 9 3.73478 9 4V10C9.00006 10.2652 9.10545 10.5195 9.293 10.707L12.293 13.707C12.4816 13.8892 12.7342 13.99 12.9964 13.9877C13.2586 13.9854 13.5094 13.8802 13.6948 13.6948C13.8802 13.5094 13.9854 13.2586 13.9877 12.9964C13.99 12.7342 13.8892 12.4816 13.707 12.293L11 9.586V4Z"
                                                 fill="" />
                                         </svg>
-                                        <span class="js-to-waiting-list" data-show="false">В лист ожидания</span>
+                                        <span class="text-active">В лист ожидания
+                                        </span>
+                                        <span class="text-hidden">В листe ожидания
+                                        </span>
+                                        <span class="js-to-waiting-list" data-show="false"></span>
                                     </button>
                                     <button class="basket__btn basket__btn--btn" type="button">
                                         <svg class="basket__icon basket__icon--del" width="24" height="24"
@@ -398,9 +406,8 @@
                                         <div class="modal-add__desktop">
                                             <div class="modal-add__box">
                                                 <div class="modal-add__img-wrap">
-                                                    <img class="modal-add__img"
-                                                        src="img/product-card/milk.png" width="29"
-                                                        height="65" alt="milk">
+                                                    <img class="modal-add__img" src="img/product-card/milk.png"
+                                                        width="29" height="65" alt="milk">
                                                 </div>
                                                 <div class="modal-add__text-wrap">
                                                     <h4 class="modal-add__title">Товар молоко овсяное с
@@ -415,8 +422,8 @@
                                         </div>
                                         <div class="modal-add__mobil" href="#">
                                             <p class="modal-add__mobil-text">
-                                                Товар добавлен в избранное. Нажмите, <a
-                                                    class="modal-add__mobil-link" href="#">чтобы
+                                                Товар добавлен в избранное. Нажмите, <a class="modal-add__mobil-link"
+                                                    href="#">чтобы
                                                     перейти</a>
                                             </p>
                                         </div>
@@ -430,9 +437,8 @@
                                         <div class="modal-add__desktop">
                                             <div class="modal-add__box">
                                                 <div class="modal-add__img-wrap">
-                                                    <img class="modal-add__img"
-                                                        src="img/product-card/milk.png" width="29"
-                                                        height="65" alt="milk">
+                                                    <img class="modal-add__img" src="img/product-card/milk.png"
+                                                        width="29" height="65" alt="milk">
                                                 </div>
                                                 <div class="modal-add__text-wrap">
                                                     <h4 class="modal-add__title">Товар молоко овсяное с
@@ -456,9 +462,8 @@
                                         <div class="modal-add__desktop">
                                             <div class="modal-add__box">
                                                 <div class="modal-add__img-wrap">
-                                                    <img class="modal-add__img"
-                                                        src="img/product-card/milk.png" width="29"
-                                                        height="65" alt="milk">
+                                                    <img class="modal-add__img" src="img/product-card/milk.png"
+                                                        width="29" height="65" alt="milk">
                                                 </div>
                                                 <div class="modal-add__text-wrap">
                                                     <h4 class="modal-add__title">Товар молоко овсяное с
@@ -473,8 +478,8 @@
                                         </div>
                                         <div class="modal-add__mobil" href="#">
                                             <p class="modal-add__mobil-text">
-                                                Товар добавлен к сравнению. Нажмите, <a
-                                                    class="modal-add__mobil-link" href="#">чтобы
+                                                Товар добавлен к сравнению. Нажмите, <a class="modal-add__mobil-link"
+                                                    href="#">чтобы
                                                     сравнить</a>
                                             </p>
                                         </div>
@@ -488,9 +493,8 @@
                                         <div class="modal-add__desktop">
                                             <div class="modal-add__box">
                                                 <div class="modal-add__img-wrap">
-                                                    <img class="modal-add__img"
-                                                        src="img/product-card/milk.png" width="29"
-                                                        height="65" alt="milk">
+                                                    <img class="modal-add__img" src="img/product-card/milk.png"
+                                                        width="29" height="65" alt="milk">
                                                 </div>
                                                 <div class="modal-add__text-wrap">
                                                     <h4 class="modal-add__title">Товар молоко овсяное с
@@ -514,19 +518,15 @@
                                     <span class="product-card__sale">В НАЛИЧИИ</span>
                                     <div class="product-card__icon-wrap">
                                         <button class="product-card__icon add-fav">
-                                            <span
-                                                class="product-card__heart product-card__heart--hidden"
+                                            <span class="product-card__heart product-card__heart--hidden"
                                                 style="background-image: url(img/icons/heart.svg);"></span>
-                                            <span
-                                                class="product-card__heart product-card__heart--active"
+                                            <span class="product-card__heart product-card__heart--active"
                                                 style="background-image: url(img/icons/heart-active.svg);"></span>
                                         </button>
                                         <button class="product-card__icon add-comp">
-                                            <span
-                                                class="product-card__filter product-card__filter--hidden"
+                                            <span class="product-card__filter product-card__filter--hidden"
                                                 style="background-image: url(img/icons/filter.svg);"></span>
-                                            <span
-                                                class="product-card__filter product-card__filter--active"
+                                            <span class="product-card__filter product-card__filter--active"
                                                 style="background-image: url(img/icons/filter-active.svg);"></span>
                                         </button>
                                     </div>
@@ -556,7 +556,7 @@
                                     <div class="product-card__btn-wrap">
                                         <button class="product-card__btn js-name">Добавить в
                                             корзину</button>
-                                        <a class="product-card__btn js-name-add" href="#">Перейти</a>
+                                        <a class="product-card__btn js-name-add" href="basket.html">Перейти</a>
                                     </div>
                                 </div>
                             </article>
@@ -568,9 +568,8 @@
                                         <div class="modal-add__desktop">
                                             <div class="modal-add__box">
                                                 <div class="modal-add__img-wrap">
-                                                    <img class="modal-add__img"
-                                                        src="img/product-card/milk.png" width="29"
-                                                        height="65" alt="milk">
+                                                    <img class="modal-add__img" src="img/product-card/milk.png"
+                                                        width="29" height="65" alt="milk">
                                                 </div>
                                                 <div class="modal-add__text-wrap">
                                                     <h4 class="modal-add__title">Товар молоко овсяное с
@@ -585,8 +584,8 @@
                                         </div>
                                         <div class="modal-add__mobil" href="#">
                                             <p class="modal-add__mobil-text">
-                                                Товар добавлен в избранное. Нажмите, <a
-                                                    class="modal-add__mobil-link" href="#">чтобы
+                                                Товар добавлен в избранное. Нажмите, <a class="modal-add__mobil-link"
+                                                    href="#">чтобы
                                                     перейти</a>
                                             </p>
                                         </div>
@@ -600,9 +599,8 @@
                                         <div class="modal-add__desktop">
                                             <div class="modal-add__box">
                                                 <div class="modal-add__img-wrap">
-                                                    <img class="modal-add__img"
-                                                        src="img/product-card/milk.png" width="29"
-                                                        height="65" alt="milk">
+                                                    <img class="modal-add__img" src="img/product-card/milk.png"
+                                                        width="29" height="65" alt="milk">
                                                 </div>
                                                 <div class="modal-add__text-wrap">
                                                     <h4 class="modal-add__title">Товар молоко овсяное с
@@ -626,9 +624,8 @@
                                         <div class="modal-add__desktop">
                                             <div class="modal-add__box">
                                                 <div class="modal-add__img-wrap">
-                                                    <img class="modal-add__img"
-                                                        src="img/product-card/milk.png" width="29"
-                                                        height="65" alt="milk">
+                                                    <img class="modal-add__img" src="img/product-card/milk.png"
+                                                        width="29" height="65" alt="milk">
                                                 </div>
                                                 <div class="modal-add__text-wrap">
                                                     <h4 class="modal-add__title">Товар молоко овсяное с
@@ -643,8 +640,8 @@
                                         </div>
                                         <div class="modal-add__mobil" href="#">
                                             <p class="modal-add__mobil-text">
-                                                Товар добавлен к сравнению. Нажмите, <a
-                                                    class="modal-add__mobil-link" href="#">чтобы
+                                                Товар добавлен к сравнению. Нажмите, <a class="modal-add__mobil-link"
+                                                    href="#">чтобы
                                                     сравнить</a>
                                             </p>
                                         </div>
@@ -658,9 +655,8 @@
                                         <div class="modal-add__desktop">
                                             <div class="modal-add__box">
                                                 <div class="modal-add__img-wrap">
-                                                    <img class="modal-add__img"
-                                                        src="img/product-card/milk.png" width="29"
-                                                        height="65" alt="milk">
+                                                    <img class="modal-add__img" src="img/product-card/milk.png"
+                                                        width="29" height="65" alt="milk">
                                                 </div>
                                                 <div class="modal-add__text-wrap">
                                                     <h4 class="modal-add__title">Товар молоко овсяное с
@@ -684,19 +680,15 @@
                                     <span class="product-card__sale">В НАЛИЧИИ</span>
                                     <div class="product-card__icon-wrap">
                                         <button class="product-card__icon add-fav">
-                                            <span
-                                                class="product-card__heart product-card__heart--hidden"
+                                            <span class="product-card__heart product-card__heart--hidden"
                                                 style="background-image: url(img/icons/heart.svg);"></span>
-                                            <span
-                                                class="product-card__heart product-card__heart--active"
+                                            <span class="product-card__heart product-card__heart--active"
                                                 style="background-image: url(img/icons/heart-active.svg);"></span>
                                         </button>
                                         <button class="product-card__icon add-comp">
-                                            <span
-                                                class="product-card__filter product-card__filter--hidden"
+                                            <span class="product-card__filter product-card__filter--hidden"
                                                 style="background-image: url(img/icons/filter.svg);"></span>
-                                            <span
-                                                class="product-card__filter product-card__filter--active"
+                                            <span class="product-card__filter product-card__filter--active"
                                                 style="background-image: url(img/icons/filter-active.svg);"></span>
                                         </button>
                                     </div>
@@ -726,7 +718,7 @@
                                     <div class="product-card__btn-wrap">
                                         <button class="product-card__btn js-name">Добавить в
                                             корзину</button>
-                                        <a class="product-card__btn js-name-add" href="#">Перейти</a>
+                                        <a class="product-card__btn js-name-add" href="basket.html">Перейти</a>
                                     </div>
                                 </div>
                             </article>
@@ -738,9 +730,8 @@
                                         <div class="modal-add__desktop">
                                             <div class="modal-add__box">
                                                 <div class="modal-add__img-wrap">
-                                                    <img class="modal-add__img"
-                                                        src="img/product-card/milk.png" width="29"
-                                                        height="65" alt="milk">
+                                                    <img class="modal-add__img" src="img/product-card/milk.png"
+                                                        width="29" height="65" alt="milk">
                                                 </div>
                                                 <div class="modal-add__text-wrap">
                                                     <h4 class="modal-add__title">Товар молоко овсяное с
@@ -755,8 +746,8 @@
                                         </div>
                                         <div class="modal-add__mobil" href="#">
                                             <p class="modal-add__mobil-text">
-                                                Товар добавлен в избранное. Нажмите, <a
-                                                    class="modal-add__mobil-link" href="#">чтобы
+                                                Товар добавлен в избранное. Нажмите, <a class="modal-add__mobil-link"
+                                                    href="#">чтобы
                                                     перейти</a>
                                             </p>
                                         </div>
@@ -770,9 +761,8 @@
                                         <div class="modal-add__desktop">
                                             <div class="modal-add__box">
                                                 <div class="modal-add__img-wrap">
-                                                    <img class="modal-add__img"
-                                                        src="img/product-card/milk.png" width="29"
-                                                        height="65" alt="milk">
+                                                    <img class="modal-add__img" src="img/product-card/milk.png"
+                                                        width="29" height="65" alt="milk">
                                                 </div>
                                                 <div class="modal-add__text-wrap">
                                                     <h4 class="modal-add__title">Товар молоко овсяное с
@@ -796,9 +786,8 @@
                                         <div class="modal-add__desktop">
                                             <div class="modal-add__box">
                                                 <div class="modal-add__img-wrap">
-                                                    <img class="modal-add__img"
-                                                        src="img/product-card/milk.png" width="29"
-                                                        height="65" alt="milk">
+                                                    <img class="modal-add__img" src="img/product-card/milk.png"
+                                                        width="29" height="65" alt="milk">
                                                 </div>
                                                 <div class="modal-add__text-wrap">
                                                     <h4 class="modal-add__title">Товар молоко овсяное с
@@ -813,8 +802,8 @@
                                         </div>
                                         <div class="modal-add__mobil" href="#">
                                             <p class="modal-add__mobil-text">
-                                                Товар добавлен к сравнению. Нажмите, <a
-                                                    class="modal-add__mobil-link" href="#">чтобы
+                                                Товар добавлен к сравнению. Нажмите, <a class="modal-add__mobil-link"
+                                                    href="#">чтобы
                                                     сравнить</a>
                                             </p>
                                         </div>
@@ -828,9 +817,8 @@
                                         <div class="modal-add__desktop">
                                             <div class="modal-add__box">
                                                 <div class="modal-add__img-wrap">
-                                                    <img class="modal-add__img"
-                                                        src="img/product-card/milk.png" width="29"
-                                                        height="65" alt="milk">
+                                                    <img class="modal-add__img" src="img/product-card/milk.png"
+                                                        width="29" height="65" alt="milk">
                                                 </div>
                                                 <div class="modal-add__text-wrap">
                                                     <h4 class="modal-add__title">Товар молоко овсяное с
@@ -854,19 +842,15 @@
                                     <span class="product-card__sale">В НАЛИЧИИ</span>
                                     <div class="product-card__icon-wrap">
                                         <button class="product-card__icon add-fav">
-                                            <span
-                                                class="product-card__heart product-card__heart--hidden"
+                                            <span class="product-card__heart product-card__heart--hidden"
                                                 style="background-image: url(img/icons/heart.svg);"></span>
-                                            <span
-                                                class="product-card__heart product-card__heart--active"
+                                            <span class="product-card__heart product-card__heart--active"
                                                 style="background-image: url(img/icons/heart-active.svg);"></span>
                                         </button>
                                         <button class="product-card__icon add-comp">
-                                            <span
-                                                class="product-card__filter product-card__filter--hidden"
+                                            <span class="product-card__filter product-card__filter--hidden"
                                                 style="background-image: url(img/icons/filter.svg);"></span>
-                                            <span
-                                                class="product-card__filter product-card__filter--active"
+                                            <span class="product-card__filter product-card__filter--active"
                                                 style="background-image: url(img/icons/filter-active.svg);"></span>
                                         </button>
                                     </div>
@@ -896,7 +880,7 @@
                                     <div class="product-card__btn-wrap">
                                         <button class="product-card__btn js-name">Добавить в
                                             корзину</button>
-                                        <a class="product-card__btn js-name-add" href="#">Перейти</a>
+                                        <a class="product-card__btn js-name-add" href="basket.html">Перейти</a>
                                     </div>
                                 </div>
                             </article>
@@ -908,9 +892,8 @@
                                         <div class="modal-add__desktop">
                                             <div class="modal-add__box">
                                                 <div class="modal-add__img-wrap">
-                                                    <img class="modal-add__img"
-                                                        src="img/product-card/milk.png" width="29"
-                                                        height="65" alt="milk">
+                                                    <img class="modal-add__img" src="img/product-card/milk.png"
+                                                        width="29" height="65" alt="milk">
                                                 </div>
                                                 <div class="modal-add__text-wrap">
                                                     <h4 class="modal-add__title">Товар молоко овсяное с
@@ -925,8 +908,8 @@
                                         </div>
                                         <div class="modal-add__mobil" href="#">
                                             <p class="modal-add__mobil-text">
-                                                Товар добавлен в избранное. Нажмите, <a
-                                                    class="modal-add__mobil-link" href="#">чтобы
+                                                Товар добавлен в избранное. Нажмите, <a class="modal-add__mobil-link"
+                                                    href="#">чтобы
                                                     перейти</a>
                                             </p>
                                         </div>
@@ -940,9 +923,8 @@
                                         <div class="modal-add__desktop">
                                             <div class="modal-add__box">
                                                 <div class="modal-add__img-wrap">
-                                                    <img class="modal-add__img"
-                                                        src="img/product-card/milk.png" width="29"
-                                                        height="65" alt="milk">
+                                                    <img class="modal-add__img" src="img/product-card/milk.png"
+                                                        width="29" height="65" alt="milk">
                                                 </div>
                                                 <div class="modal-add__text-wrap">
                                                     <h4 class="modal-add__title">Товар молоко овсяное с
@@ -966,9 +948,8 @@
                                         <div class="modal-add__desktop">
                                             <div class="modal-add__box">
                                                 <div class="modal-add__img-wrap">
-                                                    <img class="modal-add__img"
-                                                        src="img/product-card/milk.png" width="29"
-                                                        height="65" alt="milk">
+                                                    <img class="modal-add__img" src="img/product-card/milk.png"
+                                                        width="29" height="65" alt="milk">
                                                 </div>
                                                 <div class="modal-add__text-wrap">
                                                     <h4 class="modal-add__title">Товар молоко овсяное с
@@ -983,8 +964,8 @@
                                         </div>
                                         <div class="modal-add__mobil" href="#">
                                             <p class="modal-add__mobil-text">
-                                                Товар добавлен к сравнению. Нажмите, <a
-                                                    class="modal-add__mobil-link" href="#">чтобы
+                                                Товар добавлен к сравнению. Нажмите, <a class="modal-add__mobil-link"
+                                                    href="#">чтобы
                                                     сравнить</a>
                                             </p>
                                         </div>
@@ -998,9 +979,8 @@
                                         <div class="modal-add__desktop">
                                             <div class="modal-add__box">
                                                 <div class="modal-add__img-wrap">
-                                                    <img class="modal-add__img"
-                                                        src="img/product-card/milk.png" width="29"
-                                                        height="65" alt="milk">
+                                                    <img class="modal-add__img" src="img/product-card/milk.png"
+                                                        width="29" height="65" alt="milk">
                                                 </div>
                                                 <div class="modal-add__text-wrap">
                                                     <h4 class="modal-add__title">Товар молоко овсяное с
@@ -1024,19 +1004,15 @@
                                     <span class="product-card__sale">В НАЛИЧИИ</span>
                                     <div class="product-card__icon-wrap">
                                         <button class="product-card__icon add-fav">
-                                            <span
-                                                class="product-card__heart product-card__heart--hidden"
+                                            <span class="product-card__heart product-card__heart--hidden"
                                                 style="background-image: url(img/icons/heart.svg);"></span>
-                                            <span
-                                                class="product-card__heart product-card__heart--active"
+                                            <span class="product-card__heart product-card__heart--active"
                                                 style="background-image: url(img/icons/heart-active.svg);"></span>
                                         </button>
                                         <button class="product-card__icon add-comp">
-                                            <span
-                                                class="product-card__filter product-card__filter--hidden"
+                                            <span class="product-card__filter product-card__filter--hidden"
                                                 style="background-image: url(img/icons/filter.svg);"></span>
-                                            <span
-                                                class="product-card__filter product-card__filter--active"
+                                            <span class="product-card__filter product-card__filter--active"
                                                 style="background-image: url(img/icons/filter-active.svg);"></span>
                                         </button>
                                     </div>
@@ -1066,7 +1042,7 @@
                                     <div class="product-card__btn-wrap">
                                         <button class="product-card__btn js-name">Добавить в
                                             корзину</button>
-                                        <a class="product-card__btn js-name-add" href="#">Перейти</a>
+                                        <a class="product-card__btn js-name-add" href="basket.html">Перейти</a>
                                     </div>
                                 </div>
                             </article>
@@ -1080,19 +1056,15 @@
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
                                             <button class="product-card__icon add-fav">
-                                                <span
-                                                    class="product-card__heart product-card__heart--hidden"
+                                                <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
-                                                <span
-                                                    class="product-card__heart product-card__heart--active"
+                                                <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
                                             <button class="product-card__icon add-comp">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
@@ -1129,19 +1101,15 @@
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
                                             <button class="product-card__icon add-fav">
-                                                <span
-                                                    class="product-card__heart product-card__heart--hidden"
+                                                <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
-                                                <span
-                                                    class="product-card__heart product-card__heart--active"
+                                                <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
                                             <button class="product-card__icon add-comp">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
@@ -1178,19 +1146,15 @@
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
                                             <button class="product-card__icon add-fav">
-                                                <span
-                                                    class="product-card__heart product-card__heart--hidden"
+                                                <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
-                                                <span
-                                                    class="product-card__heart product-card__heart--active"
+                                                <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
                                             <button class="product-card__icon add-comp">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
@@ -1226,19 +1190,15 @@
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
                                             <button class="product-card__icon add-fav">
-                                                <span
-                                                    class="product-card__heart product-card__heart--hidden"
+                                                <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
-                                                <span
-                                                    class="product-card__heart product-card__heart--active"
+                                                <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
                                             <button class="product-card__icon add-comp">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
@@ -1377,31 +1337,31 @@
             <button class="modal-notification__back"></button>
         </div>
     </div>
-        <div class="modal-notification modal-notification--framed mfp-hide white-popup-block" id="framed-1">
-            <div class="modal-notification__img"></div>
-            <h3 class="modal-notification__title">Ваша заявка оформлена</h3>
-            <p class="modal-notification__text">
-                В ближайшее время с вами свяжется менеджер, чтобы согласовать условия оплаты и доставки
-            </p>
-            <button class="modal-notification__btn">Понятно, спасибо</button>
-            <button class="modal-notification__close"></button>
-        </div>
-        <div class="modal-notification  modal-notification--please-login mfp-hide white-popup-block" id="please-login-1">
-            <h3 class="modal-notification__title">Пожалуйста, авторизуйтесь</h3>
-            <p class="modal-notification__text">
-                Добавляйте товары в избранное и списки ожидания, формируйте шаблоны заказов и многое другое
-            </p>
-            <a class="modal-notification__button" href="#">Войти в личный кабинет</a>
-            <button class="modal-notification__close"></button>
-        </div>
-        <div class="modal-notification  modal-notification--please-login mfp-hide white-popup-block" id="please-login-2">
-            <h3 class="modal-notification__title">Пожалуйста, авторизуйтесь</h3>
-            <p class="modal-notification__text">
-                Добавляйте товары в избранное и списки ожидания, формируйте шаблоны заказов и многое другое
-            </p>
-            <a class="modal-notification__button" href="#">Войти в личный кабинет</a>
-            <button class="modal-notification__close"></button>
-        </div>
+    <div class="modal-notification modal-notification--framed mfp-hide white-popup-block" id="framed-1">
+        <div class="modal-notification__img"></div>
+        <h3 class="modal-notification__title">Ваша заявка оформлена</h3>
+        <p class="modal-notification__text">
+            В ближайшее время с вами свяжется менеджер, чтобы согласовать условия оплаты и доставки
+        </p>
+        <button class="modal-notification__btn">Понятно, спасибо</button>
+        <button class="modal-notification__close"></button>
+    </div>
+    <div class="modal-notification  modal-notification--please-login mfp-hide white-popup-block" id="please-login-1">
+        <h3 class="modal-notification__title">Пожалуйста, авторизуйтесь</h3>
+        <p class="modal-notification__text">
+            Добавляйте товары в избранное и списки ожидания, формируйте шаблоны заказов и многое другое
+        </p>
+        <a class="modal-notification__button welcome-js" href="#login-3">Войти в личный кабинет</a>
+        <button class="modal-notification__close"></button>
+    </div>
+    <div class="modal-notification  modal-notification--please-login mfp-hide white-popup-block" id="please-login-2">
+        <h3 class="modal-notification__title">Пожалуйста, авторизуйтесь</h3>
+        <p class="modal-notification__text">
+            Добавляйте товары в избранное и списки ожидания, формируйте шаблоны заказов и многое другое
+        </p>
+        <a class="modal-notification__button welcome-js" href="#login-3">Войти в личный кабинет</a>
+        <button class="modal-notification__close"></button>
+    </div>
     </div>
 
     <div class="basket-modal mfp-hide white-popup-block" id="basket-modal">
@@ -1658,7 +1618,12 @@
         <button class="modal-notification__btn">Закрыть</button>
         <button class="modal-notification__close"></button>
     </div>
-
+    <a class="attention" href="#attention-modal"></a>
+    <div class="modal-notification modal-notification--note mfp-hide white-popup-block" id="attention-modal">
+        <div class="modal-notification__img modal-notification__img--note"></div>
+        <h3 class="modal-notification__title">Ничего не выбрано</h3>
+        <button class="modal-notification__close"></button>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
