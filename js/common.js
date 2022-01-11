@@ -130,7 +130,15 @@ $('.product-card__basket').on('click', function () {
     $(this).toggleClass('active');
 });
 $('.js-active').on('click', function () {
-    $(this).toggleClass('icon-active');
+
+    if ($('input:checkbox').filter(':checked').length == 0) {
+        $(".attention").click();
+        return false;
+    }
+
+    else {
+        $(this).toggleClass('icon-active');
+    }
 });
 
 var swiper = new Swiper(".swiper-thumb", {
@@ -315,7 +323,15 @@ $('.js-arrow').on('click', function () {
 });
 
 $('.orders__button--js').on('click', function () {
-    $(this).toggleClass('active');
+    if ($('input:checkbox').filter(':checked').length == 0) {
+        $(".attention").click();
+        return false;
+    }
+
+    else {
+        $(this).toggleClass('active');
+    }
+
 });
 
 $('.js-contact').on('click', function () {
@@ -433,47 +449,6 @@ $('.orders__all-btn').click(function () {
     }
     else {
         $(this).text("Показать меньше");
-        $(this).attr('data-show', "true");
-    }
-});
-
-$('.js-to-favorites').click(function () {
-    if ($(this).attr('data-show') === "true") {
-        $(this).text("В избранное");
-        $(this).attr('data-show', "false");
-    }
-    else {
-        $(this).text("В избранном");
-        $(this).attr('data-show', "true");
-    }
-});
-$('.js-to-basket').click(function () {
-    if ($(this).attr('data-show') === "true") {
-        $(this).text("В корзину");
-        $(this).attr('data-show', "false");
-    }
-    else {
-        $(this).text("В корзине");
-        $(this).attr('data-show', "true");
-    }
-});
-$('.js-add-to-basket').click(function () {
-    if ($(this).attr('data-show') === "true") {
-        $(this).text("Добавить в корзину");
-        $(this).attr('data-show', "false");
-    }
-    else {
-        $(this).text("В корзине");
-        $(this).attr('data-show', "true");
-    }
-});
-$('.js-to-waiting-list').click(function () {
-    if ($(this).attr('data-show') === "true") {
-        $(this).text("В лист ожидания");
-        $(this).attr('data-show', "false");
-    }
-    else {
-        $(this).text("В листе ожидания");
         $(this).attr('data-show', "true");
     }
 });
@@ -731,7 +706,7 @@ $(function () {
 });
 
 $(function () {
-    $('.framed-js, .js_please-login, .js-review, .modal-settings, .main-title__contact--add, .js-modal').magnificPopup({
+    $('.framed-js, .js_please-login, .js-review, .modal-settings, .main-title__contact--add, .js-modal, .attention, .welcome-js').magnificPopup({
         type: 'inline',
         preloader: false,
         focus: '#username',
@@ -790,7 +765,7 @@ $(".form__input").on('click', function () {
     $(this).closest('.form--autojest').children('.autojest').addClass("active");
     $(document).mouseup(function (e) {
         var container = $(".autojest");
-        if (container.has(e.target).length === 0){
+        if (container.has(e.target).length === 0) {
             container.removeClass('active');
         }
     });
@@ -798,7 +773,22 @@ $(".form__input").on('click', function () {
         $(this).closest('.form--autojest').children('.autojest').removeClass("active");
     });
 });
+$(".basket__top .basket__label").on("click", function(){
+    $(".basket__item").toggleClass("active_item");
+});
 
 
-
-
+$(".basket__top .basket__label").on("click", function(){
+    $(".basket__item").toggleClass("active_item");
+});
+$(".basket__list .basket__input").on("click", function () {
+    $(this).closest('.basket__item').toggleClass("active_item");
+    $(".basket__list .active_item").each(function () {
+        var item = $(".active_item").length;
+        console.log(item);
+        if (item == 1) {
+            $(".basket__top .basket__label").click();
+            $(".mobil-check").removeClass("active");
+        }
+    });
+});
