@@ -95,6 +95,63 @@
             </div>
         </header>
         <main>
+            <div class="modal-add comp-add-js">
+                <div class="container">
+                    <div class="modal-add__inner">
+                        <div class="modal-add__desktop">
+                            <div class="modal-add__box">
+                                <div class="modal-add__image-wrap">
+                                    <img class="modal-add__image" src="" alt="milk" width="65" height="153">
+                                </div>
+                                <div class="modal-add__text-wrap">
+                                    <span class="modal-add__title-text">Товар</span>
+                                    <h2 class="modal-add__title"></h2>
+                                    <span class="modal-add__title-text">добавлен к сравнению</span>
+                                    <p class="modal-add__text">Всего в списке <span class="modal__num">2</span> товара
+                                        из категории Молочные продукты</p>
+                                </div>
+                            </div>
+                            <div class="modal-add__links">
+                                <a class="modal-add__link" href="comparison.html">Сравнить</a>
+                            </div>
+                        </div>
+                        <div class="modal-add__mobil">
+                            <p class="modal-add__mobil-text">
+                                Товар добавлен к сравнению. Нажмите, <a class="modal-add__mobil-link"
+                                    href="comparison.html">чтобы
+                                    cравнить</a>
+                            </p>
+                        </div>
+                        <button class="modal-add__close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-add comp-remove-js">
+                <div class="container">
+                    <div class="modal-add__inner">
+                        <div class="modal-add__desktop">
+                            <div class="modal-add__box">
+                                <div class="modal-add__image-wrap">
+                                    <img class="modal-add__image modal-add__image--remove" src="" alt="" width="65"
+                                        height="153">
+                                </div>
+                                <div class="modal-add__text-wrap">
+                                    <span class="modal-add__title-text">Товар </span>
+                                    <h2 class="modal-add__title modal-add__title--remove"></h2>
+                                    <span class="modal-add__title-text"> удален из сравнения</span>
+                                    <p class="modal-add__price modal-add__price--remove"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-add__mobil">
+                            <p class="modal-add__mobil-text">
+                                Товар удален из сравнения
+                            </p>
+                        </div>
+                        <button class="modal-add__close"></button>
+                    </div>
+                </div>
+            </div>
             <section class="breadcrumbs  breadcrumbs--pa">
                 <div class="container">
                     <ul class="breadcrumbs__list">
@@ -210,65 +267,6 @@
                         </div>
                         <ul class="product-list__list">
                             <li class="product-list__item">
-                                <div class="modal-add comp-add-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао добавлен к сравнению</h4>
-                                                        <p class="modal-add__text">Всего в списке 2 товара
-                                                            из категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-add__links">
-                                                    <a class="modal-add__link" href="#">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар добавлен к сравнению. Нажмите, <a
-                                                        class="modal-add__mobil-link" href="#">чтобы
-                                                        сравнить</a>
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-add comp-remove-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао удален из сравнения</h4>
-                                                        <p class="modal-add__text">Всего в списке 1 товар из
-                                                            категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар удален из сравнения
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
                                 <article class="product-card">
                                     <div class="product-card__img-wrap">
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
@@ -281,7 +279,9 @@
                                                     class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp">
+                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки"
+                                            data-img="img/product-card/milk.png">
                                                 <span
                                                     class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
@@ -323,65 +323,6 @@
                                 </article>
                             </li>
                             <li class="product-list__item">
-                                <div class="modal-add comp-add-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао добавлен к сравнению</h4>
-                                                        <p class="modal-add__text">Всего в списке 2 товара
-                                                            из категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-add__links">
-                                                    <a class="modal-add__link" href="#">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар добавлен к сравнению. Нажмите, <a
-                                                        class="modal-add__mobil-link" href="#">чтобы
-                                                        сравнить</a>
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-add comp-remove-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао удален из сравнения</h4>
-                                                        <p class="modal-add__text">Всего в списке 1 товар из
-                                                            категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар удален из сравнения
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
                                 <article class="product-card">
                                     <div class="product-card__img-wrap">
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
@@ -394,7 +335,9 @@
                                                     class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp">
+                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки"
+                                            data-img="img/product-card/milk.png">
                                                 <span
                                                     class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
@@ -436,65 +379,6 @@
                                 </article>
                             </li>
                             <li class="product-list__item">
-                                <div class="modal-add comp-add-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао добавлен к сравнению</h4>
-                                                        <p class="modal-add__text">Всего в списке 2 товара
-                                                            из категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-add__links">
-                                                    <a class="modal-add__link" href="#">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар добавлен к сравнению. Нажмите, <a
-                                                        class="modal-add__mobil-link" href="#">чтобы
-                                                        сравнить</a>
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-add comp-remove-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао удален из сравнения</h4>
-                                                        <p class="modal-add__text">Всего в списке 1 товар из
-                                                            категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар удален из сравнения
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
                                 <article class="product-card">
                                     <div class="product-card__img-wrap">
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
@@ -507,7 +391,9 @@
                                                     class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp">
+                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки"
+                                            data-img="img/product-card/milk.png">
                                                 <span
                                                     class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
@@ -549,65 +435,6 @@
                                 </article>
                             </li>
                             <li class="product-list__item">
-                                <div class="modal-add comp-add-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао добавлен к сравнению</h4>
-                                                        <p class="modal-add__text">Всего в списке 2 товара
-                                                            из категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-add__links">
-                                                    <a class="modal-add__link" href="#">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар добавлен к сравнению. Нажмите, <a
-                                                        class="modal-add__mobil-link" href="#">чтобы
-                                                        сравнить</a>
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-add comp-remove-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао удален из сравнения</h4>
-                                                        <p class="modal-add__text">Всего в списке 1 товар из
-                                                            категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар удален из сравнения
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
                                 <article class="product-card">
                                     <div class="product-card__img-wrap">
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
@@ -620,7 +447,9 @@
                                                     class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp">
+                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки"
+                                            data-img="img/product-card/milk.png">
                                                 <span
                                                     class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
@@ -662,65 +491,6 @@
                                 </article>
                             </li>
                             <li class="product-list__item">
-                                <div class="modal-add comp-add-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао добавлен к сравнению</h4>
-                                                        <p class="modal-add__text">Всего в списке 2 товара
-                                                            из категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-add__links">
-                                                    <a class="modal-add__link" href="#">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар добавлен к сравнению. Нажмите, <a
-                                                        class="modal-add__mobil-link" href="#">чтобы
-                                                        сравнить</a>
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-add comp-remove-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао удален из сравнения</h4>
-                                                        <p class="modal-add__text">Всего в списке 1 товар из
-                                                            категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар удален из сравнения
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
                                 <article class="product-card">
                                     <div class="product-card__img-wrap">
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
@@ -733,7 +503,9 @@
                                                     class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp">
+                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки"
+                                            data-img="img/product-card/milk.png">
                                                 <span
                                                     class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
@@ -775,65 +547,6 @@
                                 </article>
                             </li>
                             <li class="product-list__item">
-                                <div class="modal-add comp-add-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао добавлен к сравнению</h4>
-                                                        <p class="modal-add__text">Всего в списке 2 товара
-                                                            из категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-add__links">
-                                                    <a class="modal-add__link" href="#">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар добавлен к сравнению. Нажмите, <a
-                                                        class="modal-add__mobil-link" href="#">чтобы
-                                                        сравнить</a>
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-add comp-remove-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао удален из сравнения</h4>
-                                                        <p class="modal-add__text">Всего в списке 1 товар из
-                                                            категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар удален из сравнения
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
                                 <article class="product-card">
                                     <div class="product-card__img-wrap">
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
@@ -846,7 +559,9 @@
                                                     class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp">
+                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки"
+                                            data-img="img/product-card/milk.png">
                                                 <span
                                                     class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
@@ -888,65 +603,6 @@
                                 </article>
                             </li>
                             <li class="product-list__item">
-                                <div class="modal-add comp-add-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао добавлен к сравнению</h4>
-                                                        <p class="modal-add__text">Всего в списке 2 товара
-                                                            из категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-add__links">
-                                                    <a class="modal-add__link" href="#">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар добавлен к сравнению. Нажмите, <a
-                                                        class="modal-add__mobil-link" href="#">чтобы
-                                                        сравнить</a>
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-add comp-remove-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао удален из сравнения</h4>
-                                                        <p class="modal-add__text">Всего в списке 1 товар из
-                                                            категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар удален из сравнения
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
                                 <article class="product-card">
                                     <div class="product-card__img-wrap">
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
@@ -959,7 +615,9 @@
                                                     class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp">
+                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки"
+                                            data-img="img/product-card/milk.png">
                                                 <span
                                                     class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
@@ -1001,65 +659,6 @@
                                 </article>
                             </li>
                             <li class="product-list__item">
-                                <div class="modal-add comp-add-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао добавлен к сравнению</h4>
-                                                        <p class="modal-add__text">Всего в списке 2 товара
-                                                            из категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-add__links">
-                                                    <a class="modal-add__link" href="#">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар добавлен к сравнению. Нажмите, <a
-                                                        class="modal-add__mobil-link" href="#">чтобы
-                                                        сравнить</a>
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-add comp-remove-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао удален из сравнения</h4>
-                                                        <p class="modal-add__text">Всего в списке 1 товар из
-                                                            категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар удален из сравнения
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
                                 <article class="product-card">
                                     <div class="product-card__img-wrap">
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
@@ -1072,7 +671,9 @@
                                                     class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp">
+                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки"
+                                            data-img="img/product-card/milk.png">
                                                 <span
                                                     class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
@@ -1114,65 +715,6 @@
                                 </article>
                             </li>
                             <li class="product-list__item">
-                                <div class="modal-add comp-add-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао добавлен к сравнению</h4>
-                                                        <p class="modal-add__text">Всего в списке 2 товара
-                                                            из категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-add__links">
-                                                    <a class="modal-add__link" href="#">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар добавлен к сравнению. Нажмите, <a
-                                                        class="modal-add__mobil-link" href="#">чтобы
-                                                        сравнить</a>
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-add comp-remove-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао удален из сравнения</h4>
-                                                        <p class="modal-add__text">Всего в списке 1 товар из
-                                                            категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар удален из сравнения
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
                                 <article class="product-card">
                                     <div class="product-card__img-wrap">
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
@@ -1185,7 +727,9 @@
                                                     class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp">
+                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки"
+                                            data-img="img/product-card/milk.png">
                                                 <span
                                                     class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
@@ -1227,65 +771,6 @@
                                 </article>
                             </li>
                             <li class="product-list__item">
-                                <div class="modal-add comp-add-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао добавлен к сравнению</h4>
-                                                        <p class="modal-add__text">Всего в списке 2 товара
-                                                            из категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-add__links">
-                                                    <a class="modal-add__link" href="#">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар добавлен к сравнению. Нажмите, <a
-                                                        class="modal-add__mobil-link" href="#">чтобы
-                                                        сравнить</a>
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-add comp-remove-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао удален из сравнения</h4>
-                                                        <p class="modal-add__text">Всего в списке 1 товар из
-                                                            категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар удален из сравнения
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
                                 <article class="product-card">
                                     <div class="product-card__img-wrap">
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
@@ -1298,7 +783,9 @@
                                                     class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp">
+                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки"
+                                            data-img="img/product-card/milk.png">
                                                 <span
                                                     class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
@@ -1340,65 +827,6 @@
                                 </article>
                             </li>
                             <li class="product-list__item">
-                                <div class="modal-add comp-add-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао добавлен к сравнению</h4>
-                                                        <p class="modal-add__text">Всего в списке 2 товара
-                                                            из категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-add__links">
-                                                    <a class="modal-add__link" href="#">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар добавлен к сравнению. Нажмите, <a
-                                                        class="modal-add__mobil-link" href="#">чтобы
-                                                        сравнить</a>
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-add comp-remove-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао удален из сравнения</h4>
-                                                        <p class="modal-add__text">Всего в списке 1 товар из
-                                                            категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар удален из сравнения
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
                                 <article class="product-card">
                                     <div class="product-card__img-wrap">
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
@@ -1411,7 +839,9 @@
                                                     class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp">
+                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки"
+                                            data-img="img/product-card/milk.png">
                                                 <span
                                                     class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
@@ -1453,65 +883,6 @@
                                 </article>
                             </li>
                             <li class="product-list__item">
-                                <div class="modal-add comp-add-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао добавлен к сравнению</h4>
-                                                        <p class="modal-add__text">Всего в списке 2 товара
-                                                            из категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-add__links">
-                                                    <a class="modal-add__link" href="#">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар добавлен к сравнению. Нажмите, <a
-                                                        class="modal-add__mobil-link" href="#">чтобы
-                                                        сравнить</a>
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-add comp-remove-js">
-                                    <div class="container">
-                                        <div class="modal-add__inner">
-                                            <div class="modal-add__desktop">
-                                                <div class="modal-add__box">
-                                                    <div class="modal-add__img-wrap">
-                                                        <img class="modal-add__img"
-                                                            src="img/product-card/milk.png" width="29"
-                                                            height="65" alt="milk">
-                                                    </div>
-                                                    <div class="modal-add__text-wrap">
-                                                        <h4 class="modal-add__title">Товар молоко овсяное с
-                                                            какао удален из сравнения</h4>
-                                                        <p class="modal-add__text">Всего в списке 1 товар из
-                                                            категории Молочные продукты</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-add__mobil" href="#">
-                                                <p class="modal-add__mobil-text">
-                                                    Товар удален из сравнения
-                                                </p>
-                                            </div>
-                                            <button class="modal-add__close"></button>
-                                        </div>
-                                    </div>
-                                </div>
                                 <article class="product-card">
                                     <div class="product-card__img-wrap">
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
@@ -1524,7 +895,9 @@
                                                     class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp">
+                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки"
+                                            data-img="img/product-card/milk.png">
                                                 <span
                                                     class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
