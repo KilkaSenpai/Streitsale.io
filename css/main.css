@@ -1844,17 +1844,19 @@ textarea {
   @media (max-width: 1280px) {
     .modal-add {
       top: 79px; } }
-  @media (max-width: 768px) {
+  @media (max-width: 835px) {
     .modal-add {
-      top: 61px;
       background-color: #211F2E;
       padding: 8px 15px 12px; } }
+  @media (max-width: 768px) {
+    .modal-add {
+      top: 61px; } }
   @media (max-width: 576px) {
     .modal-add {
       top: 53px; } }
   .modal-add__inner {
     position: relative; }
-    @media (max-width: 768px) {
+    @media (max-width: 835px) {
       .modal-add__inner {
         display: -webkit-box;
         display: -webkit-flex;
@@ -1881,7 +1883,7 @@ textarea {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-    @media (max-width: 768px) {
+    @media (max-width: 835px) {
       .modal-add__desktop {
         display: none; } }
   .modal-add__box {
@@ -1896,7 +1898,7 @@ textarea {
     font-family: 'Manrope', sans-serif;
     font-weight: 500;
     width: 100%; }
-  .modal-add__img-wrap {
+  .modal-add__image-wrap {
     background-color: #F4F4F4;
     border-radius: 8px;
     max-width: 98px;
@@ -1904,20 +1906,32 @@ textarea {
     text-align: center;
     padding: 3px 0;
     margin-right: 15px; }
-  .modal-add__img {
+  .modal-add__image {
     max-width: 29px;
     max-height: 65px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
   .modal-add__title {
+    display: inline-block;
+    font-weight: 500;
     font-size: 18px;
     line-height: 1.35;
     margin-bottom: 4px; }
     @media (max-width: 991px) {
       .modal-add__title {
         font-size: 16px; } }
+  .modal-add__title-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.35;
+    margin-bottom: 4px; }
+    @media (max-width: 991px) {
+      .modal-add__title-text {
+        font-size: 16px; } }
   .modal-add__text {
+    display: block;
+    color: #88868F;
     font-size: 14px;
     line-height: 1.75; }
     @media (max-width: 991px) {
@@ -1925,7 +1939,7 @@ textarea {
         font-size: 12px; } }
   .modal-add__mobil {
     display: none; }
-    @media (max-width: 768px) {
+    @media (max-width: 835px) {
       .modal-add__mobil {
         display: block; } }
   .modal-add__mobil-text {
@@ -1971,7 +1985,7 @@ textarea {
     background-size: cover;
     border: transparent;
     background-color: transparent; }
-    @media (max-width: 768px) {
+    @media (max-width: 835px) {
       .modal-add__close {
         background-image: url("../img/icons/close-white.svg");
         position: static; } }
@@ -6990,7 +7004,6 @@ input.star-1:checked ~ label.star:before {
     background-color: transparent; }
     @media (max-width: 768px) {
       .orders__settings {
-        display: block;
         margin: 0 auto; } }
     @media (max-width: 576px) {
       .orders__settings {
