@@ -2241,7 +2241,7 @@ input.star-1:checked ~ label.star:before {
         display: block; } }
   .header__inner {
     display: grid;
-    grid-template-columns: 310px 490px minmax(230px, 530px) 365px;
+    grid-template-columns: 311px 490px minmax(230px, 530px) 365px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
@@ -2254,17 +2254,17 @@ input.star-1:checked ~ label.star:before {
     font-family: 'Manrope', sans-serif; }
     @media (max-width: 1600px) {
       .header__inner {
-        grid-template-columns: 310px 395px minmax(295px, 400px) 180px; } }
+        grid-template-columns: 311px 400px minmax(295px, 570px) 365px; } }
     @media (max-width: 1280px) {
       .header__inner {
-        grid-template-columns: 22px 270px minmax(250px, 470px) minmax(290px, 310px);
+        grid-template-columns: 22px 270px minmax(260px, 785px) minmax(290px, 320px);
         -webkit-column-gap: 15px;
            -moz-column-gap: 15px;
                 column-gap: 15px;
         padding: 13px 0; } }
     @media (max-width: 991px) {
       .header__inner {
-        grid-template-columns: 22px 270px minmax(250px, 470px) 160px;
+        grid-template-columns: 22px 270px minmax(250px, 650px) 160px;
         -webkit-column-gap: 15px;
            -moz-column-gap: 15px;
                 column-gap: 15px; } }
@@ -2274,13 +2274,13 @@ input.star-1:checked ~ label.star:before {
         padding: 14px 0; } }
     @media (max-width: 576px) {
       .header__inner {
-        grid-template-columns: 17px minmax(80px, 390px) 110px; } }
+        grid-template-columns: 17px minmax(80px, 520px) 110px; } }
   .header__left {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    max-width: 310px;
+    max-width: 311px;
     width: 100%; }
   .header__span {
     position: relative;
@@ -2436,10 +2436,6 @@ input.star-1:checked ~ label.star:before {
       height: 19px; }
     .header__phone:hover {
       color: #F85A3E; }
-    @media (max-width: 1600px) {
-      .header__phone {
-        font-size: 0;
-        margin-top: 4px; } }
     @media (max-width: 1280px) {
       .header__phone {
         font-size: 16px;
