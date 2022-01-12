@@ -2241,7 +2241,7 @@ input.star-1:checked ~ label.star:before {
         display: block; } }
   .header__inner {
     display: grid;
-    grid-template-columns: 310px 470px minmax(250px, 530px) 365px;
+    grid-template-columns: 310px 490px minmax(230px, 530px) 365px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;

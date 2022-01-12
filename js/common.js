@@ -100,51 +100,44 @@ $(document).click(function (e) {
     };
 });
 
-$(".add-fav").on("click", function (e) {
-    $(this).toggleClass('active');
-    var name = $(this).attr("data-name");
-    var image = $(this).attr("data-img");
+$(".product-card__heart--hidden, .card-info__filter-heart--hidden").on("click", function (e) {
+    $(this).parent().toggleClass('active');
+    var name = $(this).parent().attr("data-name");
+    var image = $(this).parent().attr("data-img");
     $(".modal-add__title").text(name);
     $(".modal-add__image").attr('src', image);
     $(".fav-add-js").addClass('activ-add');
-    console.log(name);
-    console.log(image);
-    $(".add-fav").on("click", function (e) {
-        if ($(this).hasClass('active')) {
-            var name = $(this).attr("data-name");
-            var image = $(this).attr("data-img");
-            $(".modal-add__title--remove").text(name);
-            $(".modal-add__image--remove").attr('src', image);
-            $(".fav-remove-js").addClass('activ-add');
-            console.log(name);
-            console.log(image);
-        }
-        $(".fav-add-js").toggleClass('activ-add');
-        $(".fav-remove-js").toggleClass('activ-add');
-        console.log(name);
-        console.log(image);
-    });
+    $(".fav-remove-js").removeClass('activ-add');
 });
 
-$(".add-comp").on("click", function (e) {
-    $(this).toggleClass('active');
-    var name = $(this).attr("data-name");
-    var image = $(this).attr("data-img");
+$(".product-card__heart--active, .card-info__filter-heart--active").on("click", function (e) {
+    $(this).parent().toggleClass('active');
+    var name = $(this).parent().attr("data-name");
+    var image = $(this).parent().attr("data-img");
+    $(".modal-add__title").text(name);
+    $(".modal-add__image").attr('src', image);
+    $(".fav-remove-js").addClass('activ-add');
+    $(".fav-add-js").removeClass('activ-add');
+});
+
+$(".product-card__filter--hidden").on("click", function (e) {
+    $(this).parent().toggleClass('active');
+    var name = $(this).parent().attr("data-name");
+    var image = $(this).parent().attr("data-img");
     $(".modal-add__title").text(name);
     $(".modal-add__image").attr('src', image);
     $(".comp-add-js").addClass('activ-add');
+    $(".comp-remove-js").removeClass('activ-add');
+});
 
-    $(".add-comp").on("click", function (e) {
-        if ($(this).hasClass('active')) {
-            var name = $(this).attr("data-name");
-            var image = $(this).attr("data-img");
-            $(".modal-add__title--remove").text(name);
-            $(".modal-add__image--remove").attr('src', image);
-            $(".comp-remove-js").addClass('activ-add');
-        }
-        $(".comp-add-js").toggleClass('activ-add');
-        $(".comp-remove-js").toggleClass('activ-add');
-    });
+$(".product-card__filter--active").on("click", function (e) {
+    $(this).parent().toggleClass('active');
+    var name = $(this).parent().attr("data-name");
+    var image = $(this).parent().attr("data-img");
+    $(".modal-add__title").text(name);
+    $(".modal-add__image").attr('src', image);
+    $(".comp-remove-js").addClass('activ-add');
+    $(".comp-add-js").removeClass('activ-add');
 });
 
 $('.product-card__basket').on('click', function () {
