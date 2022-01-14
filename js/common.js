@@ -359,6 +359,7 @@ $(document).ready(function () {
 
 $('.js-arrow').on('click', function () {
     $(this).children('.icon-up').toggleClass('icon-down');
+    $(this).toggleClass('active');
 });
 
 $('.orders__button--js').on('click', function () {
@@ -773,8 +774,8 @@ $(".modal-notification__form").submit(function (e) {
     return false;
 });
 
-$('.product-card__info').on('click', function () {
-    $(this).closest('.product-card__price-wrap').children('.drop-info').toggleClass('activ-info');
+$('.product-card__info, .basket__price-info').on('click', function () {
+    $(this).closest('.product-card__price-wrap, .basket__price-box').children('.drop-info').toggleClass('activ-info');
     $(document).mouseup(function (e) {
         var container = $(".drop-info");
         if (container.has(e.target).length === 0) {

@@ -2974,6 +2974,7 @@ input.star-1:checked ~ label.star:before {
     .filter__btn::after {
       display: none;
       margin-bottom: 8px;
+      margin-left: 3px;
       content: '';
       width: 9px;
       height: 9px;
@@ -4192,6 +4193,8 @@ input.star-1:checked ~ label.star:before {
   .product-list__link.js-arrow {
     position: relative;
     padding-right: 15px; }
+  .product-list__link.active {
+    color: #F85A3E; }
 
 .product-list .icon-up {
   display: block;
