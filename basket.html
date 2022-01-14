@@ -93,6 +93,53 @@
             </div>
         </header>
         <main>
+            <div class="modal-add modal-add--all basket-add-js">
+                <div class="container">
+                    <div class="modal-add__inner">
+                        <div class="modal-add__desktop">
+                            <div class="modal-add__box">
+                                <div class="modal-add__text-wrap">
+                                    <span class="modal-add__title-text">Товар добавлен в корзину</span>
+                                    <p class="modal-add__text">Всего в списке <span class="modal__num">2</span> товара
+                                        из категории Молочные продукты</p>
+                                </div>
+                            </div>
+                            <div class="modal-add__links">
+                                <a class="modal-add__link" href="basket.html">Перейти в
+                                    корзину</a>
+                            </div>
+                        </div>
+                        <div class="modal-add__mobil">
+                            <p class="modal-add__mobil-text">
+                                Товар добавлен в корзину. Нажмите, <a class="modal-add__mobil-link"
+                                    href="basket.html">чтобы
+                                    перейти</a>
+                            </p>
+                        </div>
+                        <button class="modal-add__close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-add modal-add--all basket-remove-js">
+                <div class="container">
+                    <div class="modal-add__inner">
+                        <div class="modal-add__desktop">
+                            <div class="modal-add__box">
+                                <div class="modal-add__text-wrap">
+                                    <span class="modal-add__title-text">Товар удален из корзины</span>
+                                    <p class="modal-add__price modal-add__price--remove"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-add__mobil">
+                            <p class="modal-add__mobil-text">
+                                Товар удален из корзины
+                            </p>
+                        </div>
+                        <button class="modal-add__close"></button>
+                    </div>
+                </div>
+            </div>
             <div class="modal-add fav-add-js">
                 <div class="container">
                     <div class="modal-add__inner">
@@ -307,8 +354,10 @@
                                     </div>
                                     <div class="basket__content">
                                         <div class="basket__img-wrap">
-                                            <img class="basket__img" src="img/basket/milk.png" width="53" height="126"
-                                                alt="milk">
+                                            <a href="product-detail.html">
+                                                <img class="basket__img" src="img/basket/milk.png" width="53"
+                                                    height="126" alt="milk">
+                                            </a>
                                         </div>
                                         <div class="basket__content-box">
                                             <div class="basket__num-box">
@@ -317,7 +366,8 @@
                                                     readonly>
                                                 <button class="basket__copy"></button>
                                             </div>
-                                            <h3 class="basket__content-title">Молоко овсяное с какао</h3>
+                                            <a class="basket__content-title" href="product-detail.html">Молоко овсяное с
+                                                какао</a>
                                             <ul class="basket__info">
                                                 <li class="basket__info-item">
                                                     <span class="basket__info-category">Объем</span>
@@ -382,8 +432,10 @@
                                     </div>
                                     <div class="basket__content">
                                         <div class="basket__img-wrap">
-                                            <img class="basket__img" src="img/basket/milk.png" width="53" height="126"
-                                                alt="milk">
+                                            <a href="product-detail.html">
+                                                <img class="basket__img" src="img/basket/milk.png" width="53"
+                                                    height="126" alt="milk">
+                                            </a>
                                         </div>
                                         <div class="basket__content-box">
                                             <div class="basket__num-box">
@@ -392,7 +444,8 @@
                                                     readonly>
                                                 <button class="basket__copy"></button>
                                             </div>
-                                            <h3 class="basket__content-title">Молоко овсяное с какао</h3>
+                                            <a class="basket__content-title" href="product-detail.html">Молоко овсяное с
+                                                какао</a>
                                             <ul class="basket__info">
                                                 <li class="basket__info-item">
                                                     <span class="basket__info-category">Объем</span>
@@ -519,24 +572,30 @@
                                 <div class="product-card__img-wrap">
                                     <span class="product-card__sale">В НАЛИЧИИ</span>
                                     <div class="product-card__icon-wrap">
-                                        <button class="product-card__icon add-fav" data-name="Самое вкусное молоко в мире молока" data-img="img/product-card/milk.png">
+                                        <button class="product-card__icon add-fav"
+                                            data-name="Самое вкусное молоко в мире молока"
+                                            data-img="img/product-card/milk.png">
                                             <span class="product-card__heart product-card__heart--hidden"
                                                 style="background-image: url(img/icons/heart.svg);"></span>
                                             <span class="product-card__heart product-card__heart--active"
                                                 style="background-image: url(img/icons/heart-active.svg);"></span>
                                         </button>
-                                        <button class="product-card__icon add-comp" data-name="Самое вкусное молоко в мире молока" data-img="img/product-card/milk.png">
+                                        <button class="product-card__icon add-comp"
+                                            data-name="Самое вкусное молоко в мире молока"
+                                            data-img="img/product-card/milk.png">
                                             <span class="product-card__filter product-card__filter--hidden"
                                                 style="background-image: url(img/icons/filter.svg);"></span>
                                             <span class="product-card__filter product-card__filter--active"
                                                 style="background-image: url(img/icons/filter-active.svg);"></span>
                                         </button>
                                     </div>
-                                    <img class="product-card__img" src="img/product-card/milk.png" alt="milk" width="65"
-                                        height="153">
+                                    <a href="product-detail.html">
+                                        <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                    </a>
                                 </div>
                                 <div class="product-card__text-wrap">
-                                    <div class="product-card__title">Молоко Valio 0.05%</div>
+                                    <a class="product-card__title" href="product-detail.html">Молоко Valio 0.05%</a>
                                     <p class="product-card__text">Самое вкусное молоко в мире молока</p>
                                 </div>
 
@@ -548,6 +607,8 @@
                                         <span class="product-card__info"
                                             style="background-image: url(img/icons/info.svg);"></span>
                                         <button class="product-card__basket" type="button">
+                                            <div class="basket-active all-style__active"></div>
+                                            <div class="basket-hidden all-style__hidden"></div>
                                             <svg class="product-card__basket-img" width="20" height="20"
                                                 viewBox="0 0 20 20" fill="none">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -568,24 +629,30 @@
                                 <div class="product-card__img-wrap">
                                     <span class="product-card__sale">В НАЛИЧИИ</span>
                                     <div class="product-card__icon-wrap">
-                                        <button class="product-card__icon add-fav" data-name="Самое вкусное молоко в мире молока" data-img="img/product-card/milk.png">
+                                        <button class="product-card__icon add-fav"
+                                            data-name="Самое вкусное молоко в мире молока"
+                                            data-img="img/product-card/milk.png">
                                             <span class="product-card__heart product-card__heart--hidden"
                                                 style="background-image: url(img/icons/heart.svg);"></span>
                                             <span class="product-card__heart product-card__heart--active"
                                                 style="background-image: url(img/icons/heart-active.svg);"></span>
                                         </button>
-                                        <button class="product-card__icon add-comp" data-name="Самое вкусное молоко в мире молока" data-img="img/product-card/milk.png">
+                                        <button class="product-card__icon add-comp"
+                                            data-name="Самое вкусное молоко в мире молока"
+                                            data-img="img/product-card/milk.png">
                                             <span class="product-card__filter product-card__filter--hidden"
                                                 style="background-image: url(img/icons/filter.svg);"></span>
                                             <span class="product-card__filter product-card__filter--active"
                                                 style="background-image: url(img/icons/filter-active.svg);"></span>
                                         </button>
                                     </div>
-                                    <img class="product-card__img" src="img/product-card/milk.png" alt="milk" width="65"
-                                        height="153">
+                                    <a href="product-detail.html">
+                                        <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                    </a>
                                 </div>
                                 <div class="product-card__text-wrap">
-                                    <div class="product-card__title">Молоко Valio 0.05%</div>
+                                    <a class="product-card__title" href="product-detail.html">Молоко Valio 0.05%</a>
                                     <p class="product-card__text">Самое вкусное молоко в мире молока</p>
                                 </div>
 
@@ -597,6 +664,8 @@
                                         <span class="product-card__info"
                                             style="background-image: url(img/icons/info.svg);"></span>
                                         <button class="product-card__basket" type="button">
+                                            <div class="basket-active all-style__active"></div>
+                                            <div class="basket-hidden all-style__hidden"></div>
                                             <svg class="product-card__basket-img" width="20" height="20"
                                                 viewBox="0 0 20 20" fill="none">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -617,24 +686,30 @@
                                 <div class="product-card__img-wrap">
                                     <span class="product-card__sale">В НАЛИЧИИ</span>
                                     <div class="product-card__icon-wrap">
-                                        <button class="product-card__icon add-fav" data-name="Самое вкусное молоко в мире молока" data-img="img/product-card/milk.png">
+                                        <button class="product-card__icon add-fav"
+                                            data-name="Самое вкусное молоко в мире молока"
+                                            data-img="img/product-card/milk.png">
                                             <span class="product-card__heart product-card__heart--hidden"
                                                 style="background-image: url(img/icons/heart.svg);"></span>
                                             <span class="product-card__heart product-card__heart--active"
                                                 style="background-image: url(img/icons/heart-active.svg);"></span>
                                         </button>
-                                        <button class="product-card__icon add-comp" data-name="Самое вкусное молоко в мире молока" data-img="img/product-card/milk.png">
+                                        <button class="product-card__icon add-comp"
+                                            data-name="Самое вкусное молоко в мире молока"
+                                            data-img="img/product-card/milk.png">
                                             <span class="product-card__filter product-card__filter--hidden"
                                                 style="background-image: url(img/icons/filter.svg);"></span>
                                             <span class="product-card__filter product-card__filter--active"
                                                 style="background-image: url(img/icons/filter-active.svg);"></span>
                                         </button>
                                     </div>
-                                    <img class="product-card__img" src="img/product-card/milk.png" alt="milk" width="65"
-                                        height="153">
+                                    <a href="product-detail.html">
+                                        <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                    </a>
                                 </div>
                                 <div class="product-card__text-wrap">
-                                    <div class="product-card__title">Молоко Valio 0.05%</div>
+                                    <a class="product-card__title" href="product-detail.html">Молоко Valio 0.05%</a>
                                     <p class="product-card__text">Самое вкусное молоко в мире молока</p>
                                 </div>
 
@@ -646,6 +721,8 @@
                                         <span class="product-card__info"
                                             style="background-image: url(img/icons/info.svg);"></span>
                                         <button class="product-card__basket" type="button">
+                                            <div class="basket-active all-style__active"></div>
+                                            <div class="basket-hidden all-style__hidden"></div>
                                             <svg class="product-card__basket-img" width="20" height="20"
                                                 viewBox="0 0 20 20" fill="none">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -666,24 +743,30 @@
                                 <div class="product-card__img-wrap">
                                     <span class="product-card__sale">В НАЛИЧИИ</span>
                                     <div class="product-card__icon-wrap">
-                                        <button class="product-card__icon add-fav" data-name="Самое вкусное молоко в мире молока" data-img="img/product-card/milk.png">
+                                        <button class="product-card__icon add-fav"
+                                            data-name="Самое вкусное молоко в мире молока"
+                                            data-img="img/product-card/milk.png">
                                             <span class="product-card__heart product-card__heart--hidden"
                                                 style="background-image: url(img/icons/heart.svg);"></span>
                                             <span class="product-card__heart product-card__heart--active"
                                                 style="background-image: url(img/icons/heart-active.svg);"></span>
                                         </button>
-                                        <button class="product-card__icon add-comp" data-name="Самое вкусное молоко в мире молока" data-img="img/product-card/milk.png">
+                                        <button class="product-card__icon add-comp"
+                                            data-name="Самое вкусное молоко в мире молока"
+                                            data-img="img/product-card/milk.png">
                                             <span class="product-card__filter product-card__filter--hidden"
                                                 style="background-image: url(img/icons/filter.svg);"></span>
                                             <span class="product-card__filter product-card__filter--active"
                                                 style="background-image: url(img/icons/filter-active.svg);"></span>
                                         </button>
                                     </div>
-                                    <img class="product-card__img" src="img/product-card/milk.png" alt="milk" width="65"
-                                        height="153">
+                                    <a href="product-detail.html">
+                                        <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                    </a>
                                 </div>
                                 <div class="product-card__text-wrap">
-                                    <div class="product-card__title">Молоко Valio 0.05%</div>
+                                    <a class="product-card__title" href="product-detail.html">Молоко Valio 0.05%</a>
                                     <p class="product-card__text">Самое вкусное молоко в мире молока</p>
                                 </div>
 
@@ -695,6 +778,8 @@
                                         <span class="product-card__info"
                                             style="background-image: url(img/icons/info.svg);"></span>
                                         <button class="product-card__basket" type="button">
+                                            <div class="basket-active all-style__active"></div>
+                                            <div class="basket-hidden all-style__hidden"></div>
                                             <svg class="product-card__basket-img" width="20" height="20"
                                                 viewBox="0 0 20 20" fill="none">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -718,24 +803,30 @@
                                     <div class="product-card__img-wrap">
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
-                                            <button class="product-card__icon add-fav" data-name="Самое вкусное молоко в мире молока" data-img="img/product-card/milk.png">
+                                            <button class="product-card__icon add-fav"
+                                                data-name="Самое вкусное молоко в мире молока"
+                                                data-img="img/product-card/milk.png">
                                                 <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
                                                 <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp" data-name="Самое вкусное молоко в мире молока" data-img="img/product-card/milk.png">
+                                            <button class="product-card__icon add-comp"
+                                                data-name="Самое вкусное молоко в мире молока"
+                                                data-img="img/product-card/milk.png">
                                                 <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
                                                 <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
-                                        <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
-                                            width="65" height="153">
+                                        <a href="product-detail.html">
+                                            <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                                width="65" height="153">
+                                        </a>
                                     </div>
                                     <div class="product-card__text-wrap">
-                                        <div class="product-card__title">Молоко Valio 0.05%</div>
+                                        <a class="product-card__title" href="product-detail.html">Молоко Valio 0.05%</a>
                                         <p class="product-card__text">Самое вкусное молоко в мире молока</p>
                                     </div>
 
@@ -747,6 +838,8 @@
                                             <span class="product-card__info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                             <button class="product-card__basket" type="button">
+                                                <div class="basket-active all-style__active"></div>
+                                                <div class="basket-hidden all-style__hidden"></div>
                                                 <svg class="product-card__basket-img" width="20" height="20"
                                                     viewBox="0 0 20 20" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -763,24 +856,30 @@
                                     <div class="product-card__img-wrap">
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
-                                            <button class="product-card__icon add-fav" data-name="Самое вкусное молоко в мире молока" data-img="img/product-card/milk.png">
+                                            <button class="product-card__icon add-fav"
+                                                data-name="Самое вкусное молоко в мире молока"
+                                                data-img="img/product-card/milk.png">
                                                 <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
                                                 <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp" data-name="Самое вкусное молоко в мире молока" data-img="img/product-card/milk.png">
+                                            <button class="product-card__icon add-comp"
+                                                data-name="Самое вкусное молоко в мире молока"
+                                                data-img="img/product-card/milk.png">
                                                 <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
                                                 <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
-                                        <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
-                                            width="65" height="153">
+                                        <a href="product-detail.html">
+                                            <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                                width="65" height="153">
+                                        </a>
                                     </div>
                                     <div class="product-card__text-wrap">
-                                        <div class="product-card__title">Молоко Valio 0.05%</div>
+                                        <a class="product-card__title" href="product-detail.html">Молоко Valio 0.05%</a>
                                         <p class="product-card__text">Самое вкусное молоко в мире молока</p>
                                     </div>
 
@@ -792,6 +891,8 @@
                                             <span class="product-card__info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                             <button class="product-card__basket" type="button">
+                                                <div class="basket-active all-style__active"></div>
+                                                <div class="basket-hidden all-style__hidden"></div>
                                                 <svg class="product-card__basket-img" width="20" height="20"
                                                     viewBox="0 0 20 20" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -808,24 +909,30 @@
                                     <div class="product-card__img-wrap">
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
-                                            <button class="product-card__icon add-fav" data-name="Самое вкусное молоко в мире молока" data-img="img/product-card/milk.png">
+                                            <button class="product-card__icon add-fav"
+                                                data-name="Самое вкусное молоко в мире молока"
+                                                data-img="img/product-card/milk.png">
                                                 <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
                                                 <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp" data-name="Самое вкусное молоко в мире молока" data-img="img/product-card/milk.png">
+                                            <button class="product-card__icon add-comp"
+                                                data-name="Самое вкусное молоко в мире молока"
+                                                data-img="img/product-card/milk.png">
                                                 <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
                                                 <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
-                                        <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
-                                            width="65" height="153">
+                                        <a href="product-detail.html">
+                                            <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                                width="65" height="153">
+                                        </a>
                                     </div>
                                     <div class="product-card__text-wrap">
-                                        <div class="product-card__title">Молоко Valio 0.05%</div>
+                                        <a class="product-card__title" href="product-detail.html">Молоко Valio 0.05%</a>
                                         <p class="product-card__text">Самое вкусное молоко в мире молока</p>
                                     </div>
 
@@ -837,6 +944,8 @@
                                             <span class="product-card__info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                             <button class="product-card__basket" type="button">
+                                                <div class="basket-active all-style__active"></div>
+                                                <div class="basket-hidden all-style__hidden"></div>
                                                 <svg class="product-card__basket-img" width="20" height="20"
                                                     viewBox="0 0 20 20" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -853,24 +962,30 @@
                                     <div class="product-card__img-wrap">
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
-                                            <button class="product-card__icon add-fav" data-name="Самое вкусное молоко в мире молока" data-img="img/product-card/milk.png">
+                                            <button class="product-card__icon add-fav"
+                                                data-name="Самое вкусное молоко в мире молока"
+                                                data-img="img/product-card/milk.png">
                                                 <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
                                                 <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp" data-name="Самое вкусное молоко в мире молока" data-img="img/product-card/milk.png">
+                                            <button class="product-card__icon add-comp"
+                                                data-name="Самое вкусное молоко в мире молока"
+                                                data-img="img/product-card/milk.png">
                                                 <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
                                                 <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
-                                        <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
-                                            width="65" height="153">
+                                        <a href="product-detail.html">
+                                            <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                                width="65" height="153">
+                                        </a>
                                     </div>
                                     <div class="product-card__text-wrap">
-                                        <div class="product-card__title">Молоко Valio 0.05%</div>
+                                        <a class="product-card__title" href="product-detail.html">Молоко Valio 0.05%</a>
                                         <p class="product-card__text">Самое вкусное молоко в мире молока</p>
                                     </div>
 
@@ -882,6 +997,8 @@
                                             <span class="product-card__info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                             <button class="product-card__basket" type="button">
+                                                <div class="basket-active all-style__active"></div>
+                                                <div class="basket-hidden all-style__hidden"></div>
                                                 <svg class="product-card__basket-img" width="20" height="20"
                                                     viewBox="0 0 20 20" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1281,6 +1398,7 @@
         <button class="modal-notification__button" type="button">Добавить в корзину</button>
         <button class="modal-notification__btn">Закрыть</button>
         <button class="modal-notification__close"></button>
+
     </div>
     <a class="attention" href="#attention-modal"></a>
     <div class="modal-notification modal-notification--note mfp-hide white-popup-block" id="attention-modal">

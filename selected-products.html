@@ -53,15 +53,15 @@
                         <a class="header__phone" href="tel:+74952592467">+7 (495) 259-24-67</a>
                         <ul class="header__list">
                             <li class="header__item">
-                                <a class="header__icon header__icon--basket" href="#"
+                                <a class="header__icon header__icon--basket" href="basket.html"
                                     style="background-image: url(img/icons/basket.svg);"></a>
                             </li>
                             <li class="header__item">
-                                <a class="header__icon header__icon--like" href="#"
+                                <a class="header__icon header__icon--like" href="selected-products.html"
                                     style="background-image: url(img//icons/like.svg);"></a>
                             </li>
                             <li class="header__item">
-                                <a class="header__icon header__icon--user" href="#"
+                                <a class="header__icon header__icon--user" href="#login-1"
                                     style="background-image: url(img/icons/user.svg);"></a>
                             </li>
                         </ul>
@@ -95,6 +95,53 @@
             </div>
         </header>
         <main>
+            <div class="modal-add modal-add--all basket-add-js">
+                <div class="container">
+                    <div class="modal-add__inner">
+                        <div class="modal-add__desktop">
+                            <div class="modal-add__box">
+                                <div class="modal-add__text-wrap">
+                                    <span class="modal-add__title-text">Товар добавлен в корзину</span>
+                                    <p class="modal-add__text">Всего в списке <span class="modal__num">2</span> товара
+                                        из категории Молочные продукты</p>
+                                </div>
+                            </div>
+                            <div class="modal-add__links">
+                                <a class="modal-add__link" href="basket.html">Перейти в
+                                    корзину</a>
+                            </div>
+                        </div>
+                        <div class="modal-add__mobil">
+                            <p class="modal-add__mobil-text">
+                                Товар добавлен в корзину. Нажмите, <a class="modal-add__mobil-link"
+                                    href="basket.html">чтобы
+                                    перейти</a>
+                            </p>
+                        </div>
+                        <button class="modal-add__close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-add modal-add--all basket-remove-js">
+                <div class="container">
+                    <div class="modal-add__inner">
+                        <div class="modal-add__desktop">
+                            <div class="modal-add__box">
+                                <div class="modal-add__text-wrap">
+                                    <span class="modal-add__title-text">Товар удален из корзины</span>
+                                    <p class="modal-add__price modal-add__price--remove"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-add__mobil">
+                            <p class="modal-add__mobil-text">
+                                Товар удален из корзины
+                            </p>
+                        </div>
+                        <button class="modal-add__close"></button>
+                    </div>
+                </div>
+            </div>
             <div class="modal-add comp-add-js">
                 <div class="container">
                     <div class="modal-add__inner">
@@ -189,10 +236,12 @@
                                     <a class="aside__link aside__link--company " href="companies.html">Компании</a>
                                 </li>
                                 <li class="aside__item">
-                                    <a class="aside__link aside__link--documentation" href="documentation.html">Документы</a>
+                                    <a class="aside__link aside__link--documentation"
+                                        href="documentation.html">Документы</a>
                                 </li>
                                 <li class="aside__item">
-                                    <a class="aside__link aside__link--notifications" href="list-notifications.html">Уведомления</a>
+                                    <a class="aside__link aside__link--notifications"
+                                        href="list-notifications.html">Уведомления</a>
                                 </li>
                                 <li class="aside__item">
                                     <a class="aside__link aside__link--download" href="#" download>Скачать
@@ -240,10 +289,12 @@
                                 <a class="aside__link aside__link--orders" href="pa-orders.html">Заказы</a>
                             </li>
                             <li class="aside__item">
-                                <a class="aside__link aside__link--documentation" href="documentation.html">Документы</a>
+                                <a class="aside__link aside__link--documentation"
+                                    href="documentation.html">Документы</a>
                             </li>
                             <li class="aside__item">
-                                <a class="aside__link aside__link--notifications" href="list-notifications.html">Уведомления</a>
+                                <a class="aside__link aside__link--notifications"
+                                    href="list-notifications.html">Уведомления</a>
                             </li>
                             <li class="aside__item">
                                 <a class="aside__link aside__link--download" href="#" download>Скачать прайс-лист</a>
@@ -256,8 +307,8 @@
                             <ul class="orders__links">
                                 <li class="orders__item">
                                     <span class="orders__link desktop-text  orders__link--the-page">
-                                        Избранные товары 
-                                        <span class="mob-text">Избранные</span>    
+                                        Избранные товары
+                                        <span class="mob-text">Избранные</span>
                                     </span>
                                 </li>
                                 <li class="orders__item">
@@ -272,41 +323,39 @@
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
                                             <button class="product-card__icon active js-remove">
-                                                <span
-                                                    class="product-card__heart product-card__heart--hidden"
+                                                <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
-                                                <span
-                                                    class="product-card__heart product-card__heart--active"
+                                                <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
-                                            разным в две строки"
-                                            data-img="img/product-card/milk.png">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                            <button class="product-card__icon add-comp" data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки" data-img="img/product-card/milk.png">
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
-                                        <img class="product-card__img" src="img/product-card/milk.png"
-                                            alt="milk" width="65" height="153">
+                                        <a href="product-detail.html">
+                                            <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                        </a>
                                     </div>
                                     <div class="product-card__text-wrap">
                                         <div class="product-card__num">05347554</div>
-                                        <div class="product-card__text">Молоко овсяное с какао и всяким
-                                            разным в две строки</div>
+                                        <a class="product-card__text" href="product-detail.html">Молоко овсяное с какао и всяким
+                                            разным в две строки</a>
                                     </div>
 
                                     <div class="product-card__buttom">
                                         <div class="product-card__price-wrap">
                                             <span class="product-card__price">2.45$</span>
-                                            <span
-                                                class="product-card__price product-card__price--currency">148р.</span>
+                                            <span class="product-card__price product-card__price--currency">148р.</span>
                                             <span class="product-card__info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                             <button class="product-card__basket" type="button">
+                                                <div class="basket-active all-style__active"></div>
+                                                <div class="basket-hidden all-style__hidden"></div>
                                                 <svg class="product-card__basket-img" width="20" height="20"
                                                     viewBox="0 0 20 20" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -328,41 +377,39 @@
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
                                             <button class="product-card__icon active js-remove">
-                                                <span
-                                                    class="product-card__heart product-card__heart--hidden"
+                                                <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
-                                                <span
-                                                    class="product-card__heart product-card__heart--active"
+                                                <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
-                                            разным в две строки"
-                                            data-img="img/product-card/milk.png">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                            <button class="product-card__icon add-comp" data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки" data-img="img/product-card/milk.png">
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
-                                        <img class="product-card__img" src="img/product-card/milk.png"
-                                            alt="milk" width="65" height="153">
+                                        <a href="product-detail.html">
+                                            <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                        </a>
                                     </div>
                                     <div class="product-card__text-wrap">
                                         <div class="product-card__num">05347554</div>
-                                        <div class="product-card__text">Молоко овсяное с какао и всяким
-                                            разным в две строки</div>
+                                        <a class="product-card__text" href="product-detail.html">Молоко овсяное с какао и всяким
+                                            разным в две строки</a>
                                     </div>
 
                                     <div class="product-card__buttom">
                                         <div class="product-card__price-wrap">
                                             <span class="product-card__price">2.45$</span>
-                                            <span
-                                                class="product-card__price product-card__price--currency">148р.</span>
+                                            <span class="product-card__price product-card__price--currency">148р.</span>
                                             <span class="product-card__info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                             <button class="product-card__basket" type="button">
+                                                <div class="basket-active all-style__active"></div>
+                                                <div class="basket-hidden all-style__hidden"></div>
                                                 <svg class="product-card__basket-img" width="20" height="20"
                                                     viewBox="0 0 20 20" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -384,41 +431,39 @@
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
                                             <button class="product-card__icon active js-remove">
-                                                <span
-                                                    class="product-card__heart product-card__heart--hidden"
+                                                <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
-                                                <span
-                                                    class="product-card__heart product-card__heart--active"
+                                                <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
-                                            разным в две строки"
-                                            data-img="img/product-card/milk.png">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                            <button class="product-card__icon add-comp" data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки" data-img="img/product-card/milk.png">
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
-                                        <img class="product-card__img" src="img/product-card/milk.png"
-                                            alt="milk" width="65" height="153">
+                                        <a href="product-detail.html">
+                                            <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                        </a>
                                     </div>
                                     <div class="product-card__text-wrap">
                                         <div class="product-card__num">05347554</div>
-                                        <div class="product-card__text">Молоко овсяное с какао и всяким
-                                            разным в две строки</div>
+                                        <a class="product-card__text" href="product-detail.html">Молоко овсяное с какао и всяким
+                                            разным в две строки</a>
                                     </div>
 
                                     <div class="product-card__buttom">
                                         <div class="product-card__price-wrap">
                                             <span class="product-card__price">2.45$</span>
-                                            <span
-                                                class="product-card__price product-card__price--currency">148р.</span>
+                                            <span class="product-card__price product-card__price--currency">148р.</span>
                                             <span class="product-card__info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                             <button class="product-card__basket" type="button">
+                                                <div class="basket-active all-style__active"></div>
+                                                <div class="basket-hidden all-style__hidden"></div>
                                                 <svg class="product-card__basket-img" width="20" height="20"
                                                     viewBox="0 0 20 20" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -440,41 +485,39 @@
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
                                             <button class="product-card__icon active js-remove">
-                                                <span
-                                                    class="product-card__heart product-card__heart--hidden"
+                                                <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
-                                                <span
-                                                    class="product-card__heart product-card__heart--active"
+                                                <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
-                                            разным в две строки"
-                                            data-img="img/product-card/milk.png">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                            <button class="product-card__icon add-comp" data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки" data-img="img/product-card/milk.png">
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
-                                        <img class="product-card__img" src="img/product-card/milk.png"
-                                            alt="milk" width="65" height="153">
+                                        <a href="product-detail.html">
+                                            <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                        </a>
                                     </div>
                                     <div class="product-card__text-wrap">
                                         <div class="product-card__num">05347554</div>
-                                        <div class="product-card__text">Молоко овсяное с какао и всяким
-                                            разным в две строки</div>
+                                        <a class="product-card__text" href="product-detail.html">Молоко овсяное с какао и всяким
+                                            разным в две строки</a>
                                     </div>
 
                                     <div class="product-card__buttom">
                                         <div class="product-card__price-wrap">
                                             <span class="product-card__price">2.45$</span>
-                                            <span
-                                                class="product-card__price product-card__price--currency">148р.</span>
+                                            <span class="product-card__price product-card__price--currency">148р.</span>
                                             <span class="product-card__info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                             <button class="product-card__basket" type="button">
+                                                <div class="basket-active all-style__active"></div>
+                                                <div class="basket-hidden all-style__hidden"></div>
                                                 <svg class="product-card__basket-img" width="20" height="20"
                                                     viewBox="0 0 20 20" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -496,41 +539,39 @@
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
                                             <button class="product-card__icon active js-remove">
-                                                <span
-                                                    class="product-card__heart product-card__heart--hidden"
+                                                <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
-                                                <span
-                                                    class="product-card__heart product-card__heart--active"
+                                                <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
-                                            разным в две строки"
-                                            data-img="img/product-card/milk.png">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                            <button class="product-card__icon add-comp" data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки" data-img="img/product-card/milk.png">
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
-                                        <img class="product-card__img" src="img/product-card/milk.png"
-                                            alt="milk" width="65" height="153">
+                                        <a href="product-detail.html">
+                                            <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                        </a>
                                     </div>
                                     <div class="product-card__text-wrap">
                                         <div class="product-card__num">05347554</div>
-                                        <div class="product-card__text">Молоко овсяное с какао и всяким
-                                            разным в две строки</div>
+                                        <a class="product-card__text" href="product-detail.html">Молоко овсяное с какао и всяким
+                                            разным в две строки</a>
                                     </div>
 
                                     <div class="product-card__buttom">
                                         <div class="product-card__price-wrap">
                                             <span class="product-card__price">2.45$</span>
-                                            <span
-                                                class="product-card__price product-card__price--currency">148р.</span>
+                                            <span class="product-card__price product-card__price--currency">148р.</span>
                                             <span class="product-card__info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                             <button class="product-card__basket" type="button">
+                                                <div class="basket-active all-style__active"></div>
+                                                <div class="basket-hidden all-style__hidden"></div>
                                                 <svg class="product-card__basket-img" width="20" height="20"
                                                     viewBox="0 0 20 20" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -552,41 +593,39 @@
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
                                             <button class="product-card__icon active js-remove">
-                                                <span
-                                                    class="product-card__heart product-card__heart--hidden"
+                                                <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
-                                                <span
-                                                    class="product-card__heart product-card__heart--active"
+                                                <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
-                                            разным в две строки"
-                                            data-img="img/product-card/milk.png">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                            <button class="product-card__icon add-comp" data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки" data-img="img/product-card/milk.png">
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
-                                        <img class="product-card__img" src="img/product-card/milk.png"
-                                            alt="milk" width="65" height="153">
+                                        <a href="product-detail.html">
+                                            <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                        </a>
                                     </div>
                                     <div class="product-card__text-wrap">
                                         <div class="product-card__num">05347554</div>
-                                        <div class="product-card__text">Молоко овсяное с какао и всяким
-                                            разным в две строки</div>
+                                        <a class="product-card__text" href="product-detail.html">Молоко овсяное с какао и всяким
+                                            разным в две строки</a>
                                     </div>
 
                                     <div class="product-card__buttom">
                                         <div class="product-card__price-wrap">
                                             <span class="product-card__price">2.45$</span>
-                                            <span
-                                                class="product-card__price product-card__price--currency">148р.</span>
+                                            <span class="product-card__price product-card__price--currency">148р.</span>
                                             <span class="product-card__info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                             <button class="product-card__basket" type="button">
+                                                <div class="basket-active all-style__active"></div>
+                                                <div class="basket-hidden all-style__hidden"></div>
                                                 <svg class="product-card__basket-img" width="20" height="20"
                                                     viewBox="0 0 20 20" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -608,41 +647,39 @@
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
                                             <button class="product-card__icon active js-remove">
-                                                <span
-                                                    class="product-card__heart product-card__heart--hidden"
+                                                <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
-                                                <span
-                                                    class="product-card__heart product-card__heart--active"
+                                                <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
-                                            разным в две строки"
-                                            data-img="img/product-card/milk.png">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                            <button class="product-card__icon add-comp" data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки" data-img="img/product-card/milk.png">
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
-                                        <img class="product-card__img" src="img/product-card/milk.png"
-                                            alt="milk" width="65" height="153">
+                                        <a href="product-detail.html">
+                                            <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                        </a>
                                     </div>
                                     <div class="product-card__text-wrap">
                                         <div class="product-card__num">05347554</div>
-                                        <div class="product-card__text">Молоко овсяное с какао и всяким
-                                            разным в две строки</div>
+                                        <a class="product-card__text" href="product-detail.html">Молоко овсяное с какао и всяким
+                                            разным в две строки</a>
                                     </div>
 
                                     <div class="product-card__buttom">
                                         <div class="product-card__price-wrap">
                                             <span class="product-card__price">2.45$</span>
-                                            <span
-                                                class="product-card__price product-card__price--currency">148р.</span>
+                                            <span class="product-card__price product-card__price--currency">148р.</span>
                                             <span class="product-card__info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                             <button class="product-card__basket" type="button">
+                                                <div class="basket-active all-style__active"></div>
+                                                <div class="basket-hidden all-style__hidden"></div>
                                                 <svg class="product-card__basket-img" width="20" height="20"
                                                     viewBox="0 0 20 20" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -664,41 +701,39 @@
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
                                             <button class="product-card__icon active js-remove">
-                                                <span
-                                                    class="product-card__heart product-card__heart--hidden"
+                                                <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
-                                                <span
-                                                    class="product-card__heart product-card__heart--active"
+                                                <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
-                                            разным в две строки"
-                                            data-img="img/product-card/milk.png">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                            <button class="product-card__icon add-comp" data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки" data-img="img/product-card/milk.png">
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
-                                        <img class="product-card__img" src="img/product-card/milk.png"
-                                            alt="milk" width="65" height="153">
+                                        <a href="product-detail.html">
+                                            <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                        </a>
                                     </div>
                                     <div class="product-card__text-wrap">
                                         <div class="product-card__num">05347554</div>
-                                        <div class="product-card__text">Молоко овсяное с какао и всяким
-                                            разным в две строки</div>
+                                        <a class="product-card__text" href="product-detail.html">Молоко овсяное с какао и всяким
+                                            разным в две строки</a>
                                     </div>
 
                                     <div class="product-card__buttom">
                                         <div class="product-card__price-wrap">
                                             <span class="product-card__price">2.45$</span>
-                                            <span
-                                                class="product-card__price product-card__price--currency">148р.</span>
+                                            <span class="product-card__price product-card__price--currency">148р.</span>
                                             <span class="product-card__info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                             <button class="product-card__basket" type="button">
+                                                <div class="basket-active all-style__active"></div>
+                                                <div class="basket-hidden all-style__hidden"></div>
                                                 <svg class="product-card__basket-img" width="20" height="20"
                                                     viewBox="0 0 20 20" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -720,41 +755,39 @@
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
                                             <button class="product-card__icon active js-remove">
-                                                <span
-                                                    class="product-card__heart product-card__heart--hidden"
+                                                <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
-                                                <span
-                                                    class="product-card__heart product-card__heart--active"
+                                                <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
-                                            разным в две строки"
-                                            data-img="img/product-card/milk.png">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                            <button class="product-card__icon add-comp" data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки" data-img="img/product-card/milk.png">
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
-                                        <img class="product-card__img" src="img/product-card/milk.png"
-                                            alt="milk" width="65" height="153">
+                                        <a href="product-detail.html">
+                                            <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                        </a>
                                     </div>
                                     <div class="product-card__text-wrap">
                                         <div class="product-card__num">05347554</div>
-                                        <div class="product-card__text">Молоко овсяное с какао и всяким
-                                            разным в две строки</div>
+                                        <a class="product-card__text" href="product-detail.html">Молоко овсяное с какао и всяким
+                                            разным в две строки</a>
                                     </div>
 
                                     <div class="product-card__buttom">
                                         <div class="product-card__price-wrap">
                                             <span class="product-card__price">2.45$</span>
-                                            <span
-                                                class="product-card__price product-card__price--currency">148р.</span>
+                                            <span class="product-card__price product-card__price--currency">148р.</span>
                                             <span class="product-card__info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                             <button class="product-card__basket" type="button">
+                                                <div class="basket-active all-style__active"></div>
+                                                <div class="basket-hidden all-style__hidden"></div>
                                                 <svg class="product-card__basket-img" width="20" height="20"
                                                     viewBox="0 0 20 20" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -776,41 +809,39 @@
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
                                             <button class="product-card__icon active js-remove">
-                                                <span
-                                                    class="product-card__heart product-card__heart--hidden"
+                                                <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
-                                                <span
-                                                    class="product-card__heart product-card__heart--active"
+                                                <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
-                                            разным в две строки"
-                                            data-img="img/product-card/milk.png">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                            <button class="product-card__icon add-comp" data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки" data-img="img/product-card/milk.png">
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
-                                        <img class="product-card__img" src="img/product-card/milk.png"
-                                            alt="milk" width="65" height="153">
+                                        <a href="product-detail.html">
+                                            <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                        </a>
                                     </div>
                                     <div class="product-card__text-wrap">
                                         <div class="product-card__num">05347554</div>
-                                        <div class="product-card__text">Молоко овсяное с какао и всяким
-                                            разным в две строки</div>
+                                        <a class="product-card__text" href="product-detail.html">Молоко овсяное с какао и всяким
+                                            разным в две строки</a>
                                     </div>
 
                                     <div class="product-card__buttom">
                                         <div class="product-card__price-wrap">
                                             <span class="product-card__price">2.45$</span>
-                                            <span
-                                                class="product-card__price product-card__price--currency">148р.</span>
+                                            <span class="product-card__price product-card__price--currency">148р.</span>
                                             <span class="product-card__info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                             <button class="product-card__basket" type="button">
+                                                <div class="basket-active all-style__active"></div>
+                                                <div class="basket-hidden all-style__hidden"></div>
                                                 <svg class="product-card__basket-img" width="20" height="20"
                                                     viewBox="0 0 20 20" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -832,41 +863,39 @@
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
                                             <button class="product-card__icon active js-remove">
-                                                <span
-                                                    class="product-card__heart product-card__heart--hidden"
+                                                <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
-                                                <span
-                                                    class="product-card__heart product-card__heart--active"
+                                                <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
-                                            разным в две строки"
-                                            data-img="img/product-card/milk.png">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                            <button class="product-card__icon add-comp" data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки" data-img="img/product-card/milk.png">
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
-                                        <img class="product-card__img" src="img/product-card/milk.png"
-                                            alt="milk" width="65" height="153">
+                                        <a href="product-detail.html">
+                                            <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                        </a>
                                     </div>
                                     <div class="product-card__text-wrap">
                                         <div class="product-card__num">05347554</div>
-                                        <div class="product-card__text">Молоко овсяное с какао и всяким
-                                            разным в две строки</div>
+                                        <a class="product-card__text" href="product-detail.html">Молоко овсяное с какао и всяким
+                                            разным в две строки</a>
                                     </div>
 
                                     <div class="product-card__buttom">
                                         <div class="product-card__price-wrap">
                                             <span class="product-card__price">2.45$</span>
-                                            <span
-                                                class="product-card__price product-card__price--currency">148р.</span>
+                                            <span class="product-card__price product-card__price--currency">148р.</span>
                                             <span class="product-card__info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                             <button class="product-card__basket" type="button">
+                                                <div class="basket-active all-style__active"></div>
+                                                <div class="basket-hidden all-style__hidden"></div>
                                                 <svg class="product-card__basket-img" width="20" height="20"
                                                     viewBox="0 0 20 20" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -888,41 +917,93 @@
                                         <span class="product-card__sale">В НАЛИЧИИ</span>
                                         <div class="product-card__icon-wrap">
                                             <button class="product-card__icon active js-remove">
-                                                <span
-                                                    class="product-card__heart product-card__heart--hidden"
+                                                <span class="product-card__heart product-card__heart--hidden"
                                                     style="background-image: url(img/icons/heart.svg);"></span>
-                                                <span
-                                                    class="product-card__heart product-card__heart--active"
+                                                <span class="product-card__heart product-card__heart--active"
                                                     style="background-image: url(img/icons/heart-active.svg);"></span>
                                             </button>
-                                            <button class="product-card__icon add-comp"  data-name="Молоко овсяное с какао и всяким
-                                            разным в две строки"
-                                            data-img="img/product-card/milk.png">
-                                                <span
-                                                    class="product-card__filter product-card__filter--hidden"
+                                            <button class="product-card__icon add-comp" data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки" data-img="img/product-card/milk.png">
+                                                <span class="product-card__filter product-card__filter--hidden"
                                                     style="background-image: url(img/icons/filter.svg);"></span>
-                                                <span
-                                                    class="product-card__filter product-card__filter--active"
+                                                <span class="product-card__filter product-card__filter--active"
                                                     style="background-image: url(img/icons/filter-active.svg);"></span>
                                             </button>
                                         </div>
-                                        <img class="product-card__img" src="img/product-card/milk.png"
-                                            alt="milk" width="65" height="153">
+                                        <a href="product-detail.html">
+                                            <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                        </a>
                                     </div>
                                     <div class="product-card__text-wrap">
                                         <div class="product-card__num">05347554</div>
-                                        <div class="product-card__text">Молоко овсяное с какао и всяким
-                                            разным в две строки</div>
+                                        <a class="product-card__text" href="product-detail.html">Молоко овсяное с какао и всяким
+                                            разным в две строки</a>
                                     </div>
 
                                     <div class="product-card__buttom">
                                         <div class="product-card__price-wrap">
                                             <span class="product-card__price">2.45$</span>
-                                            <span
-                                                class="product-card__price product-card__price--currency">148р.</span>
+                                            <span class="product-card__price product-card__price--currency">148р.</span>
                                             <span class="product-card__info"
                                                 style="background-image: url(img/icons/info.svg);"></span>
                                             <button class="product-card__basket" type="button">
+                                                <div class="basket-active all-style__active"></div>
+                                                <div class="basket-hidden all-style__hidden"></div>
+                                                <svg class="product-card__basket-img" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M10 2.00038C9.2912 2.00044 8.60082 2.2408 8.02882 2.68666C7.45682 3.13252 7.03289 3.76073 6.81842 4.48032L6.06739 7.00027H13.9326L13.1816 4.48032C12.9671 3.76073 12.5432 3.13252 11.9712 2.68666C11.3992 2.2408 10.7088 2.00044 10 2.00038ZM15.9022 7.00027L14.9709 3.87534C14.6361 2.75083 13.9738 1.76909 13.08 1.07234C12.1863 0.375583 11.1075 0 10 0C8.89246 0 7.81369 0.375583 6.91995 1.07234C6.02622 1.76909 5.36395 2.75083 5.02908 3.87534L4.09779 7.00027H1.87754C1.5844 7.00028 1.29534 7.0734 1.0335 7.21377C0.771652 7.35414 0.544301 7.55787 0.369647 7.80864C0.194994 8.05941 0.07789 8.35025 0.0277122 8.65789C-0.0224656 8.96552 -0.00432325 9.28139 0.0806865 9.58022L1.13589 13.2901L2.43894 17.87C2.6142 18.4861 2.97086 19.0258 3.45621 19.4093C3.94157 19.7929 4.52988 20 5.13422 20H14.8658C15.47 19.9998 16.0581 19.7926 16.5432 19.409C17.0284 19.0255 17.3849 18.486 17.5601 17.87L18.8641 13.2901L19.9193 9.58022C20.0043 9.28139 20.0225 8.96552 19.9723 8.65789C19.9221 8.35025 19.805 8.05941 19.6304 7.80864C19.4557 7.55787 19.2283 7.35414 18.9665 7.21377C18.7047 7.0734 18.4156 7.00028 18.1225 7.00027H15.9022ZM4.78405 9.00023H1.87754L2.73091 12.0002H6.27955L5.89465 9.00023H4.78405ZM7.79008 9.00023L8.17404 12.0002H11.826L12.2109 9.00023H7.78914H7.79008ZM14.1054 9.00023L13.7204 12.0002H17.2691L18.1225 9.00023H14.1054ZM16.7002 14.0001H13.4642L12.9525 18H14.8648C15.0663 18 15.2624 17.931 15.4242 17.8032C15.586 17.6753 15.7048 17.4954 15.7633 17.2901L16.6992 14.0001H16.7002ZM11.058 18L11.5697 14.0001H8.42939L8.94198 18H11.058ZM7.04655 18L6.53491 14.0001H3.29982L4.2358 17.2901C4.29422 17.4954 4.4131 17.6753 4.57489 17.8032C4.73667 17.931 4.93277 18 5.13422 18H7.04655Z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="product-card__btn-wrap">
+                                            <button class="product-card__btn js-name">Добавить в
+                                                корзину</button>
+                                            <a class="product-card__btn js-name-add" href="basket.html">Перейти</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="product-list__item">
+                                <article class="product-card">
+                                    <div class="product-card__img-wrap">
+                                        <span class="product-card__sale">В НАЛИЧИИ</span>
+                                        <div class="product-card__icon-wrap">
+                                            <button class="product-card__icon active js-remove">
+                                                <span class="product-card__heart product-card__heart--hidden"
+                                                    style="background-image: url(img/icons/heart.svg);"></span>
+                                                <span class="product-card__heart product-card__heart--active"
+                                                    style="background-image: url(img/icons/heart-active.svg);"></span>
+                                            </button>
+                                            <button class="product-card__icon add-comp" data-name="Молоко овсяное с какао и всяким
+                                            разным в две строки" data-img="img/product-card/milk.png">
+                                                <span class="product-card__filter product-card__filter--hidden"
+                                                    style="background-image: url(img/icons/filter.svg);"></span>
+                                                <span class="product-card__filter product-card__filter--active"
+                                                    style="background-image: url(img/icons/filter-active.svg);"></span>
+                                            </button>
+                                        </div>
+                                        <a href="product-detail.html">
+                                            <img class="product-card__img" src="img/product-card/milk.png" alt="milk"
+                                            width="65" height="153">
+                                        </a>
+                                    </div>
+                                    <div class="product-card__text-wrap">
+                                        <div class="product-card__num">05347554</div>
+                                        <a class="product-card__text" href="product-detail.html">Молоко овсяное с какао и всяким
+                                            разным в две строки</a>
+                                    </div>
+
+                                    <div class="product-card__buttom">
+                                        <div class="product-card__price-wrap">
+                                            <span class="product-card__price">2.45$</span>
+                                            <span class="product-card__price product-card__price--currency">148р.</span>
+                                            <span class="product-card__info"
+                                                style="background-image: url(img/icons/info.svg);"></span>
+                                            <button class="product-card__basket" type="button">
+                                                <div class="basket-active all-style__active"></div>
+                                                <div class="basket-hidden all-style__hidden"></div>
                                                 <svg class="product-card__basket-img" width="20" height="20"
                                                     viewBox="0 0 20 20" fill="none">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1016,6 +1097,70 @@
                 </div>
             </div>
         </footer>
+        <div class="modal-notification modal-notification--welcome mfp-hide white-popup-block" id="login-1">
+            <h3 class="modal-notification__title">Добро пожаловать</h3>
+            <p class="modal-notification__text">
+                Введите номер телефона, чтобы войти или зарегистрироваться
+            </p>
+            <form class="modal-notification__form js-form">
+                <label class="modal-notification__label" for="footer-form"></label>
+                <input class="modal-notification__input" type="tel" id="footer-form" name="phone_user"
+                    placeholder="+7 (___) ___ ____" required="">
+                <button class="modal-notification__btn" type="submit">Получить код в СМС</button>
+            </form>
+            <ul class="orders__title-list active">
+                <li class="orders__icon">
+                    <label class="basket__label" for="add-filterCheck-1">
+                        <input class="basket__input" type="checkbox" id="add-filterCheck-1">
+                        <span class="basket__check-style"></span>
+                        Согласен с политикой использования персональных данных
+                    </label>
+                </li>
+                <li class="orders__icon">
+                    <label class="basket__label" for="add-filterCheck-2">
+                        <input class="basket__input" type="checkbox" id="add-filterCheck-2">
+                        <span class="basket__check-style"></span>
+                        Согласен получать информацию об акциях и новостях компании
+                    </label>
+                </li>
+            </ul>
+            <div class="modal-notification__category">
+                Вы также можете войти через сервисы:
+            </div>
+            <ul class="modal-notification__list">
+                <li class="modal-notification__item">
+                    <a class="modal-notification__link modal-notification__link--google" href="#"></a>
+                </li>
+                <li class="modal-notification__item">
+                    <a class="modal-notification__link modal-notification__link--yandex" href="#"></a>
+                </li>
+                <li class="modal-notification__item">
+                    <a class="modal-notification__link modal-notification__link--facebook" href="#"></a>
+                </li>
+                <li class="modal-notification__item">
+                    <a class="modal-notification__link modal-notification__link--vk" href="#"></a>
+                </li>
+            </ul>
+            <button class="modal-notification__close"></button>
+        </div>
+        <div class="modal-notification modal-notification--welcome mfp-hide white-popup-block" id="login-2">
+            <h3 class="modal-notification__title">Введите код</h3>
+            <p class="modal-notification__text">
+                +7 (977) 612-65-50
+            </p>
+            <form class="modal-notification__form js-form">
+                <div class="modal-notification__box">
+                    <input class="modal-notification__passcode-area" autofocus type="text" maxlength="1">
+                    <input class="modal-notification__passcode-area" type="text" maxlength="1">
+                    <input class="modal-notification__passcode-area" type="text" maxlength="1">
+                    <input class="modal-notification__passcode-area" type="text" maxlength="1">
+                </div>
+                <button class="modal-notification__btn modal-notification__btn--hidden" type="submit">Новый код через
+                    <span class="js-time">00:24</span></button>
+            </form>
+            <button class="modal-notification__close"></button>
+            <button class="modal-notification__back"></button>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"

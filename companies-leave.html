@@ -61,7 +61,7 @@
                                     style="background-image: url(img//icons/like.svg);"></a>
                             </li>
                             <li class="header__item">
-                                <a class="header__icon header__icon--user" href="pa-orders.html"
+                                <a class="header__icon header__icon--user" href="#login-1"
                                     style="background-image: url(img/icons/user.svg);"></a>
                             </li>
                         </ul>
@@ -323,6 +323,70 @@
                 </div>
             </div>
         </footer>
+        <div class="modal-notification modal-notification--welcome mfp-hide white-popup-block" id="login-1">
+            <h3 class="modal-notification__title">Добро пожаловать</h3>
+            <p class="modal-notification__text">
+                Введите номер телефона, чтобы войти или зарегистрироваться
+            </p>
+            <form class="modal-notification__form js-form">
+                <label class="modal-notification__label" for="footer-form"></label>
+                <input class="modal-notification__input" type="tel" id="footer-form" name="phone_user"
+                    placeholder="+7 (___) ___ ____" required="">
+                <button class="modal-notification__btn" type="submit">Получить код в СМС</button>
+            </form>
+            <ul class="orders__title-list active">
+                <li class="orders__icon">
+                    <label class="basket__label" for="add-filterCheck-1">
+                        <input class="basket__input" type="checkbox" id="add-filterCheck-1">
+                        <span class="basket__check-style"></span>
+                        Согласен с политикой использования персональных данных
+                    </label>
+                </li>
+                <li class="orders__icon">
+                    <label class="basket__label" for="add-filterCheck-2">
+                        <input class="basket__input" type="checkbox" id="add-filterCheck-2">
+                        <span class="basket__check-style"></span>
+                        Согласен получать информацию об акциях и новостях компании
+                    </label>
+                </li>
+            </ul>
+            <div class="modal-notification__category">
+                Вы также можете войти через сервисы:
+            </div>
+            <ul class="modal-notification__list">
+                <li class="modal-notification__item">
+                    <a class="modal-notification__link modal-notification__link--google" href="#"></a>
+                </li>
+                <li class="modal-notification__item">
+                    <a class="modal-notification__link modal-notification__link--yandex" href="#"></a>
+                </li>
+                <li class="modal-notification__item">
+                    <a class="modal-notification__link modal-notification__link--facebook" href="#"></a>
+                </li>
+                <li class="modal-notification__item">
+                    <a class="modal-notification__link modal-notification__link--vk" href="#"></a>
+                </li>
+            </ul>
+            <button class="modal-notification__close"></button>
+        </div>
+        <div class="modal-notification modal-notification--welcome mfp-hide white-popup-block" id="login-2">
+            <h3 class="modal-notification__title">Введите код</h3>
+            <p class="modal-notification__text">
+                +7 (977) 612-65-50
+            </p>
+            <form class="modal-notification__form js-form">
+                <div class="modal-notification__box">
+                    <input class="modal-notification__passcode-area" autofocus type="text" maxlength="1">
+                    <input class="modal-notification__passcode-area" type="text" maxlength="1">
+                    <input class="modal-notification__passcode-area" type="text" maxlength="1">
+                    <input class="modal-notification__passcode-area" type="text" maxlength="1">
+                </div>
+                <button class="modal-notification__btn modal-notification__btn--hidden" type="submit">Новый код через
+                    <span class="js-time">00:24</span></button>
+            </form>
+            <button class="modal-notification__close"></button>
+            <button class="modal-notification__back"></button>
+        </div>
         <div class="modal-notification modal-notification--note mfp-hide white-popup-block" id="note-1">
             <div class="modal-notification__img modal-notification__img--note"></div>
             <h3 class="modal-notification__title">Вы собираетесь покинуть компанию</h3>
