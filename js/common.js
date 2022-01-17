@@ -206,8 +206,15 @@ $('.text-hide').on('click', function () {
     $('.card-info__description-text').toggleClass('js-text');
 });
 
-$('.text-hide').on('click', function () {
-    $('.card-info__description-span').toggleClass('js-active');
+$('.card-info__description-span--active').on('click', function () {
+    $('.card-info__description-span--hidden').addClass('js-active');
+    $('.card-info__description-span--active').removeClass('js-active');
+    $(this).parent().parent().children('.card-info__description-text').addClass('js-text');
+});
+$('.card-info__description-span--hidden').on('click', function () {
+    $('.card-info__description-span--active').addClass('js-active');
+    $('.card-info__description-span--hidden').removeClass('js-active');
+    $(this).parent().parent().children('.card-info__description-text').removeClass('js-text');
 });
 
 $('.scroll-card__btn').on('click', function () {
