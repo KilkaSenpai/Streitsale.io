@@ -539,8 +539,8 @@
                                 полезность напитка можно подчеркнуть злаками и орехами. Каждая капелька пропитана
                                 пользой. Прекрасная формула вкусов показывает 100 % пользу для организма. </p>
                             <button class="card-info__description-link text-hide">
-                                <span class="card-info__description-span js-active">Подробнее</span>
-                                <span class="card-info__description-span">Показать меньше</span>
+                                <span class="card-info__description-span card-info__description-span--active js-active">Подробнее</span>
+                                <span class="card-info__description-span card-info__description-span--hidden">Показать меньше</span>
                             </button>
                         </div>
                         <div class="card-info__description-box">
@@ -1641,7 +1641,7 @@
         });
     </script>
     <script>
-        $("..card-info__filter-heart--hidden").on("click", function (e) {
+        $(".card-info__filter-heart--hidden").on("click", function (e) {
             $(this).parent().toggleClass('active');
             var name = $(this).parent().attr("data-name");
             var image = $(this).parent().attr("data-img");
@@ -1651,7 +1651,7 @@
             $(".fav-remove-js").removeClass('activ-add');
         });
 
-        $("..card-info__filter-heart--active").on("click", function (e) {
+        $(".card-info__filter-heart--active").on("click", function (e) {
             $(this).parent().toggleClass('active');
             var name = $(this).parent().attr("data-name");
             var image = $(this).parent().attr("data-img");
